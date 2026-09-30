@@ -446,6 +446,16 @@ security audit. The pre-publication local suite passed 146 tests, with nine
 isolated PostgreSQL-only tests skipped because no test URL was configured.
 Repository publication is not a Vercel deployment or live-payment approval.
 
+## Staging packaging check - 2026-09-30
+
+An isolated wheel built from the published Python packaging configuration
+contained zero of the 48 files under `app/templates_and_static/`, even though
+source-checkout web tests passed. Added explicit setuptools package-data globs
+for HTML templates, CSS, JavaScript and the static image directory. A fresh
+wheel then contained all 48 assets, and focused web-route tests passed 5/5.
+The wheel check validates packaging only; no Vercel runtime, managed database,
+Redis connection, worker/beat schedule or live payment was exercised.
+
 ## Phase summary
 
 | Phase | Status | Scope |

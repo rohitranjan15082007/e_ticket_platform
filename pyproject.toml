@@ -39,5 +39,15 @@ target-version = "py311"
 [tool.setuptools.packages.find]
 include = ["app*"]
 
+[tool.setuptools.package-data]
+app = [
+  "templates_and_static/static/css/*.css",
+  "templates_and_static/static/js/*.js",
+  "templates_and_static/static/images/*",
+  "templates_and_static/templates/admin/*.html",
+  "templates_and_static/templates/public/*.html",
+  "templates_and_static/templates/user/*.html",
+]
+
 [tool.vercel]
 entrypoint = "app.main:app"

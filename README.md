@@ -43,7 +43,7 @@ The P2P user flow is explicit:
 
 ## Local setup
 
-1. Copy `.env.example` to `.env` and replace `JWT_SECRET`.
+1. Copy `.env.example` to `.env` and replace `TICKET_JWT_SECRET`.
 2. Install development dependencies: `python -m pip install -e ".[dev]"`.
 3. Run database migrations: `alembic upgrade head`.
 4. Start the API: `uvicorn app.main:app --reload`.

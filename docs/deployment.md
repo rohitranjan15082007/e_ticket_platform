@@ -1,6 +1,6 @@
 # Deployment and operations runbook
 
-Status: **development workflow documented; production rollout not authorized**.
+Status: **source published; staging runtime not deployed or verified; production rollout not authorized**.
 
 ## Local verification
 
@@ -24,6 +24,13 @@ Function. Keep `.env` out of Git and set `TICKET_*` values in the deployment
 environment. Use non-example JWT/DB secrets, an isolated managed PostgreSQL
 database, and exact HTTPS origins. Apply Alembic migrations as a separate,
 reviewed step before using the API; never perform migration on Function startup.
+For any internet-reachable staging environment, set `TICKET_APP_ENV=production`
+and `TICKET_DEBUG=false` so the production configuration guards reject example
+secrets, credentials and insecure origins. Keep all payment-method credentials
+unset and `TICKET_MANUAL_UPI_ENABLED=false` during infrastructure validation.
+The Python wheel build must contain the 48 files under
+`app/templates_and_static/`; source-checkout page tests alone do not verify
+that deployed HTML, CSS and JavaScript are packaged.
 
 The current Celery configuration uses Redis and a persistent worker plus beat.
 Deploying the FastAPI Function alone does **not** start these processes: the
