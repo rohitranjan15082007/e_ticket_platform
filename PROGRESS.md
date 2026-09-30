@@ -428,8 +428,23 @@ provider, queue, or browser end-to-end check was performed. Added
 deprecation warning; focused migration/readiness tests then passed **6/6**.
 The remaining warnings originate in installed Starlette/FastAPI dependencies.
 This recheck does not change the production release gate or authorize payment
-activation. All project files currently appear untracked to Git in this local
-checkout; GitHub publication was not attempted.
+activation. At the time of this recheck, project files were still untracked in
+the local Git checkout and GitHub publication had not yet been attempted.
+
+## GitHub repository split - 2026-09-30
+
+Published the three text requirement documents plus the public `.env.example`
+and `.gitignore` to the public `rohitranjan15082007/sctratch_card` repository
+(commit `9daa7ad`). Published the application source, migrations, UI assets,
+design handoff, tests, scripts and operations documentation to the separate
+public `rohitranjan15082007/e_ticket_platform` repository (initial app commit
+`f234a7b`). The latter remote contained 292 files when checked. The real
+`.env`, original reference PDF/photos, local test artifacts and missing-work
+report PDF were not published. A paths-only credential-pattern scan of staged
+content found no recognized token or private-key markers; that is not a full
+security audit. The pre-publication local suite passed 146 tests, with nine
+isolated PostgreSQL-only tests skipped because no test URL was configured.
+Repository publication is not a Vercel deployment or live-payment approval.
 
 ## Phase summary
 
