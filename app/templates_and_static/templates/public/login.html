@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Sign in · E-Ticket</title>
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/public-v2.css">
+</head>
+<body class="public-v2" data-area="public" data-page="login">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="shell header-inner">
+    <a class="brand" href="/" aria-label="E-Ticket home"><span class="brand-mark">E</span><span>E-Ticket</span></a>
+    <nav id="site-nav" aria-label="Main navigation"><a href="/series">Series</a><a href="/packages">Packages</a><a href="/results">Results</a></nav>
+  </div></header>
+  <main id="main" class="shell">
+    <div class="auth-layout">
+      <section class="auth-story" aria-label="E-Ticket introduction"><div><p class="eyebrow">Welcome back</p><h2>Everything in one clear ticket journey.</h2><p>Browse your tickets, review payment status and follow published results from your account.</p></div><p class="story-bottom">Your order and payment status come from the server, never from a visual confirmation alone.</p></section>
+      <section class="auth-panel" aria-labelledby="auth-title"><div class="page-heading"><p class="eyebrow">Your account</p><h1 id="auth-title">Sign in</h1><p>Enter your account details to continue.</p></div>
+    <div id="status" class="notice" role="status" aria-live="polite" hidden></div>
+    <div id="page-content"><p class="muted">Loading…</p></div>
+    <div class="auth-security">Account access does not initiate a payment or reserve a ticket.</div>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer"><div class="shell footer-inner"><p>Tickets and payments are final only when the server confirms them.</p><div class="footer-links"><a href="/series">Series</a><a href="/results">Public results</a></div></div></footer>
+  <script type="module" src="/assets/js/app.js"></script>
+</body>
+</html>

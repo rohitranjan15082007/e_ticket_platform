@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Payment experience demo · E-Ticket</title>
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/payment_demo.css">
+</head>
+<body data-area="public" data-page="payment-demo">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="shell header-inner">
+    <a class="brand" href="/" aria-label="E-Ticket home"><span class="brand-mark">E</span><span>E-Ticket</span></a>
+    <nav id="site-nav" aria-label="Main navigation"><a href="/series">Series</a><a href="/packages">Packages</a><a href="/results">Results</a></nav>
+  </div></header>
+  <main id="main" class="shell payment-page">
+    <div class="demo-ribbon" role="note"><span class="demo-dot" aria-hidden="true"></span>UI DEMO ONLY <span class="demo-ribbon-copy">No payment is initiated or recorded on this page.</span></div>
+    <div class="page-heading payment-heading">
+      <p class="eyebrow">Checkout experience</p>
+      <h1>Choose how you would pay</h1>
+      <p class="muted">Explore the payment screens before connecting a real order or provider.</p>
+    </div>
+    <div id="status" class="notice" role="status" aria-live="polite" hidden></div>
+    <div id="page-content"><p class="muted">Loading demo…</p></div>
+  </main>
+  <footer class="site-footer"><div class="shell">Demo only. Real orders and payments require server confirmation. <a href="/series">Browse live catalog</a></div></footer>
+  <script type="module" src="/assets/js/app.js"></script>
+</body>
+</html>

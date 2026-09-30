@@ -1,0 +1,529 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="4720" height="4100" viewBox="0 0 4720 4100" role="img" aria-labelledby="bt bd">
+<title id="bt">E-Ticket platform UI/UX design board (v2)</title>
+<desc id="bd">Static vector preview of the nine screens defined in design/v2/build_figma.js. Illustrative sample data only.</desc>
+<rect width="4720" height="4100" fill="#EAEAE5"/>
+<text x="100" y="44" font-size="20" font-weight="800" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">E-TICKET PLATFORM · UI/UX DESIGN BOARD (v2)</text>
+<text x="100" y="68" font-size="13" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">9 screens · 1440×900 · mirrors design/v2/build_figma.js · sample data only — no payment or win implied</text>
+<text x="100" y="90" font-size="13" font-weight="600" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">01 · User dashboard</text>
+<rect x="100" y="100" width="1440" height="900" fill="#F5F5F1" stroke="#E2E3EB" stroke-width="1"/>
+<rect x="100" y="100" width="1440" height="76" fill="#FFFFFF"/>
+<rect x="122" y="116" width="210" height="44" fill="#292450" rx="13" ry="13"/>
+<text x="144" y="146" font-size="22" font-weight="700" fill="#D9F4C2" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">✦</text>
+<text x="174" y="145" font-size="17" font-weight="800" fill="#FFFFFF" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">ETICKET</text>
+<text x="492" y="145" font-size="14" font-weight="500" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Explore</text>
+<text x="586.2" y="145" font-size="14" font-weight="500" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Packages</text>
+<text x="689" y="145" font-size="14" font-weight="500" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Results</text>
+<text x="783.2" y="145" font-size="14" font-weight="500" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Wallet</text>
+<text x="868.8" y="145" font-size="14" font-weight="700" fill="#5446A4" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">My account</text>
+<rect x="1342" y="124" width="176" height="29" fill="#FFF8E7" rx="15" ry="15"/>
+<text x="1430" y="143" font-size="11" font-weight="700" fill="#A94150" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif">DESIGN / SAMPLE DATA</text>
+<rect x="100" y="176" width="236" height="824" fill="#292450"/>
+<text x="122" y="208" font-size="11" font-weight="800" fill="#D9F4C2" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">MY SPACE</text>
+<rect x="122" y="231" width="192" height="40" fill="#5446A4" rx="10" ry="10"/>
+<text x="132" y="257" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Dashboard</text>
+<rect x="122" y="286" width="192" height="40" fill="#292450" rx="10" ry="10"/>
+<text x="132" y="312" font-size="13" font-weight="500" fill="#D4D2EC" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">My tickets</text>
+<rect x="122" y="341" width="192" height="40" fill="#292450" rx="10" ry="10"/>
+<text x="132" y="367" font-size="13" font-weight="500" fill="#D4D2EC" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Orders</text>
+<rect x="122" y="396" width="192" height="40" fill="#292450" rx="10" ry="10"/>
+<text x="132" y="422" font-size="13" font-weight="500" fill="#D4D2EC" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Payments</text>
+<rect x="122" y="451" width="192" height="40" fill="#292450" rx="10" ry="10"/>
+<text x="132" y="477" font-size="13" font-weight="500" fill="#D4D2EC" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Wallet</text>
+<rect x="122" y="506" width="192" height="40" fill="#292450" rx="10" ry="10"/>
+<text x="132" y="532" font-size="13" font-weight="500" fill="#D4D2EC" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Withdrawals</text>
+<rect x="122" y="561" width="192" height="40" fill="#292450" rx="10" ry="10"/>
+<text x="132" y="587" font-size="13" font-weight="500" fill="#D4D2EC" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Referrals</text>
+<rect x="122" y="616" width="192" height="40" fill="#292450" rx="10" ry="10"/>
+<text x="132" y="642" font-size="13" font-weight="500" fill="#D4D2EC" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Results</text>
+<text x="371" y="226" font-size="11" font-weight="800" fill="#5446A4" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">YOUR ACCOUNT</text>
+<text x="371" y="264" font-size="34" font-weight="800" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Good morning, Rohit</text>
+<text x="371" y="290" font-size="14" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Your tickets, orders and wallet status in one clear place.</text>
+<rect x="371" y="312" width="271" height="138" fill="#FFFFFF" rx="18" ry="18"/>
+<text x="391" y="344" font-size="13" font-weight="500" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">My tickets</text>
+<text x="391" y="386" font-size="32" font-weight="800" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">04</text>
+<text x="391" y="410" font-size="11" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Delivered tickets</text>
+<rect x="658" y="312" width="271" height="138" fill="#FFFFFF" rx="18" ry="18"/>
+<text x="678" y="344" font-size="13" font-weight="500" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Open orders</text>
+<text x="678" y="386" font-size="32" font-weight="800" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">01</text>
+<text x="678" y="410" font-size="11" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Awaiting server status</text>
+<rect x="945" y="312" width="271" height="138" fill="#FFFFFF" rx="18" ry="18"/>
+<text x="965" y="344" font-size="13" font-weight="500" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Available wallet</text>
+<text x="965" y="386" font-size="32" font-weight="800" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">INR 0</text>
+<text x="965" y="410" font-size="11" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Sample balance</text>
+<rect x="1232" y="312" width="271" height="138" fill="#FFFFFF" rx="18" ry="18"/>
+<text x="1252" y="344" font-size="13" font-weight="500" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Held wallet</text>
+<text x="1252" y="386" font-size="32" font-weight="800" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">INR 0</text>
+<text x="1252" y="410" font-size="11" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Sample balance</text>
+<rect x="371" y="468" width="1134" height="176" fill="#292450" rx="19" ry="19"/>
+<text x="397" y="507" font-size="11" font-weight="800" fill="#D9F4C2" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">CONTINUE YOUR JOURNEY</text>
+<text x="397" y="543" font-size="27" font-weight="700" fill="#FFFFFF" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Explore the next series</text>
+<text x="397" y="568" font-size="13" font-weight="400" fill="#D8D6EF" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Choose tickets, review the server price, then follow payment status.</text>
+<rect x="1320.2" y="535" width="158.8" height="42" fill="#5446A4" rx="12" ry="12"/>
+<text x="1399.6" y="561" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif">Explore series</text>
+<rect x="371" y="662" width="559" height="287" fill="#FFFFFF" rx="18" ry="18"/>
+<text x="393" y="708" font-size="20" font-weight="700" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Recent orders</text>
+<rect x="393" y="720" width="138.5" height="29" fill="#FFF8E7" rx="15" ry="15"/>
+<text x="462.25" y="739" font-size="11" font-weight="700" fill="#A94150" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif">PENDING PAYMENT</text>
+<text x="393" y="774" font-size="16" font-weight="600" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Sample order  ·  INR 250</text>
+<text x="393" y="802" font-size="13" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Continue checkout to see the method and latest status.</text>
+<rect x="393" y="885" width="126" height="42" fill="#FFFFFF" rx="12" ry="12" stroke="#E2E3EB" stroke-width="1"/>
+<text x="456" y="911" font-size="14" font-weight="600" fill="#20223B" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif">View order</text>
+<rect x="946" y="662" width="559" height="287" fill="#FFFFFF" rx="18" ry="18"/>
+<text x="968" y="708" font-size="20" font-weight="700" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Tickets overview</text>
+<rect x="968" y="720" width="131" height="29" fill="#ECE9F8" rx="15" ry="15"/>
+<text x="1033.5" y="739" font-size="11" font-weight="700" fill="#5446A4" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif">RESULT PENDING</text>
+<text x="968" y="774" font-size="15" font-weight="600" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Ticket serials appear after confirmed delivery.</text>
+<text x="968" y="802" font-size="13" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">A ticket is not a win until the published result</text>
+<text x="968" y="822" font-size="13" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">confirms it.</text>
+<rect x="968" y="885" width="142.4" height="42" fill="#FFFFFF" rx="12" ry="12" stroke="#E2E3EB" stroke-width="1"/>
+<text x="1039.2" y="911" font-size="14" font-weight="600" fill="#20223B" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif">View tickets</text>
+<text x="1640" y="90" font-size="13" font-weight="600" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">02 · Packages catalog</text>
+<rect x="1640" y="100" width="1440" height="900" fill="#F5F5F1" stroke="#E2E3EB" stroke-width="1"/>
+<rect x="1640" y="100" width="1440" height="76" fill="#FFFFFF"/>
+<rect x="1662" y="116" width="210" height="44" fill="#292450" rx="13" ry="13"/>
+<text x="1684" y="146" font-size="22" font-weight="700" fill="#D9F4C2" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">✦</text>
+<text x="1714" y="145" font-size="17" font-weight="800" fill="#FFFFFF" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">ETICKET</text>
+<text x="2032" y="145" font-size="14" font-weight="500" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Explore</text>
+<text x="2126.2" y="145" font-size="14" font-weight="700" fill="#5446A4" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Packages</text>
+<text x="2229" y="145" font-size="14" font-weight="500" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Results</text>
+<text x="2323.2" y="145" font-size="14" font-weight="500" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Wallet</text>
+<text x="2408.8" y="145" font-size="14" font-weight="500" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">My account</text>
+<rect x="2882" y="124" width="176" height="29" fill="#FFF8E7" rx="15" ry="15"/>
+<text x="2970" y="143" font-size="11" font-weight="700" fill="#A94150" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif">DESIGN / SAMPLE DATA</text>
+<text x="1682" y="228" font-size="11" font-weight="800" fill="#5446A4" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">TICKET COLLECTIONS</text>
+<text x="1682" y="266" font-size="34" font-weight="800" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Find a package that fits</text>
+<text x="1682" y="292" font-size="14" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Every package shows its included series, price and availability before checkout.</text>
+<rect x="1682" y="314" width="1356" height="62" fill="#FFFFFF" rx="15" ry="15"/>
+<rect x="1700" y="330" width="116" height="29" fill="#292450" rx="15" ry="15"/>
+<text x="1758" y="349" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif">ALL PACKAGES</text>
+<text x="1832.5" y="352" font-size="14" font-weight="600" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Available</text>
+<text x="1942.5" y="352" font-size="14" font-weight="500" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">By price</text>
+<text x="2042.5" y="352" font-size="14" font-weight="500" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">By included series</text>
+<rect x="1682" y="396" width="440" height="441" fill="#FFFFFF" rx="21" ry="21"/>
+<rect x="1704" y="418" width="396" height="145" fill="#ECE9F8" rx="15" ry="15"/>
+<rect x="1721" y="433" width="78.5" height="29" fill="#292450" rx="15" ry="15"/>
+<text x="1760.25" y="452" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif">PACKAGE</text>
+<text x="1721" y="502" font-size="33" font-weight="700" fill="#5446A4" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">✦  ✦  ✦</text>
+<text x="1704" y="601" font-size="24" font-weight="800" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Starter Mix</text>
+<text x="1704" y="627" font-size="13" font-weight="600" fill="#5446A4" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">2 series  ·  3 tickets</text>
+<text x="1704" y="649" font-size="13" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">A compact introduction to current series.</text>
+<text x="1704" y="708" font-size="26" font-weight="800" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">INR 250</text>
+<rect x="1704" y="773" width="142.4" height="42" fill="#5446A4" rx="12" ry="12"/>
+<text x="1775.2" y="799" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif">View package</text>
+<rect x="2140" y="396" width="440" height="441" fill="#FFFFFF" rx="21" ry="21"/>
+<rect x="2162" y="418" width="396" height="145" fill="#ECE9F8" rx="15" ry="15"/>
+<rect x="2179" y="433" width="78.5" height="29" fill="#292450" rx="15" ry="15"/>
+<text x="2218.25" y="452" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif">PACKAGE</text>
+<text x="2179" y="502" font-size="33" font-weight="700" fill="#5446A4" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">✦  ✦  ✦</text>
+<text x="2162" y="601" font-size="24" font-weight="800" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Explorer Bundle</text>
+<text x="2162" y="627" font-size="13" font-weight="600" fill="#5446A4" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">3 series  ·  6 tickets</text>
+<text x="2162" y="649" font-size="13" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">A broader mix of available ticket series.</text>
+<text x="2162" y="708" font-size="26" font-weight="800" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">INR 500</text>
+<rect x="2162" y="773" width="142.4" height="42" fill="#5446A4" rx="12" ry="12"/>
+<text x="2233.2" y="799" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif">View package</text>
+<rect x="2598" y="396" width="440" height="441" fill="#FFFFFF" rx="21" ry="21"/>
+<rect x="2620" y="418" width="396" height="145" fill="#ECE9F8" rx="15" ry="15"/>
+<rect x="2637" y="433" width="78.5" height="29" fill="#292450" rx="15" ry="15"/>
+<text x="2676.25" y="452" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif">PACKAGE</text>
+<text x="2637" y="502" font-size="33" font-weight="700" fill="#5446A4" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">✦  ✦  ✦</text>
+<text x="2620" y="601" font-size="24" font-weight="800" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Choose your series</text>
+<text x="2620" y="627" font-size="13" font-weight="600" fill="#5446A4" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">See live packages</text>
+<text x="2620" y="649" font-size="13" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Only active packages are purchasable.</text>
+<text x="2620" y="708" font-size="26" font-weight="800" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Server price</text>
+<rect x="2620" y="773" width="142.4" height="42" fill="#5446A4" rx="12" ry="12"/>
+<text x="2691.2" y="799" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif">View package</text>
+<rect x="1682" y="857" width="1356" height="91" fill="#FFF8E7" rx="14" ry="14"/>
+<text x="1699" y="892" font-size="14" font-weight="700" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Availability is checked again when an order is reserved.</text>
+<text x="1699" y="917" font-size="12" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">These cards use illustrative titles and prices; live catalog data comes from the server.</text>
+<text x="3180" y="90" font-size="13" font-weight="600" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">03 · Scratch-card style ticket</text>
+<rect x="3180" y="100" width="1440" height="900" fill="#F5F5F1" stroke="#E2E3EB" stroke-width="1"/>
+<rect x="3180" y="100" width="1440" height="76" fill="#FFFFFF"/>
+<rect x="3202" y="116" width="210" height="44" fill="#292450" rx="13" ry="13"/>
+<text x="3224" y="146" font-size="22" font-weight="700" fill="#D9F4C2" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">✦</text>
+<text x="3254" y="145" font-size="17" font-weight="800" fill="#FFFFFF" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">ETICKET</text>
+<text x="3572" y="145" font-size="14" font-weight="500" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Explore</text>
+<text x="3666.2" y="145" font-size="14" font-weight="500" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Packages</text>
+<text x="3769" y="145" font-size="14" font-weight="500" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Results</text>
+<text x="3863.2" y="145" font-size="14" font-weight="500" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Wallet</text>
+<text x="3948.8" y="145" font-size="14" font-weight="700" fill="#5446A4" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">My account</text>
+<rect x="4422" y="124" width="176" height="29" fill="#FFF8E7" rx="15" ry="15"/>
+<text x="4510" y="143" font-size="11" font-weight="700" fill="#A94150" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif">DESIGN / SAMPLE DATA</text>
+<rect x="3180" y="176" width="236" height="824" fill="#292450"/>
+<text x="3202" y="208" font-size="11" font-weight="800" fill="#D9F4C2" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">MY SPACE</text>
+<rect x="3202" y="231" width="192" height="40" fill="#292450" rx="10" ry="10"/>
+<text x="3212" y="257" font-size="13" font-weight="500" fill="#D4D2EC" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Dashboard</text>
+<rect x="3202" y="286" width="192" height="40" fill="#5446A4" rx="10" ry="10"/>
+<text x="3212" y="312" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">My tickets</text>
+<rect x="3202" y="341" width="192" height="40" fill="#292450" rx="10" ry="10"/>
+<text x="3212" y="367" font-size="13" font-weight="500" fill="#D4D2EC" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Orders</text>
+<rect x="3202" y="396" width="192" height="40" fill="#292450" rx="10" ry="10"/>
+<text x="3212" y="422" font-size="13" font-weight="500" fill="#D4D2EC" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Payments</text>
+<rect x="3202" y="451" width="192" height="40" fill="#292450" rx="10" ry="10"/>
+<text x="3212" y="477" font-size="13" font-weight="500" fill="#D4D2EC" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Wallet</text>
+<rect x="3202" y="506" width="192" height="40" fill="#292450" rx="10" ry="10"/>
+<text x="3212" y="532" font-size="13" font-weight="500" fill="#D4D2EC" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Withdrawals</text>
+<rect x="3202" y="561" width="192" height="40" fill="#292450" rx="10" ry="10"/>
+<text x="3212" y="587" font-size="13" font-weight="500" fill="#D4D2EC" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Referrals</text>
+<rect x="3202" y="616" width="192" height="40" fill="#292450" rx="10" ry="10"/>
+<text x="3212" y="642" font-size="13" font-weight="500" fill="#D4D2EC" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Results</text>
+<text x="3451" y="226" font-size="11" font-weight="800" fill="#5446A4" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">TICKET COLLECTION</text>
+<text x="3451" y="264" font-size="34" font-weight="800" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">My tickets</text>
+<text x="3451" y="290" font-size="14" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">A visual ticket card with transparent result status — no scratch-to-reveal action.</text>
+<rect x="3451" y="312" width="540" height="437" fill="#292450" rx="22" ry="22"/>
+<rect x="3479" y="340" width="123.5" height="29" fill="#D9F4C2" rx="15" ry="15"/>
+<text x="3540.75" y="359" font-size="11" font-weight="700" fill="#286D53" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif">SAMPLE TICKET</text>
+<text x="3479" y="411" font-size="31" font-weight="800" fill="#FFFFFF" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">GOLDEN SERIES</text>
+<text x="3479" y="445" font-size="22" font-weight="700" fill="#D9F4C2" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">SERIAL  •  000127</text>
+<rect x="3479" y="463" width="484" height="156" fill="#5446A4" rx="16" ry="16"/>
+<text x="3498" y="517" font-size="32" font-weight="700" fill="#D9F4C2" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">✦  ✦  ✦  ✦  ✦</text>
+<text x="3498" y="547" font-size="16" font-weight="600" fill="#FFFFFF" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Result status appears</text>
+<text x="3498" y="571" font-size="16" font-weight="600" fill="#FFFFFF" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">after publication</text>
+<text x="3479" y="717" font-size="12" font-weight="400" fill="#DEDDF0" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Decorative ticket surface · not an instant reveal game</text>
+<rect x="4009" y="312" width="576" height="437" fill="#FFFFFF" rx="22" ry="22"/>
+<text x="4033" y="362" font-size="22" font-weight="700" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Ticket details</text>
+<rect x="4033" y="376" width="131" height="29" fill="#ECE9F8" rx="15" ry="15"/>
+<text x="4098.5" y="395" font-size="11" font-weight="700" fill="#5446A4" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif">RESULT PENDING</text>
+<text x="4033" y="433" font-size="15" font-weight="600" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Series  Golden Series</text>
+<text x="4033" y="457" font-size="13" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Order  sample-order-id</text>
+<text x="4033" y="479" font-size="13" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Draw status  Await published result</text>
+<text x="4033" y="507" font-size="13" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Winning status is shown only after the server</text>
+<text x="4033" y="527" font-size="13" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">publishes an audited result.</text>
+<rect x="4033" y="683" width="199.8" height="42" fill="#FFFFFF" rx="12" ry="12" stroke="#E2E3EB" stroke-width="1"/>
+<text x="4132.9" y="709" font-size="14" font-weight="600" fill="#20223B" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif">View public results</text>
+<rect x="3451" y="767" width="1134" height="121" fill="#FFF8E7" rx="16" ry="16"/>
+<text x="3469" y="802" font-size="17" font-weight="700" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Result transparency</text>
+<text x="3469" y="829" font-size="13" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">The public result page exposes a commitment, revealed seed and reproducible winner evidence.</text>
+<text x="3469" y="849" font-size="13" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">A card gesture never changes the outcome.</text>
+<text x="100" y="1090" font-size="13" font-weight="600" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">04 · Payment checkout</text>
+<rect x="100" y="1100" width="1440" height="900" fill="#F5F5F1" stroke="#E2E3EB" stroke-width="1"/>
+<rect x="100" y="1100" width="1440" height="76" fill="#FFFFFF"/>
+<rect x="122" y="1116" width="210" height="44" fill="#292450" rx="13" ry="13"/>
+<text x="144" y="1146" font-size="22" font-weight="700" fill="#D9F4C2" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">✦</text>
+<text x="174" y="1145" font-size="17" font-weight="800" fill="#FFFFFF" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">ETICKET</text>
+<text x="492" y="1145" font-size="14" font-weight="500" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Explore</text>
+<text x="586.2" y="1145" font-size="14" font-weight="500" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Packages</text>
+<text x="689" y="1145" font-size="14" font-weight="500" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Results</text>
+<text x="783.2" y="1145" font-size="14" font-weight="500" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Wallet</text>
+<text x="868.8" y="1145" font-size="14" font-weight="700" fill="#5446A4" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">My account</text>
+<rect x="1342" y="1124" width="176" height="29" fill="#FFF8E7" rx="15" ry="15"/>
+<text x="1430" y="1143" font-size="11" font-weight="700" fill="#A94150" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif">DESIGN / SAMPLE DATA</text>
+<rect x="100" y="1176" width="236" height="824" fill="#292450"/>
+<text x="122" y="1208" font-size="11" font-weight="800" fill="#D9F4C2" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">MY SPACE</text>
+<rect x="122" y="1231" width="192" height="40" fill="#292450" rx="10" ry="10"/>
+<text x="132" y="1257" font-size="13" font-weight="500" fill="#D4D2EC" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Dashboard</text>
+<rect x="122" y="1286" width="192" height="40" fill="#292450" rx="10" ry="10"/>
+<text x="132" y="1312" font-size="13" font-weight="500" fill="#D4D2EC" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">My tickets</text>
+<rect x="122" y="1341" width="192" height="40" fill="#292450" rx="10" ry="10"/>
+<text x="132" y="1367" font-size="13" font-weight="500" fill="#D4D2EC" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Orders</text>
+<rect x="122" y="1396" width="192" height="40" fill="#5446A4" rx="10" ry="10"/>
+<text x="132" y="1422" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Payments</text>
+<rect x="122" y="1451" width="192" height="40" fill="#292450" rx="10" ry="10"/>
+<text x="132" y="1477" font-size="13" font-weight="500" fill="#D4D2EC" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Wallet</text>
+<rect x="122" y="1506" width="192" height="40" fill="#292450" rx="10" ry="10"/>
+<text x="132" y="1532" font-size="13" font-weight="500" fill="#D4D2EC" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Withdrawals</text>
+<rect x="122" y="1561" width="192" height="40" fill="#292450" rx="10" ry="10"/>
+<text x="132" y="1587" font-size="13" font-weight="500" fill="#D4D2EC" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Referrals</text>
+<rect x="122" y="1616" width="192" height="40" fill="#292450" rx="10" ry="10"/>
+<text x="132" y="1642" font-size="13" font-weight="500" fill="#D4D2EC" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Results</text>
+<text x="371" y="1226" font-size="11" font-weight="800" fill="#5446A4" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">CHOOSE → REVIEW → PAY</text>
+<text x="371" y="1264" font-size="34" font-weight="800" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Choose payment path</text>
+<text x="371" y="1290" font-size="14" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Server-priced order. The method starts a process — it does not mark the order paid.</text>
+<rect x="371" y="1312" width="705" height="548" fill="#FFFFFF" rx="20" ry="20"/>
+<text x="393" y="1360" font-size="22" font-weight="700" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Available methods</text>
+<rect x="393" y="1378" width="661" height="91" fill="#ECE9F8" rx="13" ry="13"/>
+<text x="407" y="1416" font-size="16" font-weight="700" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Manual UPI</text>
+<text x="407" y="1438" font-size="12" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Proof goes to independent review</text>
+<rect x="849" y="1409" width="191" height="29" fill="#FFFFFF" rx="15" ry="15"/>
+<text x="944.5" y="1428" font-size="11" font-weight="700" fill="#5446A4" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif">CONFIGURATION REQUIRED</text>
+<rect x="393" y="1482" width="661" height="91" fill="#F5F5F1" rx="13" ry="13" stroke="#E2E3EB" stroke-width="1"/>
+<text x="407" y="1520" font-size="16" font-weight="700" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">P2P exact match</text>
+<text x="407" y="1542" font-size="12" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Exact-amount eligible match only</text>
+<rect x="909" y="1513" width="131" height="29" fill="#FFFFFF" rx="15" ry="15"/>
+<text x="974.5" y="1532" font-size="11" font-weight="700" fill="#5446A4" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif">MATCH REQUIRED</text>
+<rect x="393" y="1586" width="661" height="91" fill="#F5F5F1" rx="13" ry="13" stroke="#E2E3EB" stroke-width="1"/>
+<text x="407" y="1624" font-size="16" font-weight="700" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Telegram Stars</text>
+<text x="407" y="1646" font-size="12" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Configured bot must send an invoice</text>
+<rect x="924" y="1617" width="116" height="29" fill="#FFFFFF" rx="15" ry="15"/>
+<text x="982" y="1636" font-size="11" font-weight="700" fill="#5446A4" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif">BOT REQUIRED</text>
+<rect x="393" y="1690" width="661" height="91" fill="#F5F5F1" rx="13" ry="13" stroke="#E2E3EB" stroke-width="1"/>
+<text x="407" y="1728" font-size="16" font-weight="700" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">White-label provider</text>
+<text x="407" y="1750" font-size="12" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Initiation is not configured</text>
+<rect x="954" y="1721" width="86" height="29" fill="#FCEDEF" rx="15" ry="15"/>
+<text x="997" y="1740" font-size="11" font-weight="700" fill="#A94150" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif">DISABLED</text>
+<text x="393" y="1824" font-size="12" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Only configured methods can create a real payment attempt.</text>
+<rect x="1094" y="1312" width="411" height="548" fill="#FFFFFF" rx="20" ry="20"/>
+<text x="1116" y="1360" font-size="22" font-weight="700" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Order summary</text>
+<rect x="1116" y="1374" width="108.5" height="29" fill="#FFF8E7" rx="15" ry="15"/>
+<text x="1170.25" y="1393" font-size="11" font-weight="700" fill="#A94150" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif">SAMPLE DATA</text>
+<text x="1116" y="1433" font-size="15" font-weight="500" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Illustrative ticket  ×  1</text>
+<text x="1116" y="1470" font-size="27" font-weight="800" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Total  INR 250</text>
+<rect x="1116" y="1488" width="367" height="134" fill="#D9F4C2" rx="13" ry="13"/>
+<text x="1131" y="1516" font-size="15" font-weight="700" fill="#286D53" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Never pay from a demo screen</text>
+<text x="1131" y="1540" font-size="12" font-weight="400" fill="#286D53" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Payee details appear only in a</text>
+<text x="1131" y="1558" font-size="12" font-weight="400" fill="#286D53" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">server-created attempt. UTR or</text>
+<text x="1131" y="1576" font-size="12" font-weight="400" fill="#286D53" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">screenshot is not settlement.</text>
+<rect x="1116" y="1642" width="191.6" height="42" fill="#5446A4" rx="12" ry="12"/>
+<text x="1211.8" y="1668" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif">Continue to method</text>
+<text x="1116" y="1710" font-size="11" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">No payment is initiated by this Figma design.</text>
+<text x="1640" y="1090" font-size="13" font-weight="600" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">05 · Withdrawal request</text>
+<rect x="1640" y="1100" width="1440" height="900" fill="#F5F5F1" stroke="#E2E3EB" stroke-width="1"/>
+<rect x="1640" y="1100" width="1440" height="76" fill="#FFFFFF"/>
+<rect x="1662" y="1116" width="210" height="44" fill="#292450" rx="13" ry="13"/>
+<text x="1684" y="1146" font-size="22" font-weight="700" fill="#D9F4C2" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">✦</text>
+<text x="1714" y="1145" font-size="17" font-weight="800" fill="#FFFFFF" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">ETICKET</text>
+<text x="2032" y="1145" font-size="14" font-weight="500" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Explore</text>
+<text x="2126.2" y="1145" font-size="14" font-weight="500" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Packages</text>
+<text x="2229" y="1145" font-size="14" font-weight="500" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Results</text>
+<text x="2323.2" y="1145" font-size="14" font-weight="500" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Wallet</text>
+<text x="2408.8" y="1145" font-size="14" font-weight="700" fill="#5446A4" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">My account</text>
+<rect x="2882" y="1124" width="176" height="29" fill="#FFF8E7" rx="15" ry="15"/>
+<text x="2970" y="1143" font-size="11" font-weight="700" fill="#A94150" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif">DESIGN / SAMPLE DATA</text>
+<rect x="1640" y="1176" width="236" height="824" fill="#292450"/>
+<text x="1662" y="1208" font-size="11" font-weight="800" fill="#D9F4C2" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">MY SPACE</text>
+<rect x="1662" y="1231" width="192" height="40" fill="#292450" rx="10" ry="10"/>
+<text x="1672" y="1257" font-size="13" font-weight="500" fill="#D4D2EC" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Dashboard</text>
+<rect x="1662" y="1286" width="192" height="40" fill="#292450" rx="10" ry="10"/>
+<text x="1672" y="1312" font-size="13" font-weight="500" fill="#D4D2EC" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">My tickets</text>
+<rect x="1662" y="1341" width="192" height="40" fill="#292450" rx="10" ry="10"/>
+<text x="1672" y="1367" font-size="13" font-weight="500" fill="#D4D2EC" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Orders</text>
+<rect x="1662" y="1396" width="192" height="40" fill="#292450" rx="10" ry="10"/>
+<text x="1672" y="1422" font-size="13" font-weight="500" fill="#D4D2EC" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Payments</text>
+<rect x="1662" y="1451" width="192" height="40" fill="#292450" rx="10" ry="10"/>
+<text x="1672" y="1477" font-size="13" font-weight="500" fill="#D4D2EC" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Wallet</text>
+<rect x="1662" y="1506" width="192" height="40" fill="#5446A4" rx="10" ry="10"/>
+<text x="1672" y="1532" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Withdrawals</text>
+<rect x="1662" y="1561" width="192" height="40" fill="#292450" rx="10" ry="10"/>
+<text x="1672" y="1587" font-size="13" font-weight="500" fill="#D4D2EC" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Referrals</text>
+<rect x="1662" y="1616" width="192" height="40" fill="#292450" rx="10" ry="10"/>
+<text x="1672" y="1642" font-size="13" font-weight="500" fill="#D4D2EC" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Results</text>
+<text x="1911" y="1226" font-size="11" font-weight="800" fill="#5446A4" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">WALLET → ELIGIBILITY → MATCH</text>
+<text x="1911" y="1264" font-size="34" font-weight="800" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Withdrawals</text>
+<text x="1911" y="1290" font-size="14" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">See the amount cap, verified destination and locked-funds status before you request.</text>
+<rect x="1911" y="1312" width="360" height="138" fill="#FFFFFF" rx="18" ry="18"/>
+<text x="1931" y="1344" font-size="13" font-weight="500" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Available</text>
+<text x="1931" y="1386" font-size="32" font-weight="800" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">INR 0</text>
+<text x="1931" y="1410" font-size="11" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Sample balance</text>
+<rect x="2287" y="1312" width="360" height="138" fill="#FFFFFF" rx="18" ry="18"/>
+<text x="2307" y="1344" font-size="13" font-weight="500" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Held</text>
+<text x="2307" y="1386" font-size="32" font-weight="800" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">INR 0</text>
+<text x="2307" y="1410" font-size="11" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Not paid out</text>
+<rect x="2663" y="1312" width="382" height="138" fill="#FFFFFF" rx="18" ry="18"/>
+<text x="2683" y="1344" font-size="13" font-weight="500" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Eligible maximum</text>
+<text x="2683" y="1386" font-size="32" font-weight="800" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Server rule</text>
+<text x="2683" y="1410" font-size="11" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">50% floor and limits</text>
+<rect x="1911" y="1468" width="555" height="467" fill="#FFFFFF" rx="20" ry="20"/>
+<text x="1934" y="1516" font-size="21" font-weight="700" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">New withdrawal request</text>
+<rect x="1934" y="1532" width="509" height="70" fill="#FFFFFF" rx="12" ry="12" stroke="#E2E3EB" stroke-width="1"/>
+<text x="1950" y="1560" font-size="13" font-weight="500" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Amount in rupees</text>
+<text x="1950" y="1584" font-size="13" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Enter an amount</text>
+<rect x="1934" y="1616" width="509" height="70" fill="#FFFFFF" rx="12" ry="12" stroke="#E2E3EB" stroke-width="1"/>
+<text x="1950" y="1644" font-size="13" font-weight="500" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Verified destination</text>
+<text x="1950" y="1668" font-size="13" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Operations-verified destination</text>
+<rect x="1934" y="1702" width="509" height="84" fill="#FFF8E7" rx="12" ry="12"/>
+<text x="1946" y="1730" font-size="13" font-weight="700" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Server eligibility applies</text>
+<text x="1946" y="1754" font-size="12" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">One unresolved request per user; exact matching in V1.</text>
+<rect x="1934" y="1808" width="191.6" height="42" fill="#5446A4" rx="12" ry="12"/>
+<text x="2029.8" y="1834" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif">Request withdrawal</text>
+<rect x="2484" y="1468" width="562" height="467" fill="#FFFFFF" rx="20" ry="20"/>
+<text x="2507" y="1516" font-size="21" font-weight="700" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Request status</text>
+<rect x="2507" y="1530" width="108.5" height="29" fill="#ECE9F8" rx="15" ry="15"/>
+<text x="2561.25" y="1549" font-size="11" font-weight="700" fill="#5446A4" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif">NO REQUESTS</text>
+<text x="2507" y="1589" font-size="16" font-weight="600" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">A submitted request first places a hold.</text>
+<text x="2507" y="1613" font-size="13" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Waiting for buyer → Matched → Under review / Settled</text>
+<rect x="2507" y="1635" width="516" height="132" fill="#FCEDEF" rx="12" ry="12"/>
+<text x="2522" y="1663" font-size="14" font-weight="700" fill="#A94150" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Payment details exposed?</text>
+<text x="2522" y="1687" font-size="12" font-weight="400" fill="#A94150" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Do not auto-release held funds.</text>
+<text x="2522" y="1705" font-size="12" font-weight="400" fill="#A94150" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Late or uncertain payments stay in review.</text>
+<rect x="2507" y="1789" width="208" height="42" fill="#FFFFFF" rx="12" ry="12" stroke="#E2E3EB" stroke-width="1"/>
+<text x="2611" y="1815" font-size="14" font-weight="600" fill="#20223B" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif">View wallet activity</text>
+<text x="3180" y="1090" font-size="13" font-weight="600" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">06 · Sign in</text>
+<rect x="3180" y="1100" width="1440" height="900" fill="#F5F5F1" stroke="#E2E3EB" stroke-width="1"/>
+<rect x="3180" y="1100" width="650" height="900" fill="#292450"/>
+<rect x="3830" y="1100" width="790" height="900" fill="#FFFFFF"/>
+<rect x="3242" y="1162" width="153.5" height="29" fill="#5446A4" rx="15" ry="15"/>
+<text x="3318.75" y="1181" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif">E-TICKET PLATFORM</text>
+<text x="3242" y="1270" font-size="48" font-weight="800" fill="#FFFFFF" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Welcome back to</text>
+<text x="3242" y="1328" font-size="48" font-weight="800" fill="#FFFFFF" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">your tickets.</text>
+<text x="3242" y="1368" font-size="20" font-weight="400" fill="#D9D7F0" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Browse series, review orders and follow the published</text>
+<text x="3242" y="1398" font-size="20" font-weight="400" fill="#D9D7F0" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">result with full status visibility.</text>
+<rect x="3242" y="1738" width="520" height="200" fill="#5446A4" rx="24" ry="24"/>
+<text x="3268" y="1804" font-size="35" font-weight="700" fill="#D9F4C2" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">✦    ✦    ✦</text>
+<text x="3268" y="1834" font-size="18" font-weight="800" fill="#FFFFFF" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">YOUR TICKET JOURNEY</text>
+<text x="3268" y="1860" font-size="12" font-weight="400" fill="#E5E3F4" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Design preview · no purchase or win implied</text>
+<text x="3960" y="1244" font-size="12" font-weight="800" fill="#5446A4" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">WELCOME BACK</text>
+<text x="3960" y="1290" font-size="38" font-weight="800" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Sign in</text>
+<text x="3960" y="1318" font-size="15" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Use your email and password to access your dashboard.</text>
+<rect x="3960" y="1344" width="490" height="70" fill="#FFFFFF" rx="12" ry="12" stroke="#E2E3EB" stroke-width="1"/>
+<text x="3976" y="1372" font-size="13" font-weight="500" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Email</text>
+<text x="3976" y="1396" font-size="13" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">you@example.com</text>
+<rect x="3960" y="1428" width="490" height="70" fill="#FFFFFF" rx="12" ry="12" stroke="#E2E3EB" stroke-width="1"/>
+<text x="3976" y="1456" font-size="13" font-weight="500" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Password</text>
+<text x="3976" y="1480" font-size="13" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Your password</text>
+<rect x="3960" y="1520" width="101.4" height="42" fill="#5446A4" rx="12" ry="12"/>
+<text x="4010.7" y="1546" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif">Sign in</text>
+<text x="3960" y="1588" font-size="14" font-weight="600" fill="#5446A4" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">New here? Create an account</text>
+<rect x="3960" y="1604" width="530" height="68" fill="#FFF8E7" rx="12" ry="12"/>
+<text x="3974" y="1644" font-size="12" font-weight="500" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">No payment or ticket is created during sign-in or registration.</text>
+<text x="100" y="2090" font-size="13" font-weight="600" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">07 · Create account</text>
+<rect x="100" y="2100" width="1440" height="900" fill="#F5F5F1" stroke="#E2E3EB" stroke-width="1"/>
+<rect x="100" y="2100" width="650" height="900" fill="#292450"/>
+<rect x="750" y="2100" width="790" height="900" fill="#FFFFFF"/>
+<rect x="162" y="2162" width="153.5" height="29" fill="#5446A4" rx="15" ry="15"/>
+<text x="238.75" y="2181" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif">E-TICKET PLATFORM</text>
+<text x="162" y="2270" font-size="48" font-weight="800" fill="#FFFFFF" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Start with a clear</text>
+<text x="162" y="2328" font-size="48" font-weight="800" fill="#FFFFFF" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">ticket journey.</text>
+<text x="162" y="2368" font-size="20" font-weight="400" fill="#D9D7F0" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Browse series, review orders and follow the published</text>
+<text x="162" y="2398" font-size="20" font-weight="400" fill="#D9D7F0" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">result with full status visibility.</text>
+<rect x="162" y="2738" width="520" height="200" fill="#5446A4" rx="24" ry="24"/>
+<text x="188" y="2804" font-size="35" font-weight="700" fill="#D9F4C2" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">✦    ✦    ✦</text>
+<text x="188" y="2834" font-size="18" font-weight="800" fill="#FFFFFF" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">YOUR TICKET JOURNEY</text>
+<text x="188" y="2860" font-size="12" font-weight="400" fill="#E5E3F4" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Design preview · no purchase or win implied</text>
+<text x="880" y="2244" font-size="12" font-weight="800" fill="#5446A4" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">CREATE YOUR ACCOUNT</text>
+<text x="880" y="2290" font-size="38" font-weight="800" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Create account</text>
+<text x="880" y="2318" font-size="15" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Use your name and email to create an account.</text>
+<rect x="880" y="2344" width="490" height="70" fill="#FFFFFF" rx="12" ry="12" stroke="#E2E3EB" stroke-width="1"/>
+<text x="896" y="2372" font-size="13" font-weight="500" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Full name</text>
+<text x="896" y="2396" font-size="13" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Your full name</text>
+<rect x="880" y="2428" width="490" height="70" fill="#FFFFFF" rx="12" ry="12" stroke="#E2E3EB" stroke-width="1"/>
+<text x="896" y="2456" font-size="13" font-weight="500" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Email</text>
+<text x="896" y="2480" font-size="13" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">you@example.com</text>
+<rect x="880" y="2512" width="490" height="70" fill="#FFFFFF" rx="12" ry="12" stroke="#E2E3EB" stroke-width="1"/>
+<text x="896" y="2540" font-size="13" font-weight="500" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Password</text>
+<text x="896" y="2564" font-size="13" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">At least 12 characters</text>
+<rect x="880" y="2604" width="158.8" height="42" fill="#5446A4" rx="12" ry="12"/>
+<text x="959.4" y="2630" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif">Create account</text>
+<text x="880" y="2672" font-size="14" font-weight="600" fill="#5446A4" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Already registered? Sign in</text>
+<rect x="880" y="2688" width="530" height="68" fill="#FFF8E7" rx="12" ry="12"/>
+<text x="894" y="2728" font-size="12" font-weight="500" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">No payment or ticket is created during sign-in or registration.</text>
+<text x="1640" y="2090" font-size="13" font-weight="600" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">08 · Admin overview</text>
+<rect x="1640" y="2100" width="1440" height="900" fill="#F5F5F1" stroke="#E2E3EB" stroke-width="1"/>
+<rect x="1640" y="2100" width="1440" height="76" fill="#FFFFFF"/>
+<rect x="1662" y="2116" width="210" height="44" fill="#292450" rx="13" ry="13"/>
+<text x="1684" y="2146" font-size="22" font-weight="700" fill="#D9F4C2" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">✦</text>
+<text x="1714" y="2145" font-size="17" font-weight="800" fill="#FFFFFF" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">ETICKET</text>
+<text x="2032" y="2145" font-size="14" font-weight="500" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Explore</text>
+<text x="2126.2" y="2145" font-size="14" font-weight="500" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Packages</text>
+<text x="2229" y="2145" font-size="14" font-weight="500" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Results</text>
+<text x="2323.2" y="2145" font-size="14" font-weight="500" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Wallet</text>
+<text x="2408.8" y="2145" font-size="14" font-weight="700" fill="#5446A4" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">My account</text>
+<rect x="2882" y="2124" width="176" height="29" fill="#FFF8E7" rx="15" ry="15"/>
+<text x="2970" y="2143" font-size="11" font-weight="700" fill="#A94150" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif">DESIGN / SAMPLE DATA</text>
+<rect x="1640" y="2176" width="236" height="824" fill="#292450"/>
+<text x="1662" y="2208" font-size="11" font-weight="800" fill="#D9F4C2" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">OPERATIONS</text>
+<rect x="1662" y="2231" width="192" height="40" fill="#5446A4" rx="10" ry="10"/>
+<text x="1672" y="2257" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Overview</text>
+<rect x="1662" y="2286" width="192" height="40" fill="#292450" rx="10" ry="10"/>
+<text x="1672" y="2312" font-size="13" font-weight="500" fill="#D4D2EC" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Users</text>
+<rect x="1662" y="2341" width="192" height="40" fill="#292450" rx="10" ry="10"/>
+<text x="1672" y="2367" font-size="13" font-weight="500" fill="#D4D2EC" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Series &amp; packages</text>
+<rect x="1662" y="2396" width="192" height="40" fill="#292450" rx="10" ry="10"/>
+<text x="1672" y="2422" font-size="13" font-weight="500" fill="#D4D2EC" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Draw &amp; results</text>
+<rect x="1662" y="2451" width="192" height="40" fill="#292450" rx="10" ry="10"/>
+<text x="1672" y="2477" font-size="13" font-weight="500" fill="#D4D2EC" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Payments</text>
+<rect x="1662" y="2506" width="192" height="40" fill="#292450" rx="10" ry="10"/>
+<text x="1672" y="2532" font-size="13" font-weight="500" fill="#D4D2EC" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Withdrawals</text>
+<rect x="1662" y="2561" width="192" height="40" fill="#292450" rx="10" ry="10"/>
+<text x="1672" y="2587" font-size="13" font-weight="500" fill="#D4D2EC" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Disputes</text>
+<rect x="1662" y="2616" width="192" height="40" fill="#292450" rx="10" ry="10"/>
+<text x="1672" y="2642" font-size="13" font-weight="500" fill="#D4D2EC" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Revenue</text>
+<rect x="1662" y="2671" width="192" height="40" fill="#292450" rx="10" ry="10"/>
+<text x="1672" y="2697" font-size="13" font-weight="500" fill="#D4D2EC" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Marketing</text>
+<rect x="1662" y="2726" width="192" height="40" fill="#292450" rx="10" ry="10"/>
+<text x="1672" y="2752" font-size="13" font-weight="500" fill="#D4D2EC" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Audit</text>
+<text x="1911" y="2226" font-size="11" font-weight="800" fill="#5446A4" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">OPERATIONS COMMAND CENTER</text>
+<text x="1911" y="2264" font-size="34" font-weight="800" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Platform overview</text>
+<text x="1911" y="2290" font-size="14" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Server-recorded counts support review; they are not payment verification.</text>
+<rect x="1911" y="2312" width="271" height="138" fill="#FFFFFF" rx="18" ry="18"/>
+<text x="1931" y="2344" font-size="13" font-weight="500" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Open series</text>
+<text x="1931" y="2386" font-size="32" font-weight="800" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">0</text>
+<text x="1931" y="2410" font-size="11" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Sample empty state</text>
+<rect x="2198" y="2312" width="271" height="138" fill="#FFFFFF" rx="18" ry="18"/>
+<text x="2218" y="2344" font-size="13" font-weight="500" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Pending orders</text>
+<text x="2218" y="2386" font-size="32" font-weight="800" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">0</text>
+<text x="2218" y="2410" font-size="11" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Sample empty state</text>
+<rect x="2485" y="2312" width="271" height="138" fill="#FFFFFF" rx="18" ry="18"/>
+<text x="2505" y="2344" font-size="13" font-weight="500" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Manual proofs</text>
+<text x="2505" y="2386" font-size="32" font-weight="800" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">0</text>
+<text x="2505" y="2410" font-size="11" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Needs independent review</text>
+<rect x="2772" y="2312" width="271" height="138" fill="#FFFFFF" rx="18" ry="18"/>
+<text x="2792" y="2344" font-size="13" font-weight="500" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Open disputes</text>
+<text x="2792" y="2386" font-size="32" font-weight="800" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">0</text>
+<text x="2792" y="2410" font-size="11" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Sample empty state</text>
+<rect x="1911" y="2468" width="1134" height="95" fill="#FFF8E7" rx="16" ry="16"/>
+<text x="1928" y="2505" font-size="16" font-weight="700" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Evidence is not settlement</text>
+<text x="1928" y="2532" font-size="13" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">A UTR, screenshot or receiver statement must not silently approve a payment. All decisions need audited evidence.</text>
+<rect x="1911" y="2581" width="365" height="311" fill="#FFFFFF" rx="18" ry="18"/>
+<text x="1931" y="2625" font-size="19" font-weight="700" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Series &amp; packages</text>
+<text x="1931" y="2659" font-size="13" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Catalog lifecycle, inventory, pricing,</text>
+<text x="1931" y="2679" font-size="13" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">prizes and package availability.</text>
+<rect x="2292" y="2581" width="365" height="311" fill="#FFFFFF" rx="18" ry="18"/>
+<text x="2312" y="2625" font-size="19" font-weight="700" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Payment and withdrawals</text>
+<text x="2312" y="2659" font-size="13" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Manual UPI review, P2P matches,</text>
+<text x="2312" y="2679" font-size="13" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">disputes and held funds.</text>
+<rect x="2673" y="2581" width="372" height="311" fill="#FFFFFF" rx="18" ry="18"/>
+<text x="2693" y="2625" font-size="19" font-weight="700" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Revenue &amp; marketing</text>
+<text x="2693" y="2659" font-size="13" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Allocated buckets, coupons and</text>
+<text x="2693" y="2679" font-size="13" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">pending-review reward records.</text>
+<text x="3180" y="2090" font-size="13" font-weight="600" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">09 · Admin functions &amp; criteria</text>
+<rect x="3180" y="2100" width="1440" height="900" fill="#F5F5F1" stroke="#E2E3EB" stroke-width="1"/>
+<rect x="3180" y="2100" width="1440" height="76" fill="#FFFFFF"/>
+<rect x="3202" y="2116" width="210" height="44" fill="#292450" rx="13" ry="13"/>
+<text x="3224" y="2146" font-size="22" font-weight="700" fill="#D9F4C2" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">✦</text>
+<text x="3254" y="2145" font-size="17" font-weight="800" fill="#FFFFFF" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">ETICKET</text>
+<text x="3572" y="2145" font-size="14" font-weight="500" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Explore</text>
+<text x="3666.2" y="2145" font-size="14" font-weight="500" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Packages</text>
+<text x="3769" y="2145" font-size="14" font-weight="500" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Results</text>
+<text x="3863.2" y="2145" font-size="14" font-weight="500" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Wallet</text>
+<text x="3948.8" y="2145" font-size="14" font-weight="700" fill="#5446A4" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">My account</text>
+<rect x="4422" y="2124" width="176" height="29" fill="#FFF8E7" rx="15" ry="15"/>
+<text x="4510" y="2143" font-size="11" font-weight="700" fill="#A94150" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif">DESIGN / SAMPLE DATA</text>
+<rect x="3180" y="2176" width="236" height="824" fill="#292450"/>
+<text x="3202" y="2208" font-size="11" font-weight="800" fill="#D9F4C2" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">OPERATIONS</text>
+<rect x="3202" y="2231" width="192" height="40" fill="#292450" rx="10" ry="10"/>
+<text x="3212" y="2257" font-size="13" font-weight="500" fill="#D4D2EC" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Overview</text>
+<rect x="3202" y="2286" width="192" height="40" fill="#292450" rx="10" ry="10"/>
+<text x="3212" y="2312" font-size="13" font-weight="500" fill="#D4D2EC" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Users</text>
+<rect x="3202" y="2341" width="192" height="40" fill="#292450" rx="10" ry="10"/>
+<text x="3212" y="2367" font-size="13" font-weight="500" fill="#D4D2EC" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Series &amp; packages</text>
+<rect x="3202" y="2396" width="192" height="40" fill="#292450" rx="10" ry="10"/>
+<text x="3212" y="2422" font-size="13" font-weight="500" fill="#D4D2EC" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Draw &amp; results</text>
+<rect x="3202" y="2451" width="192" height="40" fill="#5446A4" rx="10" ry="10"/>
+<text x="3212" y="2477" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Payments</text>
+<rect x="3202" y="2506" width="192" height="40" fill="#292450" rx="10" ry="10"/>
+<text x="3212" y="2532" font-size="13" font-weight="500" fill="#D4D2EC" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Withdrawals</text>
+<rect x="3202" y="2561" width="192" height="40" fill="#292450" rx="10" ry="10"/>
+<text x="3212" y="2587" font-size="13" font-weight="500" fill="#D4D2EC" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Disputes</text>
+<rect x="3202" y="2616" width="192" height="40" fill="#292450" rx="10" ry="10"/>
+<text x="3212" y="2642" font-size="13" font-weight="500" fill="#D4D2EC" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Revenue</text>
+<rect x="3202" y="2671" width="192" height="40" fill="#292450" rx="10" ry="10"/>
+<text x="3212" y="2697" font-size="13" font-weight="500" fill="#D4D2EC" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Marketing</text>
+<rect x="3202" y="2726" width="192" height="40" fill="#292450" rx="10" ry="10"/>
+<text x="3212" y="2752" font-size="13" font-weight="500" fill="#D4D2EC" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Audit</text>
+<text x="3451" y="2226" font-size="11" font-weight="800" fill="#5446A4" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">REVIEW CENTER</text>
+<text x="3451" y="2264" font-size="34" font-weight="800" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Admin sections &amp; criteria</text>
+<text x="3451" y="2290" font-size="14" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Every action is permissioned, audited and constrained by the backend state machine.</text>
+<rect x="3451" y="2312" width="559" height="132" fill="#FFFFFF" rx="15" ry="15"/>
+<text x="3469" y="2352" font-size="17" font-weight="700" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Users / access</text>
+<text x="3469" y="2378" font-size="12" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Admin role gates and redacted audit metadata.</text>
+<rect x="3451" y="2457" width="559" height="132" fill="#FFFFFF" rx="15" ry="15"/>
+<text x="3469" y="2497" font-size="17" font-weight="700" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Series / packages</text>
+<text x="3469" y="2523" font-size="12" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Draft → publish → open → close; inventory and frozen snapshots.</text>
+<rect x="3451" y="2602" width="559" height="132" fill="#FFFFFF" rx="15" ry="15"/>
+<text x="3469" y="2642" font-size="17" font-weight="700" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Draw / results</text>
+<text x="3469" y="2668" font-size="12" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Commit → close → draw → post prizes → publish; reproducible proof.</text>
+<rect x="3451" y="2747" width="559" height="132" fill="#FFFFFF" rx="15" ry="15"/>
+<text x="3469" y="2787" font-size="17" font-weight="700" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Payments</text>
+<text x="3469" y="2813" font-size="12" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Manual evidence review; signed provider/Telegram events only.</text>
+<rect x="4026" y="2312" width="559" height="132" fill="#FFFFFF" rx="15" ry="15"/>
+<text x="4044" y="2352" font-size="17" font-weight="700" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Withdrawals / P2P</text>
+<text x="4044" y="2378" font-size="12" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">50% cap, one unresolved request, exact match and safe holds.</text>
+<rect x="4026" y="2457" width="559" height="132" fill="#FFFFFF" rx="15" ry="15"/>
+<text x="4044" y="2497" font-size="17" font-weight="700" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Disputes / refunds</text>
+<text x="4044" y="2523" font-size="12" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Evidence-backed review; no automatic payout or silent reversal.</text>
+<rect x="4026" y="2602" width="559" height="132" fill="#FFFFFF" rx="15" ry="15"/>
+<text x="4044" y="2642" font-size="17" font-weight="700" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Revenue</text>
+<text x="4044" y="2668" font-size="12" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Integer-paise balanced allocation and read-only reports.</text>
+<rect x="4026" y="2747" width="559" height="132" fill="#FFFFFF" rx="15" ry="15"/>
+<text x="4044" y="2787" font-size="17" font-weight="700" fill="#20223B" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Marketing / audit</text>
+<text x="4044" y="2813" font-size="12" font-weight="400" fill="#667085" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Coupons and pending rewards; no automatic reward credit.</text>
+</svg>

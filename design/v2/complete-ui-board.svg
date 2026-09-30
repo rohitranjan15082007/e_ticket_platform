@@ -1,0 +1,431 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3020" height="2300" viewBox="0 0 3020 2300" role="img" aria-labelledby="title desc">
+  <title id="title">E-Ticket complete UI direction, version two</title>
+  <desc id="desc">Nine Figma-importable vector mockups: login, sign-up, packages, user dashboard, ticket card, payment, withdrawals, admin overview, and admin criteria. This is illustrative design only.</desc>
+  <defs>
+    <linearGradient id="board" x2="1" y2="1"><stop stop-color="#F5F6F8"/><stop offset="1" stop-color="#ECEBF6"/></linearGradient>
+    <linearGradient id="ink" x2="1" y2="1"><stop stop-color="#28234F"/><stop offset="1" stop-color="#4D438B"/></linearGradient>
+    <linearGradient id="ticket" x2="1" y2="1"><stop stop-color="#4D438B"/><stop offset="1" stop-color="#7869B6"/></linearGradient>
+    <filter id="shadow" x="-15%" y="-15%" width="130%" height="145%"><feDropShadow dx="0" dy="15" stdDeviation="17" flood-color="#28234F" flood-opacity=".09"/></filter>
+    <style>
+      svg{fill:#20223B}
+      text{font-family:Inter,"Segoe UI",Arial,sans-serif}
+      .cap{font-size:14px;font-weight:800;letter-spacing:1.7px;fill:#655B99}
+      .h1{font-size:29px;font-weight:800;letter-spacing:-.9px}
+      .h2{font-size:20px;font-weight:800;letter-spacing:-.4px}
+      .body{font-size:14px;fill:#667085}
+      .small{font-size:12px;fill:#667085}
+      .tiny{font-size:11px;fill:#667085}
+      .bold{font-weight:800}
+      .white{fill:#FFFFFF}
+      .mint{fill:#D9F4C2}
+      .purple{fill:#5446A4}
+      .line{stroke:#E2E3EB;stroke-width:1}
+    </style>
+  </defs>
+  <rect width="3020" height="2300" fill="url(#board)"/>
+  <text x="70" y="70" font-size="42" font-weight="800" letter-spacing="-1.6">E-Ticket / complete experience</text>
+  <text x="72" y="109" font-size="18" fill="#667085">Direction 02 · warm ivory, deep violet and mint · nine linked product screens</text>
+  <rect x="2634" y="42" width="315" height="42" rx="21" fill="#FFF8E7"/>
+  <circle cx="2660" cy="63" r="5" fill="#A94150"/><text x="2676" y="69" font-size="13" font-weight="800" fill="#A94150">DESIGN ONLY · SAMPLE DATA</text>
+
+  <!-- 01 Login -->
+  <text x="72" y="150" class="cap">01 / LOGIN</text>
+  <g transform="translate(70 170)">
+    <rect width="900" height="610" rx="20" fill="#FFFFFF" filter="url(#shadow)"/>
+    <path d="M20 0h342v610H20Q0 610 0 590V20Q0 0 20 0Z" fill="url(#ink)"/>
+    <rect x="28" y="28" width="121" height="35" rx="10" fill="#5F55A0"/>
+    <text x="44" y="52" font-size="17" font-weight="800" class="white">✦ ETICKET</text>
+    <text x="32" y="150" font-size="31" font-weight="800" class="white">Welcome back.</text>
+    <text x="32" y="182" font-size="31" font-weight="800" class="mint">Your tickets await.</text>
+    <text x="32" y="229" font-size="13" fill="#DEDDF1">Track orders, tickets and published</text>
+    <text x="32" y="250" font-size="13" fill="#DEDDF1">results from one trusted account.</text>
+    <rect x="31" y="339" width="295" height="183" rx="16" fill="#6055A3"/>
+    <text x="54" y="398" font-size="37" class="mint">✦   ✦   ✦</text>
+    <text x="54" y="441" font-size="18" font-weight="800" class="white">YOUR TICKET JOURNEY</text>
+    <text x="54" y="473" font-size="11" fill="#E7E4F5">Preview only · no win implied</text>
+    <text x="419" y="101" class="cap">ACCOUNT ACCESS</text>
+    <text x="419" y="150" class="h1">Sign in</text>
+    <text x="419" y="181" class="body">Use your email and password to continue.</text>
+    <text x="419" y="244" font-size="13" font-weight="700">Email</text>
+    <rect x="419" y="258" width="422" height="48" rx="10" fill="#F8F8FB" stroke="#D9DCE8"/>
+    <text x="436" y="288" class="body">you@example.com</text>
+    <text x="419" y="351" font-size="13" font-weight="700">Password</text>
+    <rect x="419" y="365" width="422" height="48" rx="10" fill="#F8F8FB" stroke="#D9DCE8"/>
+    <text x="436" y="395" class="body">Enter your password</text>
+    <rect x="419" y="447" width="422" height="52" rx="11" fill="#5446A4"/>
+    <text x="602" y="479" font-size="15" font-weight="800" class="white">Sign in  →</text>
+    <text x="419" y="537" font-size="13" fill="#5446A4">New here? Create an account</text>
+    <text x="419" y="570" class="tiny">Sign-in itself never initiates a payment.</text>
+  </g>
+
+  <!-- 02 Signup -->
+  <text x="1032" y="150" class="cap">02 / SIGN UP</text>
+  <g transform="translate(1030 170)">
+    <rect width="900" height="610" rx="20" fill="#FFFFFF" filter="url(#shadow)"/>
+    <path d="M20 0h342v610H20Q0 610 0 590V20Q0 0 20 0Z" fill="url(#ink)"/>
+    <rect x="28" y="28" width="121" height="35" rx="10" fill="#5F55A0"/>
+    <text x="44" y="52" font-size="17" font-weight="800" class="white">✦ ETICKET</text>
+    <text x="32" y="150" font-size="31" font-weight="800" class="white">A clear start.</text>
+    <text x="32" y="182" font-size="31" font-weight="800" class="mint">Every step visible.</text>
+    <text x="32" y="229" font-size="13" fill="#DEDDF1">Browse first, then review the</text>
+    <text x="32" y="250" font-size="13" fill="#DEDDF1">server-priced order before paying.</text>
+    <rect x="31" y="339" width="295" height="183" rx="16" fill="#6055A3"/>
+    <text x="54" y="398" font-size="37" class="mint">✦   ✦   ✦</text>
+    <text x="54" y="441" font-size="18" font-weight="800" class="white">YOUR TICKET JOURNEY</text>
+    <text x="54" y="473" font-size="11" fill="#E7E4F5">Preview only · no purchase implied</text>
+    <text x="419" y="69" class="cap">NEW ACCOUNT</text>
+    <text x="419" y="111" class="h1">Create account</text>
+    <text x="419" y="138" class="body">Use your name and email to get started.</text>
+    <text x="419" y="182" font-size="13" font-weight="700">Full name</text>
+    <rect x="419" y="193" width="422" height="43" rx="10" fill="#F8F8FB" stroke="#D9DCE8"/>
+    <text x="436" y="220" class="body">Your full name</text>
+    <text x="419" y="278" font-size="13" font-weight="700">Email</text>
+    <rect x="419" y="289" width="422" height="43" rx="10" fill="#F8F8FB" stroke="#D9DCE8"/>
+    <text x="436" y="316" class="body">you@example.com</text>
+    <text x="419" y="374" font-size="13" font-weight="700">Password</text>
+    <rect x="419" y="385" width="422" height="43" rx="10" fill="#F8F8FB" stroke="#D9DCE8"/>
+    <text x="436" y="412" class="body">At least 12 characters</text>
+    <rect x="419" y="456" width="422" height="52" rx="11" fill="#5446A4"/>
+    <text x="565" y="488" font-size="15" font-weight="800" class="white">Create account  →</text>
+    <text x="419" y="544" font-size="13" fill="#5446A4">Already registered? Sign in</text>
+    <text x="419" y="575" class="tiny">Registration creates an account, not a ticket or wallet credit.</text>
+  </g>
+
+  <!-- 03 Packages -->
+  <text x="1992" y="150" class="cap">03 / PACKAGES</text>
+  <g transform="translate(1990 170)">
+    <rect width="900" height="610" rx="20" fill="#F5F5F1" filter="url(#shadow)"/>
+    <rect width="900" height="66" rx="20" fill="#FFFFFF"/><rect y="47" width="900" height="19" fill="#FFFFFF"/>
+    <rect x="24" y="15" width="130" height="37" rx="10" fill="#292450"/>
+    <text x="40" y="40" font-size="16" font-weight="800" class="white">✦ ETICKET</text>
+    <text x="558" y="39" font-size="13" fill="#667085">Explore</text><text x="634" y="39" font-size="13" font-weight="800" class="purple">Packages</text><text x="723" y="39" font-size="13" fill="#667085">Results</text>
+    <text x="27" y="107" class="cap">TICKET COLLECTIONS</text>
+    <text x="27" y="145" class="h1">Find a package that fits</text>
+    <text x="27" y="171" class="body">Compare included series, availability and server price before checkout.</text>
+    <rect x="26" y="195" width="848" height="47" rx="11" fill="#FFFFFF"/>
+    <rect x="37" y="203" width="126" height="30" rx="15" fill="#292450"/>
+    <text x="53" y="223" font-size="11" font-weight="800" class="white">ALL PACKAGES</text>
+    <text x="190" y="224" font-size="12" fill="#667085">Available</text><text x="294" y="224" font-size="12" fill="#667085">By price</text><text x="384" y="224" font-size="12" fill="#667085">Included series</text>
+    <g transform="translate(26 262)">
+      <rect width="268" height="275" rx="16" fill="#FFFFFF"/>
+      <rect x="14" y="14" width="240" height="78" rx="12" fill="#ECE9F8"/>
+      <text x="31" y="47" font-size="17" font-weight="800" class="purple">✦ STARTER MIX</text>
+      <text x="31" y="71" font-size="11" fill="#655B99">2 series · 3 tickets</text>
+      <text x="16" y="127" class="h2">Starter Mix</text>
+      <text x="16" y="151" class="small">A compact introduction</text>
+      <text x="16" y="171" class="small">to current series.</text>
+      <text x="16" y="215" font-size="23" font-weight="800">INR 250</text>
+      <rect x="153" y="228" width="101" height="32" rx="8" fill="#5446A4"/>
+      <text x="170" y="249" font-size="11" font-weight="800" class="white">View details</text>
+    </g>
+    <g transform="translate(316 262)">
+      <rect width="268" height="275" rx="16" fill="#FFFFFF"/>
+      <rect x="14" y="14" width="240" height="78" rx="12" fill="#D9F4C2"/>
+      <text x="31" y="47" font-size="17" font-weight="800" fill="#286D53">✦ EXPLORER</text>
+      <text x="31" y="71" font-size="11" fill="#286D53">3 series · 6 tickets</text>
+      <text x="16" y="127" class="h2">Explorer Bundle</text>
+      <text x="16" y="151" class="small">A broader mix of</text>
+      <text x="16" y="171" class="small">available ticket series.</text>
+      <text x="16" y="215" font-size="23" font-weight="800">INR 500</text>
+      <rect x="153" y="228" width="101" height="32" rx="8" fill="#5446A4"/>
+      <text x="170" y="249" font-size="11" font-weight="800" class="white">View details</text>
+    </g>
+    <g transform="translate(606 262)">
+      <rect width="268" height="275" rx="16" fill="#FFFFFF"/>
+      <rect x="14" y="14" width="240" height="78" rx="12" fill="#FFF0D4"/>
+      <text x="31" y="47" font-size="17" font-weight="800" fill="#8F622D">✦ FLEXIBLE</text>
+      <text x="31" y="71" font-size="11" fill="#8F622D">Live catalog data</text>
+      <text x="16" y="127" class="h2">More collections</text>
+      <text x="16" y="151" class="small">Only active packages</text>
+      <text x="16" y="171" class="small">can be reserved.</text>
+      <text x="16" y="215" font-size="21" font-weight="800">Server price</text>
+      <rect x="153" y="228" width="101" height="32" rx="8" fill="#5446A4"/>
+      <text x="170" y="249" font-size="11" font-weight="800" class="white">View details</text>
+    </g>
+    <rect x="26" y="554" width="848" height="35" rx="9" fill="#FFF8E7"/>
+    <text x="40" y="576" font-size="11" font-weight="700" fill="#8F622D">Sample titles and prices. Inventory and final order price are checked by the backend.</text>
+  </g>
+
+  <!-- 04 Dashboard -->
+  <text x="72" y="840" class="cap">04 / USER DASHBOARD</text>
+  <g transform="translate(70 860)">
+    <rect width="900" height="610" rx="20" fill="#F5F5F1" filter="url(#shadow)"/>
+    <rect width="900" height="62" rx="20" fill="#FFFFFF"/><rect y="44" width="900" height="18" fill="#FFFFFF"/>
+    <rect x="18" y="13" width="128" height="35" rx="9" fill="#292450"/>
+    <text x="34" y="37" font-size="15" font-weight="800" class="white">✦ ETICKET</text>
+    <text x="686" y="38" font-size="12" fill="#667085">Explore</text><text x="759" y="38" font-size="12" font-weight="700" class="purple">My account</text>
+    <rect y="62" width="165" height="548" fill="#292450"/>
+    <text x="20" y="102" font-size="10" font-weight="800" class="mint">MY SPACE</text>
+    <rect x="11" y="118" width="143" height="32" rx="8" fill="#5446A4"/>
+    <text x="27" y="140" font-size="12" font-weight="800" class="white">Dashboard</text>
+    <text x="27" y="185" font-size="12" fill="#D7D4EA">My tickets</text>
+    <text x="27" y="224" font-size="12" fill="#D7D4EA">Orders</text>
+    <text x="27" y="263" font-size="12" fill="#D7D4EA">Payments</text>
+    <text x="27" y="302" font-size="12" fill="#D7D4EA">Wallet</text>
+    <text x="27" y="341" font-size="12" fill="#D7D4EA">Withdrawals</text>
+    <text x="27" y="380" font-size="12" fill="#D7D4EA">Referrals</text>
+    <text x="192" y="105" class="cap">YOUR ACCOUNT</text>
+    <text x="192" y="141" class="h1">Good morning, Rohit</text>
+    <text x="192" y="164" class="body">Tickets, orders and wallet status in one clear place.</text>
+    <g transform="translate(192 186)">
+      <rect width="164" height="101" rx="12" fill="#FFFFFF"/>
+      <text x="14" y="27" class="small">My tickets</text><text x="14" y="71" font-size="29" font-weight="800">04</text>
+      <rect x="176" width="164" height="101" rx="12" fill="#FFFFFF"/>
+      <text x="190" y="27" class="small">Open orders</text><text x="190" y="71" font-size="29" font-weight="800">01</text>
+      <rect x="352" width="164" height="101" rx="12" fill="#FFFFFF"/>
+      <text x="366" y="27" class="small">Available wallet</text><text x="366" y="71" font-size="23" font-weight="800">INR 0</text>
+      <rect x="528" width="158" height="101" rx="12" fill="#FFFFFF"/>
+      <text x="542" y="27" class="small">Held wallet</text><text x="542" y="71" font-size="23" font-weight="800">INR 0</text>
+    </g>
+    <rect x="192" y="303" width="686" height="119" rx="16" fill="url(#ink)"/>
+    <text x="211" y="334" font-size="11" font-weight="800" class="mint">CONTINUE YOUR JOURNEY</text>
+    <text x="211" y="366" font-size="22" font-weight="800" class="white">Explore the next series</text>
+    <text x="211" y="392" font-size="12" fill="#E0DDF1">Choose tickets, review the price, then follow payment status.</text>
+    <rect x="192" y="438" width="334" height="144" rx="15" fill="#FFFFFF"/>
+    <text x="211" y="468" class="h2">Recent order</text>
+    <rect x="211" y="482" width="127" height="23" rx="12" fill="#FFF8E7"/>
+    <text x="223" y="498" font-size="10" font-weight="800" fill="#A94150">PENDING PAYMENT</text>
+    <text x="211" y="530" font-size="13" font-weight="700">Sample order · INR 250</text>
+    <text x="211" y="556" class="small">Continue checkout to see the latest status.</text>
+    <rect x="542" y="438" width="336" height="144" rx="15" fill="#FFFFFF"/>
+    <text x="561" y="468" class="h2">My tickets</text>
+    <rect x="561" y="482" width="110" height="23" rx="12" fill="#ECE9F8"/>
+    <text x="574" y="498" font-size="10" font-weight="800" class="purple">RESULT PENDING</text>
+    <text x="561" y="530" font-size="13" font-weight="700">Serials after confirmed delivery</text>
+    <text x="561" y="556" class="small">Published result decides winning status.</text>
+  </g>
+
+  <!-- 05 Ticket / scratch card visual -->
+  <text x="1032" y="840" class="cap">05 / TICKET &amp; SCRATCH-CARD VISUAL</text>
+  <g transform="translate(1030 860)">
+    <rect width="900" height="610" rx="20" fill="#F5F5F1" filter="url(#shadow)"/>
+    <rect width="900" height="62" rx="20" fill="#FFFFFF"/><rect y="44" width="900" height="18" fill="#FFFFFF"/>
+    <rect x="18" y="13" width="128" height="35" rx="9" fill="#292450"/>
+    <text x="34" y="37" font-size="15" font-weight="800" class="white">✦ ETICKET</text>
+    <text x="192" y="105" class="cap">MY TICKETS</text>
+    <text x="192" y="141" class="h1">Ticket collection</text>
+    <text x="192" y="164" class="body">A card-style ticket with honest result status.</text>
+    <rect y="62" width="165" height="548" fill="#292450"/>
+    <text x="20" y="102" font-size="10" font-weight="800" class="mint">MY SPACE</text>
+    <text x="27" y="146" font-size="12" fill="#D7D4EA">Dashboard</text>
+    <rect x="11" y="162" width="143" height="32" rx="8" fill="#5446A4"/>
+    <text x="27" y="184" font-size="12" font-weight="800" class="white">My tickets</text>
+    <text x="27" y="229" font-size="12" fill="#D7D4EA">Orders</text>
+    <text x="27" y="268" font-size="12" fill="#D7D4EA">Results</text>
+    <rect x="192" y="188" width="326" height="294" rx="20" fill="url(#ticket)"/>
+    <rect x="210" y="207" width="112" height="26" rx="13" fill="#D9F4C2"/>
+    <text x="224" y="225" font-size="10" font-weight="800" fill="#286D53">SAMPLE TICKET</text>
+    <text x="210" y="280" font-size="25" font-weight="800" class="white">GOLDEN SERIES</text>
+    <text x="210" y="317" font-size="17" font-weight="800" class="mint">SERIAL · 000127</text>
+    <rect x="210" y="344" width="290" height="88" rx="12" fill="#8A7CC8"/>
+    <text x="232" y="384" font-size="25" font-weight="800" class="mint">✦  ✦  ✦  ✦</text>
+    <text x="232" y="411" font-size="11" font-weight="700" class="white">RESULT AWAITS PUBLICATION</text>
+    <text x="210" y="459" font-size="10" fill="#EBE8FA">Decorative surface · no scratch reveal</text>
+    <rect x="536" y="188" width="342" height="294" rx="20" fill="#FFFFFF"/>
+    <text x="555" y="224" class="h2">Ticket details</text>
+    <rect x="555" y="239" width="109" height="25" rx="13" fill="#ECE9F8"/>
+    <text x="567" y="256" font-size="10" font-weight="800" class="purple">RESULT PENDING</text>
+    <text x="555" y="297" font-size="13" font-weight="700">Series: Golden Series</text>
+    <text x="555" y="325" class="small">Order: sample-order-id</text>
+    <text x="555" y="353" class="small">Draw: await published result</text>
+    <text x="555" y="396" class="small">No gesture can change the outcome.</text>
+    <rect x="555" y="430" width="178" height="35" rx="9" fill="#5446A4"/>
+    <text x="570" y="453" font-size="11" font-weight="800" class="white">View public results</text>
+    <rect x="192" y="500" width="686" height="80" rx="13" fill="#FFF8E7"/>
+    <text x="209" y="530" font-size="14" font-weight="800">Result transparency</text>
+    <text x="209" y="551" class="small">Published proof includes seed commitment, reveal and reproducible selection.</text>
+  </g>
+
+  <!-- 06 Payment -->
+  <text x="1992" y="840" class="cap">06 / PAYMENT SECTION</text>
+  <g transform="translate(1990 860)">
+    <rect width="900" height="610" rx="20" fill="#F5F5F1" filter="url(#shadow)"/>
+    <rect width="900" height="62" rx="20" fill="#FFFFFF"/><rect y="44" width="900" height="18" fill="#FFFFFF"/>
+    <rect x="18" y="13" width="128" height="35" rx="9" fill="#292450"/>
+    <text x="34" y="37" font-size="15" font-weight="800" class="white">✦ ETICKET</text>
+    <rect y="62" width="165" height="548" fill="#292450"/>
+    <text x="20" y="102" font-size="10" font-weight="800" class="mint">MY SPACE</text>
+    <text x="27" y="146" font-size="12" fill="#D7D4EA">Dashboard</text>
+    <text x="27" y="185" font-size="12" fill="#D7D4EA">Orders</text>
+    <rect x="11" y="201" width="143" height="32" rx="8" fill="#5446A4"/>
+    <text x="27" y="223" font-size="12" font-weight="800" class="white">Payments</text>
+    <text x="192" y="105" class="cap">CHOOSE → REVIEW → PAY</text>
+    <text x="192" y="141" class="h1">Choose payment path</text>
+    <text x="192" y="164" class="body">Method selection is not a paid order.</text>
+    <rect x="192" y="188" width="430" height="386" rx="17" fill="#FFFFFF"/>
+    <text x="210" y="220" class="h2">Available methods</text>
+    <text x="210" y="241" class="small">Only configured paths can start.</text>
+    <g transform="translate(210 259)">
+      <rect width="394" height="61" rx="11" fill="#ECE9F8"/>
+      <circle cx="21" cy="30" r="10" fill="#5446A4"/><circle cx="21" cy="30" r="4" fill="#FFFFFF"/>
+      <text x="40" y="26" font-size="13" font-weight="800">Manual UPI</text>
+      <text x="40" y="45" font-size="10" fill="#667085">Evidence goes to independent review</text>
+      <rect y="73" width="394" height="61" rx="11" fill="#F7F7FA"/>
+      <circle cx="21" cy="103" r="10" fill="#FFFFFF" stroke="#A7AABB" stroke-width="2"/>
+      <text x="40" y="99" font-size="13" font-weight="800">P2P exact match</text>
+      <text x="40" y="118" font-size="10" fill="#667085">Exact eligible withdrawal required</text>
+      <rect y="146" width="394" height="61" rx="11" fill="#F7F7FA"/>
+      <circle cx="21" cy="176" r="10" fill="#FFFFFF" stroke="#A7AABB" stroke-width="2"/>
+      <text x="40" y="172" font-size="13" font-weight="800">Telegram Stars</text>
+      <text x="40" y="191" font-size="10" fill="#667085">Configured bot invoice required</text>
+      <rect y="219" width="394" height="61" rx="11" fill="#FCEDEF"/>
+      <text x="17" y="246" font-size="13" font-weight="800" fill="#A94150">White-label provider</text>
+      <text x="17" y="266" font-size="10" fill="#A94150">Initiation disabled until integration</text>
+    </g>
+    <text x="210" y="558" class="tiny">No method is paid without server-confirmed settlement.</text>
+    <rect x="638" y="188" width="240" height="386" rx="17" fill="#FFFFFF"/>
+    <text x="655" y="221" class="h2">Order summary</text>
+    <rect x="655" y="234" width="101" height="25" rx="13" fill="#FFF8E7"/>
+    <text x="669" y="251" font-size="10" font-weight="800" fill="#A94150">SAMPLE DATA</text>
+    <text x="655" y="297" class="small">Illustrative ticket × 1</text>
+    <path d="M655 313h206" class="line" stroke-dasharray="4 4"/>
+    <text x="655" y="343" font-size="20" font-weight="800">INR 250</text>
+    <rect x="655" y="368" width="206" height="96" rx="10" fill="#D9F4C2"/>
+    <text x="669" y="391" font-size="12" font-weight="800" fill="#286D53">PAYMENT SAFETY</text>
+    <text x="669" y="413" font-size="10" fill="#286D53">UTR or screenshot does not</text>
+    <text x="669" y="431" font-size="10" fill="#286D53">prove settlement.</text>
+    <rect x="655" y="485" width="206" height="39" rx="9" fill="#5446A4"/>
+    <text x="690" y="511" font-size="11" font-weight="800" class="white">Continue to method</text>
+    <text x="655" y="549" class="tiny">Design cannot initiate a payment.</text>
+  </g>
+
+  <!-- 07 Withdrawals -->
+  <text x="72" y="1530" class="cap">07 / WITHDRAWALS</text>
+  <g transform="translate(70 1550)">
+    <rect width="900" height="610" rx="20" fill="#F5F5F1" filter="url(#shadow)"/>
+    <rect width="900" height="62" rx="20" fill="#FFFFFF"/><rect y="44" width="900" height="18" fill="#FFFFFF"/>
+    <rect x="18" y="13" width="128" height="35" rx="9" fill="#292450"/>
+    <text x="34" y="37" font-size="15" font-weight="800" class="white">✦ ETICKET</text>
+    <rect y="62" width="165" height="548" fill="#292450"/>
+    <text x="20" y="102" font-size="10" font-weight="800" class="mint">MY SPACE</text>
+    <text x="27" y="146" font-size="12" fill="#D7D4EA">Dashboard</text>
+    <text x="27" y="185" font-size="12" fill="#D7D4EA">Wallet</text>
+    <rect x="11" y="201" width="143" height="32" rx="8" fill="#5446A4"/>
+    <text x="27" y="223" font-size="12" font-weight="800" class="white">Withdrawals</text>
+    <text x="192" y="105" class="cap">WALLET → ELIGIBILITY → MATCH</text>
+    <text x="192" y="141" class="h1">Withdrawals</text>
+    <text x="192" y="164" class="body">See eligibility and locked funds before requesting.</text>
+    <g transform="translate(192 188)">
+      <rect width="216" height="88" rx="12" fill="#FFFFFF"/>
+      <text x="15" y="26" class="small">Available</text><text x="15" y="63" font-size="22" font-weight="800">INR 0</text>
+      <rect x="228" width="216" height="88" rx="12" fill="#FFFFFF"/>
+      <text x="243" y="26" class="small">Held</text><text x="243" y="63" font-size="22" font-weight="800">INR 0</text>
+      <rect x="456" width="230" height="88" rx="12" fill="#FFFFFF"/>
+      <text x="471" y="26" class="small">Eligible maximum</text><text x="471" y="63" font-size="18" font-weight="800">Server rule</text>
+    </g>
+    <rect x="192" y="292" width="335" height="287" rx="16" fill="#FFFFFF"/>
+    <text x="210" y="326" class="h2">New request</text>
+    <text x="210" y="354" font-size="12" font-weight="700">Amount in rupees</text>
+    <rect x="210" y="367" width="299" height="41" rx="9" fill="#F8F8FB" stroke="#D9DCE8"/>
+    <text x="222" y="393" class="small">Enter an amount</text>
+    <text x="210" y="434" font-size="12" font-weight="700">Verified destination</text>
+    <rect x="210" y="447" width="299" height="41" rx="9" fill="#F8F8FB" stroke="#D9DCE8"/>
+    <text x="222" y="473" class="small">Operations-verified destination</text>
+    <rect x="210" y="519" width="299" height="42" rx="9" fill="#5446A4"/>
+    <text x="275" y="546" font-size="12" font-weight="800" class="white">Request withdrawal</text>
+    <rect x="543" y="292" width="335" height="287" rx="16" fill="#FFFFFF"/>
+    <text x="561" y="326" class="h2">Request status</text>
+    <rect x="561" y="341" width="107" height="23" rx="12" fill="#ECE9F8"/>
+    <text x="574" y="357" font-size="10" font-weight="800" class="purple">NO REQUESTS</text>
+    <text x="561" y="398" font-size="13" font-weight="700">A request first places a hold.</text>
+    <text x="561" y="423" class="small">Waiting for buyer → Matched → Review</text>
+    <rect x="561" y="449" width="299" height="96" rx="10" fill="#FCEDEF"/>
+    <text x="576" y="473" font-size="12" font-weight="800" fill="#A94150">No automatic release</text>
+    <text x="576" y="495" font-size="10" fill="#A94150">Once payment details are exposed,</text>
+    <text x="576" y="513" font-size="10" fill="#A94150">uncertainty stays under review.</text>
+  </g>
+
+  <!-- 08 Admin overview -->
+  <text x="1032" y="1530" class="cap">08 / ADMIN OVERVIEW</text>
+  <g transform="translate(1030 1550)">
+    <rect width="900" height="610" rx="20" fill="#F5F5F1" filter="url(#shadow)"/>
+    <rect width="900" height="62" rx="20" fill="#FFFFFF"/><rect y="44" width="900" height="18" fill="#FFFFFF"/>
+    <rect x="18" y="13" width="128" height="35" rx="9" fill="#292450"/>
+    <text x="34" y="37" font-size="15" font-weight="800" class="white">✦ ETICKET</text>
+    <rect y="62" width="165" height="548" fill="#292450"/>
+    <text x="20" y="102" font-size="10" font-weight="800" class="mint">OPERATIONS</text>
+    <rect x="11" y="118" width="143" height="32" rx="8" fill="#5446A4"/>
+    <text x="27" y="140" font-size="12" font-weight="800" class="white">Overview</text>
+    <text x="27" y="185" font-size="12" fill="#D7D4EA">Users</text>
+    <text x="27" y="224" font-size="12" fill="#D7D4EA">Series &amp; packages</text>
+    <text x="27" y="263" font-size="12" fill="#D7D4EA">Draw &amp; results</text>
+    <text x="27" y="302" font-size="12" fill="#D7D4EA">Payments</text>
+    <text x="27" y="341" font-size="12" fill="#D7D4EA">Withdrawals</text>
+    <text x="27" y="380" font-size="12" fill="#D7D4EA">Disputes</text>
+    <text x="27" y="419" font-size="12" fill="#D7D4EA">Revenue</text>
+    <text x="27" y="458" font-size="12" fill="#D7D4EA">Marketing</text>
+    <text x="192" y="105" class="cap">OPERATIONS COMMAND CENTER</text>
+    <text x="192" y="141" class="h1">Platform overview</text>
+    <text x="192" y="164" class="body">Server counts guide review; they are not payment verification.</text>
+    <g transform="translate(192 188)">
+      <rect width="164" height="101" rx="12" fill="#FFFFFF"/><text x="14" y="27" class="small">Open series</text><text x="14" y="70" font-size="29" font-weight="800">0</text>
+      <rect x="176" width="164" height="101" rx="12" fill="#FFFFFF"/><text x="190" y="27" class="small">Pending orders</text><text x="190" y="70" font-size="29" font-weight="800">0</text>
+      <rect x="352" width="164" height="101" rx="12" fill="#FFFFFF"/><text x="366" y="27" class="small">Manual proofs</text><text x="366" y="70" font-size="29" font-weight="800">0</text>
+      <rect x="528" width="158" height="101" rx="12" fill="#FFFFFF"/><text x="542" y="27" class="small">Open disputes</text><text x="542" y="70" font-size="29" font-weight="800">0</text>
+    </g>
+    <rect x="192" y="305" width="686" height="83" rx="13" fill="#FFF8E7"/>
+    <text x="209" y="334" font-size="15" font-weight="800">Independent confirmation required</text>
+    <text x="209" y="356" class="small">UTR, screenshot or receiver statement alone never settles a payment.</text>
+    <rect x="192" y="405" width="216" height="164" rx="14" fill="#FFFFFF"/>
+    <text x="209" y="440" class="h2">Catalog</text>
+    <text x="209" y="466" class="small">Series, packages, pricing,</text>
+    <text x="209" y="484" class="small">inventory and draw dates.</text>
+    <rect x="423" y="405" width="216" height="164" rx="14" fill="#FFFFFF"/>
+    <text x="440" y="440" class="h2">Payment review</text>
+    <text x="440" y="466" class="small">Manual evidence, P2P,</text>
+    <text x="440" y="484" class="small">disputes and holds.</text>
+    <rect x="654" y="405" width="224" height="164" rx="14" fill="#FFFFFF"/>
+    <text x="671" y="440" class="h2">Finance</text>
+    <text x="671" y="466" class="small">Revenue buckets, audit,</text>
+    <text x="671" y="484" class="small">pending reward records.</text>
+  </g>
+
+  <!-- 09 Admin criteria -->
+  <text x="1992" y="1530" class="cap">09 / ADMIN FUNCTIONS &amp; CRITERIA</text>
+  <g transform="translate(1990 1550)">
+    <rect width="900" height="610" rx="20" fill="#F5F5F1" filter="url(#shadow)"/>
+    <rect width="900" height="62" rx="20" fill="#FFFFFF"/><rect y="44" width="900" height="18" fill="#FFFFFF"/>
+    <rect x="18" y="13" width="128" height="35" rx="9" fill="#292450"/>
+    <text x="34" y="37" font-size="15" font-weight="800" class="white">✦ ETICKET</text>
+    <rect y="62" width="165" height="548" fill="#292450"/>
+    <text x="20" y="102" font-size="10" font-weight="800" class="mint">OPERATIONS</text>
+    <text x="27" y="146" font-size="12" fill="#D7D4EA">Overview</text>
+    <text x="27" y="185" font-size="12" fill="#D7D4EA">Catalog</text>
+    <rect x="11" y="201" width="143" height="32" rx="8" fill="#5446A4"/>
+    <text x="27" y="223" font-size="12" font-weight="800" class="white">All sections</text>
+    <text x="192" y="105" class="cap">REVIEW CENTER</text>
+    <text x="192" y="141" class="h1">Admin sections</text>
+    <text x="192" y="164" class="body">Permissioned, audited and server-controlled actions.</text>
+    <g transform="translate(192 188)">
+      <rect width="333" height="85" rx="12" fill="#FFFFFF"/>
+      <text x="15" y="27" font-size="15" font-weight="800">Users / access</text>
+      <text x="15" y="50" class="small">Role gates; redacted audit reads.</text>
+      <rect y="98" width="333" height="85" rx="12" fill="#FFFFFF"/>
+      <text x="15" y="125" font-size="15" font-weight="800">Series / packages</text>
+      <text x="15" y="148" class="small">Lifecycle, inventory, snapshots.</text>
+      <rect y="196" width="333" height="85" rx="12" fill="#FFFFFF"/>
+      <text x="15" y="223" font-size="15" font-weight="800">Draw / results</text>
+      <text x="15" y="246" class="small">Commit, reveal, publish proof.</text>
+      <rect y="294" width="333" height="85" rx="12" fill="#FFFFFF"/>
+      <text x="15" y="321" font-size="15" font-weight="800">Payments</text>
+      <text x="15" y="344" class="small">Evidence review; signed events.</text>
+      <rect x="347" width="339" height="85" rx="12" fill="#FFFFFF"/>
+      <text x="362" y="27" font-size="15" font-weight="800">Withdrawals / P2P</text>
+      <text x="362" y="50" class="small">50% cap, exact match, safe holds.</text>
+      <rect x="347" y="98" width="339" height="85" rx="12" fill="#FFFFFF"/>
+      <text x="362" y="125" font-size="15" font-weight="800">Disputes / refunds</text>
+      <text x="362" y="148" class="small">Evidence-backed review, no auto payout.</text>
+      <rect x="347" y="196" width="339" height="85" rx="12" fill="#FFFFFF"/>
+      <text x="362" y="223" font-size="15" font-weight="800">Revenue</text>
+      <text x="362" y="246" class="small">Balanced integer-paise allocation.</text>
+      <rect x="347" y="294" width="339" height="85" rx="12" fill="#FFFFFF"/>
+      <text x="362" y="321" font-size="15" font-weight="800">Marketing / audit</text>
+      <text x="362" y="344" class="small">Coupons and pending rewards.</text>
+    </g>
+    <rect x="192" y="587" width="686" height="1" fill="#E2E3EB"/>
+  </g>
+
+  <text x="72" y="2228" font-size="19" font-weight="800">Design system</text>
+  <text x="72" y="2255" font-size="14" fill="#667085">Inter · 8px spacing scale · violet #5446A4 · ink #20223B · mint #D9F4C2 · warm canvas #F5F5F1</text>
+  <text x="72" y="2280" font-size="12" font-weight="800" fill="#A94150">All screens are illustrative. They do not create accounts, orders, payments, tickets, withdrawals or admin decisions.</text>
+</svg>

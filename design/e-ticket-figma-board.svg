@@ -1,0 +1,168 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2660" height="1960" viewBox="0 0 2660 1960" role="img" aria-labelledby="title desc">
+  <title id="title">E-Ticket responsive interface concept</title>
+  <desc id="desc">Figma-importable vector design board with public catalog, buyer checkout, admin payment review, and mobile checkout concepts. All content is illustrative; no payment is initiated.</desc>
+  <defs>
+    <linearGradient id="canvas" x2="1" y2="1"><stop stop-color="#F5F7F9"/><stop offset="1" stop-color="#E9F0F2"/></linearGradient>
+    <linearGradient id="hero" x2="1" y2="1"><stop stop-color="#10283D"/><stop offset="1" stop-color="#1D4355"/></linearGradient>
+    <linearGradient id="coral" x2="1" y2="0"><stop stop-color="#F47C62"/><stop offset="1" stop-color="#E86455"/></linearGradient>
+    <clipPath id="heroClip"><rect x="112" y="277" width="1136" height="275" rx="23"/></clipPath>
+    <filter id="shadow" x="-15%" y="-15%" width="130%" height="145%"><feDropShadow dx="0" dy="17" stdDeviation="22" flood-color="#183347" flood-opacity=".10"/></filter>
+    <filter id="soft" x="-15%" y="-15%" width="130%" height="145%"><feDropShadow dx="0" dy="7" stdDeviation="11" flood-color="#173245" flood-opacity=".08"/></filter>
+  </defs>
+  <rect width="2660" height="1960" fill="url(#canvas)"/>
+  <g font-family="Inter, Segoe UI, Arial, sans-serif" fill="#12293C">
+    <text x="80" y="74" font-size="38" font-weight="800" letter-spacing="-1.5">E-Ticket / experience direction</text>
+    <text x="82" y="113" font-size="19" fill="#647789">A coherent, responsive visual system for discovery, checkout and payment operations</text>
+    <rect x="2252" y="50" width="326" height="42" rx="21" fill="#FFF0E8"/>
+    <circle cx="2280" cy="71" r="5" fill="#E86C55"/><text x="2295" y="77" font-size="16" font-weight="700" fill="#9B4A3D">DESIGN CONCEPT · SAMPLE DATA</text>
+
+    <!-- Screen 1: catalog -->
+    <text x="82" y="157" font-size="16" font-weight="800" fill="#627587" letter-spacing="2">01 / PUBLIC DISCOVERY · DESKTOP</text>
+    <rect x="80" y="178" width="1200" height="720" rx="22" fill="#F9FAF9" filter="url(#shadow)"/>
+    <rect x="80" y="178" width="1200" height="72" rx="22" fill="#FFFFFF"/>
+    <rect x="80" y="228" width="1200" height="22" fill="#FFFFFF"/>
+    <rect x="80" y="249" width="1200" height="1" fill="#E8EDEE"/>
+    <rect x="111" y="196" width="38" height="38" rx="11" fill="#18384B"/>
+    <path d="M122 207h16v4h-12v5h10v4h-10v5h12v4h-16z" fill="#FFFFFF"/>
+    <text x="161" y="223" font-size="21" font-weight="800" letter-spacing="-.6">E-Ticket</text>
+    <text x="710" y="224" font-size="15" fill="#40566A">Explore</text><text x="791" y="224" font-size="15" fill="#40566A">Packages</text><text x="886" y="224" font-size="15" fill="#40566A">Results</text>
+    <rect x="1072" y="194" width="177" height="41" rx="11" fill="#18384B"/>
+    <text x="1108" y="220" font-size="15" font-weight="700" fill="#FFFFFF">My account</text>
+    <rect x="112" y="277" width="1136" height="275" rx="23" fill="url(#hero)"/>
+    <g clip-path="url(#heroClip)">
+    <circle cx="1100" cy="347" r="127" fill="#2A6872" opacity=".46"/>
+    <circle cx="1040" cy="445" r="91" fill="#327A7C" opacity=".45"/>
+    <circle cx="1180" cy="462" r="64" fill="#F58065" opacity=".85"/>
+    <path d="M930 334l38-21 38 21v44l-38 21-38-21z" fill="none" stroke="#F9D0A9" stroke-width="3" opacity=".75"/>
+    <path d="M1001 399l28-16 28 16v31l-28 16-28-16z" fill="none" stroke="#FFFFFF" stroke-width="2" opacity=".56"/>
+    </g>
+    <rect x="149" y="308" width="234" height="27" rx="13" fill="#295363"/>
+    <circle cx="166" cy="321" r="4" fill="#7CE2CB"/>
+    <text x="179" y="326" font-size="12" font-weight="800" fill="#D5EEE9" letter-spacing="1">TRANSPARENT TICKET JOURNEY</text>
+    <text x="149" y="385" font-size="42" font-weight="800" fill="#FFFFFF" letter-spacing="-1.6">Discover a series.</text>
+    <text x="149" y="432" font-size="42" font-weight="800" fill="#FFFFFF" letter-spacing="-1.6">Follow every result.</text>
+    <text x="150" y="469" font-size="17" fill="#CADBDF">Explore tickets, review the price, and track server-confirmed outcomes.</text>
+    <rect x="149" y="492" width="186" height="42" rx="10" fill="url(#coral)"/><text x="180" y="519" font-size="16" font-weight="800" fill="#FFFFFF">Explore series  →</text>
+    <text x="112" y="609" font-size="27" font-weight="800" letter-spacing="-.8">Featured series</text>
+    <text x="1115" y="606" font-size="15" font-weight="700" fill="#BD5846">See all  →</text>
+    <g filter="url(#soft)">
+      <rect x="112" y="634" width="354" height="221" rx="17" fill="#FFFFFF"/><rect x="479" y="634" width="354" height="221" rx="17" fill="#FFFFFF"/><rect x="846" y="634" width="402" height="221" rx="17" fill="#FFFFFF"/>
+    </g>
+    <rect x="131" y="653" width="78" height="26" rx="13" fill="#E7F5EF"/><text x="150" y="671" font-size="12" font-weight="800" fill="#2E795C">OPEN</text>
+    <text x="131" y="713" font-size="23" font-weight="800">Your series title</text><text x="131" y="740" font-size="14" fill="#68798B">Clear inventory and draw schedule</text>
+    <text x="131" y="791" font-size="25" font-weight="800">INR 250</text><rect x="337" y="766" width="108" height="38" rx="9" fill="#173A4B"/><text x="354" y="790" font-size="13" font-weight="750" fill="#FFFFFF">View tickets</text>
+    <rect x="498" y="653" width="90" height="26" rx="13" fill="#EAF1F9"/><text x="515" y="671" font-size="12" font-weight="800" fill="#406E98">PACKAGE</text>
+    <text x="498" y="713" font-size="23" font-weight="800">Ticket collection</text><text x="498" y="740" font-size="14" fill="#68798B">Multiple series, one order</text>
+    <text x="498" y="791" font-size="25" font-weight="800">INR 500</text><rect x="704" y="766" width="108" height="38" rx="9" fill="#173A4B"/><text x="721" y="790" font-size="13" font-weight="750" fill="#FFFFFF">View tickets</text>
+    <rect x="865" y="653" width="125" height="26" rx="13" fill="#FFF1E8"/><text x="879" y="671" font-size="12" font-weight="800" fill="#A4503D">HOW IT WORKS</text>
+    <text x="865" y="713" font-size="23" font-weight="800">Know each step</text><text x="865" y="740" font-size="14" fill="#68798B">Choose → Review → Confirmed result</text>
+    <rect x="865" y="766" width="214" height="38" rx="9" fill="#F4F7F7"/><text x="882" y="790" font-size="13" font-weight="750" fill="#28566A">Read the process  →</text>
+
+    <!-- Screen 2: desktop checkout -->
+    <text x="1382" y="157" font-size="16" font-weight="800" fill="#627587" letter-spacing="2">02 / BUYER CHECKOUT · DESKTOP</text>
+    <rect x="1380" y="178" width="1200" height="720" rx="22" fill="#F9FAF9" filter="url(#shadow)"/>
+    <rect x="1380" y="178" width="1200" height="72" rx="22" fill="#FFFFFF"/><rect x="1380" y="228" width="1200" height="22" fill="#FFFFFF"/><rect x="1380" y="249" width="1200" height="1" fill="#E8EDEE"/>
+    <rect x="1411" y="196" width="38" height="38" rx="11" fill="#18384B"/><path d="M1422 207h16v4h-12v5h10v4h-10v5h12v4h-16z" fill="#FFFFFF"/>
+    <text x="1461" y="223" font-size="21" font-weight="800">E-Ticket</text>
+    <text x="2090" y="223" font-size="15" fill="#40566A">Explore</text><text x="2170" y="223" font-size="15" fill="#40566A">Results</text><text x="2284" y="223" font-size="15" fill="#40566A">Dashboard</text>
+    <text x="1413" y="283" font-size="13" font-weight="750" fill="#6F8493">CATALOG  /  ORDER REVIEW  /  PAYMENT</text>
+    <text x="1413" y="327" font-size="34" font-weight="800" letter-spacing="-1.2">Choose a payment method</text>
+    <text x="1413" y="354" font-size="15" fill="#647789">Review your server-priced order before choosing a configured path.</text>
+    <circle cx="1428" cy="395" r="13" fill="#DDF3EB"/><text x="1423" y="400" font-size="14" font-weight="800" fill="#308567">✓</text><text x="1451" y="400" font-size="14" font-weight="750">Choose</text>
+    <path d="M1515 394h72" stroke="#CAD9D9" stroke-width="2"/><circle cx="1602" cy="395" r="13" fill="#DDF3EB"/><text x="1597" y="400" font-size="14" font-weight="800" fill="#308567">✓</text><text x="1625" y="400" font-size="14" font-weight="750">Review</text>
+    <path d="M1691 394h72" stroke="#CAD9D9" stroke-width="2"/><circle cx="1779" cy="395" r="13" fill="#18384B"/><text x="1774" y="400" font-size="13" font-weight="800" fill="#FFFFFF">3</text><text x="1802" y="400" font-size="14" font-weight="750">Pay</text>
+    <rect x="1413" y="426" width="715" height="431" rx="18" fill="#FFFFFF" stroke="#DFE8EB"/>
+    <text x="1441" y="465" font-size="21" font-weight="800">Available paths</text><text x="1441" y="489" font-size="14" fill="#68798B">Only methods enabled by the server can start a payment attempt.</text>
+    <rect x="1441" y="513" width="659" height="84" rx="13" fill="#F3FAF7" stroke="#68BBA1" stroke-width="2"/>
+    <circle cx="1475" cy="555" r="13" fill="#207F64"/><circle cx="1475" cy="555" r="5" fill="#FFFFFF"/>
+    <text x="1503" y="547" font-size="17" font-weight="800">Manual UPI</text><text x="1503" y="570" font-size="13" fill="#557069">Submit evidence for independent review</text>
+    <rect x="1963" y="532" width="113" height="29" rx="14" fill="#E6F5EE"/><text x="1984" y="552" font-size="12" font-weight="800" fill="#287857">REVIEW</text>
+    <rect x="1441" y="608" width="659" height="73" rx="13" fill="#FFFFFF" stroke="#DCE7E9"/>
+    <circle cx="1475" cy="645" r="13" fill="#FFFFFF" stroke="#9CB0B7" stroke-width="2"/><text x="1503" y="640" font-size="17" font-weight="800">P2P exact match</text><text x="1503" y="662" font-size="13" fill="#68798B">A matching recipient must be available</text>
+    <rect x="1441" y="692" width="659" height="73" rx="13" fill="#FFFFFF" stroke="#DCE7E9"/>
+    <circle cx="1475" cy="729" r="13" fill="#FFFFFF" stroke="#9CB0B7" stroke-width="2"/><text x="1503" y="724" font-size="17" font-weight="800">Telegram Stars</text><text x="1503" y="746" font-size="13" fill="#68798B">A configured bot must dispatch an invoice</text>
+    <rect x="1441" y="786" width="659" height="47" rx="10" fill="url(#coral)"/><text x="1657" y="816" font-size="16" font-weight="800" fill="#FFFFFF">Continue securely  →</text>
+    <rect x="2145" y="426" width="403" height="298" rx="18" fill="#FFFFFF" stroke="#DFE8EB"/>
+    <text x="2174" y="468" font-size="20" font-weight="800">Order summary</text><rect x="2425" y="442" width="95" height="27" rx="13" fill="#FFF1E8"/><text x="2442" y="460" font-size="11" font-weight="800" fill="#AD5A43">SAMPLE</text>
+    <text x="2174" y="516" font-size="15" fill="#586C7D">Illustrative ticket × 1</text><text x="2437" y="516" font-size="16" font-weight="750">INR 250</text>
+    <path d="M2174 541h344" stroke="#DCE6E9" stroke-dasharray="5 4"/>
+    <text x="2174" y="580" font-size="16" font-weight="800">Total</text><text x="2417" y="580" font-size="22" font-weight="800">INR 250</text>
+    <rect x="2174" y="608" width="344" height="87" rx="10" fill="#F1F7F7"/>
+    <text x="2191" y="635" font-size="13" font-weight="800" fill="#306171">Your safety matters</text><text x="2191" y="657" font-size="12" fill="#59727C">Evidence is not settlement. Wait for</text><text x="2191" y="674" font-size="12" fill="#59727C">server-confirmed payment status.</text>
+    <rect x="2145" y="739" width="403" height="118" rx="15" fill="#FFF4ED"/>
+    <circle cx="2175" cy="774" r="13" fill="#F4D1B7"/><text x="2171" y="780" font-size="17" font-weight="800" fill="#9F6234">!</text>
+    <text x="2199" y="778" font-size="14" font-weight="800" fill="#81563E">Design preview only</text>
+    <text x="2174" y="809" font-size="13" fill="#805D4C">No order, payee or transaction is</text><text x="2174" y="828" font-size="13" fill="#805D4C">created by this design file.</text>
+
+    <!-- Screen 3: admin payment review -->
+    <text x="82" y="966" font-size="16" font-weight="800" fill="#627587" letter-spacing="2">03 / PAYMENT OPERATIONS · DESKTOP</text>
+    <rect x="80" y="990" width="1700" height="760" rx="22" fill="#F7F9F8" filter="url(#shadow)"/>
+    <rect x="80" y="990" width="255" height="760" rx="22" fill="#17384B"/><rect x="313" y="990" width="22" height="760" fill="#17384B"/>
+    <rect x="111" y="1021" width="39" height="39" rx="11" fill="#F47C62"/><path d="M122 1032h17v4h-12v5h10v4h-10v5h12v4h-17z" fill="#FFFFFF"/>
+    <text x="162" y="1048" font-size="22" font-weight="800" fill="#FFFFFF">E-Ticket</text>
+    <text x="112" y="1111" font-size="12" font-weight="800" letter-spacing="1.7" fill="#86A9B6">OPERATIONS</text>
+    <text x="128" y="1160" font-size="16" fill="#BBD1D7">Overview</text><text x="128" y="1209" font-size="16" fill="#BBD1D7">Series</text>
+    <rect x="101" y="1230" width="211" height="45" rx="10" fill="#315567"/><rect x="101" y="1238" width="4" height="29" rx="2" fill="#F47C62"/>
+    <text x="128" y="1259" font-size="16" font-weight="800" fill="#FFFFFF">Payments</text>
+    <text x="128" y="1312" font-size="16" fill="#BBD1D7">Withdrawals</text><text x="128" y="1360" font-size="16" fill="#BBD1D7">Disputes</text><text x="128" y="1408" font-size="16" fill="#BBD1D7">Revenue</text><text x="128" y="1456" font-size="16" fill="#BBD1D7">Marketing</text>
+    <rect x="102" y="1664" width="211" height="58" rx="11" fill="#24485A"/><circle cx="127" cy="1693" r="12" fill="#F47C62"/><text x="153" y="1690" font-size="13" font-weight="750" fill="#FFFFFF">Admin workspace</text><text x="153" y="1707" font-size="11" fill="#A9C0C9">Review-only view</text>
+    <text x="376" y="1045" font-size="13" font-weight="800" letter-spacing="1.5" fill="#6D8190">OPERATIONS / PAYMENTS</text>
+    <text x="376" y="1091" font-size="37" font-weight="800" letter-spacing="-1.3">Payment review</text>
+    <text x="376" y="1120" font-size="16" fill="#63798B">Evidence queues and decision context in one place.</text>
+    <rect x="1590" y="1036" width="152" height="43" rx="10" fill="#17384B"/><text x="1621" y="1063" font-size="15" font-weight="750" fill="#FFFFFF">Refresh data</text>
+    <rect x="376" y="1154" width="409" height="116" rx="15" fill="#FFFFFF" stroke="#DFE8EA"/><rect x="800" y="1154" width="409" height="116" rx="15" fill="#FFFFFF" stroke="#DFE8EA"/><rect x="1224" y="1154" width="518" height="116" rx="15" fill="#FFFFFF" stroke="#DFE8EA"/>
+    <text x="401" y="1186" font-size="14" font-weight="750" fill="#607789">Manual proofs awaiting review</text><text x="401" y="1235" font-size="39" font-weight="800">0</text>
+    <text x="825" y="1186" font-size="14" font-weight="750" fill="#607789">Active P2P matches</text><text x="825" y="1235" font-size="39" font-weight="800">0</text>
+    <text x="1249" y="1186" font-size="14" font-weight="750" fill="#607789">Open disputes</text><text x="1249" y="1235" font-size="39" font-weight="800">0</text>
+    <rect x="376" y="1294" width="1366" height="80" rx="13" fill="#FFF5E8" stroke="#EEDDBE"/>
+    <circle cx="405" cy="1333" r="15" fill="#F6DFB9"/><text x="401" y="1339" font-size="17" font-weight="800" fill="#98672E">!</text>
+    <text x="434" y="1326" font-size="15" font-weight="800" fill="#765331">Independent confirmation required</text>
+    <text x="434" y="1350" font-size="13" fill="#82684A">A UTR, screenshot, or buyer claim is evidence for review, never proof of settlement.</text>
+    <rect x="376" y="1396" width="1366" height="326" rx="16" fill="#FFFFFF" stroke="#DFE8EA"/>
+    <text x="405" y="1439" font-size="21" font-weight="800">Manual UPI review queue</text>
+    <rect x="405" y="1463" width="222" height="34" rx="9" fill="#EAF4F2"/><text x="427" y="1485" font-size="13" font-weight="800" fill="#236C5E">Awaiting independent review</text>
+    <text x="676" y="1485" font-size="13" fill="#718393">Resolved</text><text x="777" y="1485" font-size="13" fill="#718393">All evidence</text>
+    <path d="M405 1517h1308" stroke="#E2E9EC"/>
+    <circle cx="1060" cy="1588" r="33" fill="#EDF5F3"/><path d="M1046 1588h28m-23-9h18m-14 18h10" stroke="#3A8473" stroke-width="3" stroke-linecap="round"/>
+    <text x="967" y="1650" font-size="20" font-weight="800">No proofs to review</text>
+    <text x="841" y="1680" font-size="14" fill="#6A7D8D">New evidence will appear here with its server-recorded status.</text>
+
+    <!-- Screen 4: mobile checkout -->
+    <text x="1892" y="966" font-size="16" font-weight="800" fill="#627587" letter-spacing="2">04 / BUYER CHECKOUT · MOBILE</text>
+    <rect x="1890" y="990" width="390" height="760" rx="27" fill="#F9FAF9" filter="url(#shadow)"/>
+    <rect x="1890" y="990" width="390" height="66" rx="27" fill="#FFFFFF"/><rect x="1890" y="1032" width="390" height="24" fill="#FFFFFF"/>
+    <rect x="1908" y="1007" width="34" height="34" rx="10" fill="#18384B"/><text x="1918" y="1031" font-size="20" font-weight="800" fill="#FFFFFF">E</text>
+    <text x="1952" y="1031" font-size="19" font-weight="800">E-Ticket</text>
+    <path d="M2240 1018h21m-21 7h21m-21 7h21" stroke="#18384B" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="1909" y="1092" font-size="12" font-weight="800" fill="#738897">CHECKOUT / PAYMENT</text>
+    <text x="1909" y="1128" font-size="27" font-weight="800" letter-spacing="-1">Choose payment</text>
+    <text x="1909" y="1153" font-size="13" fill="#687D8D">Review the amount before continuing.</text>
+    <circle cx="1923" cy="1190" r="12" fill="#DDF3EB"/><text x="1918" y="1195" font-size="13" font-weight="800" fill="#308567">✓</text>
+    <path d="M1937 1190h94" stroke="#C7D9D8" stroke-width="2"/>
+    <circle cx="2046" cy="1190" r="12" fill="#DDF3EB"/><text x="2041" y="1195" font-size="13" font-weight="800" fill="#308567">✓</text>
+    <path d="M2060 1190h94" stroke="#C7D9D8" stroke-width="2"/>
+    <circle cx="2169" cy="1190" r="12" fill="#18384B"/><text x="2165" y="1195" font-size="12" font-weight="800" fill="#FFFFFF">3</text>
+    <rect x="1908" y="1216" width="354" height="120" rx="14" fill="#FFFFFF" stroke="#E0E9EB"/>
+    <text x="1927" y="1247" font-size="15" font-weight="800">Order summary</text><rect x="2168" y="1229" width="76" height="24" rx="12" fill="#FFF1E8"/><text x="2181" y="1246" font-size="10" font-weight="800" fill="#AD5A43">SAMPLE</text>
+    <text x="1927" y="1282" font-size="13" fill="#6D7F8D">Ticket × 1</text><text x="2184" y="1282" font-size="13" font-weight="700">INR 250</text>
+    <path d="M1927 1295h316" stroke="#E3EAEC"/><text x="1927" y="1320" font-size="15" font-weight="800">Total</text><text x="2169" y="1320" font-size="17" font-weight="800">INR 250</text>
+    <text x="1909" y="1375" font-size="18" font-weight="800">Payment methods</text>
+    <rect x="1908" y="1394" width="354" height="73" rx="12" fill="#F3FAF7" stroke="#68BBA1" stroke-width="2"/>
+    <circle cx="1931" cy="1430" r="10" fill="#207F64"/><circle cx="1931" cy="1430" r="4" fill="#FFFFFF"/>
+    <text x="1951" y="1426" font-size="14" font-weight="800">Manual UPI</text><text x="1951" y="1447" font-size="11" fill="#627A72">Evidence → independent review</text>
+    <rect x="1908" y="1478" width="354" height="66" rx="12" fill="#FFFFFF" stroke="#DCE7E9"/>
+    <circle cx="1931" cy="1511" r="10" fill="#FFFFFF" stroke="#9CB0B7" stroke-width="2"/>
+    <text x="1951" y="1508" font-size="14" font-weight="800">P2P exact match</text><text x="1951" y="1528" font-size="11" fill="#68798B">Requires an eligible recipient</text>
+    <rect x="1908" y="1555" width="354" height="66" rx="12" fill="#FFFFFF" stroke="#DCE7E9"/>
+    <circle cx="1931" cy="1588" r="10" fill="#FFFFFF" stroke="#9CB0B7" stroke-width="2"/>
+    <text x="1951" y="1585" font-size="14" font-weight="800">Telegram Stars</text><text x="1951" y="1605" font-size="11" fill="#68798B">Bot invoice required</text>
+    <rect x="1908" y="1639" width="354" height="46" rx="10" fill="url(#coral)"/><text x="2005" y="1668" font-size="14" font-weight="800" fill="#FFFFFF">Continue  →</text>
+    <text x="1909" y="1714" font-size="11" fill="#718492">Payment is final only after server confirmation.</text>
+
+    <!-- Design tokens and status -->
+    <text x="81" y="1821" font-size="21" font-weight="800">Design system</text>
+    <text x="82" y="1853" font-size="15" fill="#5B7080">Ink #12293C · Navy #17384B · Coral #F47C62 · Teal #207F64 · Canvas #F9FAF9</text>
+    <text x="82" y="1883" font-size="15" fill="#5B7080">Type: Inter / Segoe UI · 8px spacing grid · 10–18px radii · visible focus and 44px+ controls in implementation</text>
+    <text x="82" y="1913" font-size="14" font-weight="800" fill="#A34B3B">CONCEPT ONLY — no real data, destination, payment initiation or provider confirmation is represented.</text>
+  </g>
+</svg>

@@ -1,0 +1,58 @@
+/* Checkout and money-facing account views. Visual state never changes financial state. */
+.commerce-v2 #page-content { display: grid; gap: 1.25rem; }
+.commerce-v2 .step-list { gap: .5rem; margin: 0 0 .25rem; }
+.commerce-v2 .step-list li { min-height: 35px; display: inline-flex; align-items: center; padding: .35rem .8rem; background: #eeeafb; color: #5a5484; border-radius: 999px; font-size: .83rem; font-weight: 750; }
+.commerce-v2 .step-list li.current { background: var(--navy); color: #fff; }
+.commerce-v2 .checkout-layout { display: grid; grid-template-columns: minmax(0, 1.18fr) minmax(280px, .82fr); grid-template-areas: "main summary"; gap: 1.25rem; align-items: start; }
+.commerce-v2 .checkout-main { grid-area: main; display: grid; gap: 1rem; min-width: 0; }
+.commerce-v2 .checkout-summary { grid-area: summary; position: sticky; top: 1.25rem; }
+.commerce-v2 .checkout-form, .commerce-v2 .payment-methods, .commerce-v2 .checkout-summary, .commerce-v2 .payment-instructions, .commerce-v2 .evidence-form, .commerce-v2 .wallet-empty, .commerce-v2 .withdrawal-form { max-width: none; min-width: 0; padding: 1.55rem; border: 1px solid var(--line); border-radius: 1.1rem; background: #fff; box-shadow: 0 10px 28px #25204b0a; }
+.commerce-v2 .checkout-form h2, .commerce-v2 .payment-methods h2, .commerce-v2 .checkout-summary h2, .commerce-v2 .payment-instructions h2, .commerce-v2 .evidence-form h2, .commerce-v2 .withdrawal-form h2 { margin: 0 0 .7rem; font-size: 1.35rem; }
+.commerce-v2 .checkout-summary .metric, .commerce-v2 .payment-instructions .metric { color: var(--ink); font-size: 1.6rem; }
+.commerce-v2 .checkout-summary .pill { display: inline-flex; max-width: 100%; white-space: normal; overflow-wrap: anywhere; padding: .55rem .8rem; background: #eeeafb; color: var(--primary); }
+.commerce-v2 .checkout-summary p, .commerce-v2 .payment-instructions p { overflow-wrap: anywhere; }
+.commerce-v2 .checkout-hint { color: #5b5679; font-size: .85rem; line-height: 1.55; margin: .55rem 0 0; }
+.commerce-v2 .method-list { display: grid; gap: .85rem; margin: 1.1rem 0; }
+.commerce-v2 .method-option { display: grid; gap: .55rem; padding: 1.15rem; border: 1px solid #d9d6e9; border-radius: .9rem; background: #fbfaff; }
+.commerce-v2 .method-option h3, .commerce-v2 .method-option h2 { margin: 0; font-size: 1.08rem; }
+.commerce-v2 .method-option p { margin: 0; }
+.commerce-v2 .method-option .button { justify-self: start; margin-top: .3rem; }
+.commerce-v2 .telegram-option .field { margin: .55rem 0 0; }
+.commerce-v2 .field input, .commerce-v2 .field select { min-height: 44px; border-radius: .65rem; border-color: #c9cad7; }
+.commerce-v2 .form-card .button { margin-top: .35rem; }
+.commerce-v2 .notice { margin: 0; }
+.commerce-v2 .evidence-form { margin-top: .25rem; }
+.commerce-v2 .payment-instructions { max-width: 760px; }
+
+.commerce-v2 .commerce-note { padding: 1.35rem 1.5rem; border: 1px solid #d9d6e9; border-radius: 1rem; background: #f3f0fc; }
+.commerce-v2 .commerce-note h2 { margin: 0 0 .4rem; font-size: 1.18rem; }
+.commerce-v2 .commerce-note p { margin: 0; color: #565073; font-size: .9rem; line-height: 1.55; }
+.commerce-v2 .payment-metrics, .commerce-v2 .wallet-metrics, .commerce-v2 .withdrawal-metrics { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.commerce-v2 .balance-card .balance-note { color: var(--muted); font-size: .8rem; line-height: 1.4; margin: .15rem 0 0; }
+.commerce-v2 .wallet-next { margin: .3rem 0 .2rem; }
+.commerce-v2 .ledger-list { display: grid; gap: .7rem; list-style: none; margin: 0; padding: 0; }
+.commerce-v2 .ledger-entry { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: 1.1rem 1.3rem; border: 1px solid var(--line); border-radius: .9rem; background: #fff; }
+.commerce-v2 .ledger-entry strong { overflow-wrap: anywhere; }
+.commerce-v2 .ledger-entry p { margin: .25rem 0 0; }
+.commerce-v2 .ledger-amount { white-space: nowrap; color: var(--ink); }
+.commerce-v2 .withdrawal-list { display: grid; gap: .85rem; }
+.commerce-v2 .withdrawal-card { padding: 1.35rem; border: 1px solid var(--line); border-radius: 1rem; background: #fff; }
+.commerce-v2 .withdrawal-card p { overflow-wrap: anywhere; }
+.commerce-v2 .withdrawal-top { display: flex; align-items: center; justify-content: space-between; gap: .7rem; flex-wrap: wrap; }
+.commerce-v2 .withdrawal-top h3 { margin: 0; font-size: 1.3rem; }
+.commerce-v2 .withdrawal-card details { padding: .8rem 0; border-top: 1px solid var(--line); }
+.commerce-v2 .withdrawal-card summary { cursor: pointer; font-weight: 750; color: var(--primary); }
+.commerce-v2 .withdrawal-card details p { font-size: .85rem; color: var(--muted); }
+.commerce-v2 .withdrawal-form { max-width: 650px; }
+body.commerce-v2 .button.danger { background: #fff; color: #9b2940; border-color: #d7949b; }
+body.commerce-v2 .button.danger:hover { background: #fff4f5; color: #842037; }
+@media (max-width: 1080px) {
+  .commerce-v2 .checkout-layout { grid-template-columns: 1fr; grid-template-areas: "summary" "main"; }
+  .commerce-v2 .checkout-summary { position: static; }
+  .commerce-v2 .payment-metrics, .commerce-v2 .wallet-metrics, .commerce-v2 .withdrawal-metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 520px) {
+  .commerce-v2 .payment-metrics, .commerce-v2 .wallet-metrics, .commerce-v2 .withdrawal-metrics { grid-template-columns: 1fr; }
+  .commerce-v2 .checkout-form, .commerce-v2 .payment-methods, .commerce-v2 .checkout-summary, .commerce-v2 .payment-instructions, .commerce-v2 .evidence-form, .commerce-v2 .wallet-empty, .commerce-v2 .withdrawal-form { padding: 1.2rem; }
+  .commerce-v2 .ledger-entry { align-items: start; }
+}

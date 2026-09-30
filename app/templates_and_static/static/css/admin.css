@@ -1,0 +1,1 @@
+body[data-area="admin"]{background:#f1f4f8}body[data-area="admin"] .page-heading{border-left:4px solid #aa6b28;padding-left:1rem}.admin-nav{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1.4rem}.admin-nav a{padding:.4rem .7rem;background:white;border:1px solid #cbd6e4;border-radius:.4rem;text-decoration:none}.admin-nav a[aria-current="page"]{background:#22456f;color:white}

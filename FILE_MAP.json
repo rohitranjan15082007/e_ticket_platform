@@ -1,0 +1,1397 @@
+[
+  {
+    "path": "README.md",
+    "purpose": "README: Project setup Ã Â¤â€Ã Â¤Â° configuration",
+    "status": "Done"
+  },
+  {
+    "path": "PROJECT_RULES.md",
+    "purpose": "PROJECT RULES: Project setup Ã Â¤â€Ã Â¤Â° configuration",
+    "status": "Planned"
+  },
+  {
+    "path": "SPEC.md",
+    "purpose": "SPEC: Project setup Ã Â¤â€Ã Â¤Â° configuration",
+    "status": "Planned"
+  },
+  {
+    "path": ".env.example",
+    "purpose": ".env: Project setup Ã Â¤â€Ã Â¤Â° configuration",
+    "status": "Done"
+  },
+  {
+    "path": ".gitignore",
+    "purpose": ".gitignore: Project setup Ã Â¤â€Ã Â¤Â° configuration",
+    "status": "Done"
+  },
+  {
+    "path": "pyproject.toml",
+    "purpose": "pyproject: Project setup Ã Â¤â€Ã Â¤Â° configuration",
+    "status": "Done"
+  },
+  {
+    "path": "Dockerfile",
+    "purpose": "Dockerfile: Project setup Ã Â¤â€Ã Â¤Â° configuration",
+    "status": "Done"
+  },
+  {
+    "path": "docker-compose.yml",
+    "purpose": "docker-compose: Project setup Ã Â¤â€Ã Â¤Â° configuration",
+    "status": "Done"
+  },
+  {
+    "path": "alembic.ini",
+    "purpose": "alembic: Project setup Ã Â¤â€Ã Â¤Â° configuration",
+    "status": "Done"
+  },
+  {
+    "path": "app/__init__.py",
+    "purpose": "  init  : Project setup Ã Â¤â€Ã Â¤Â° configuration",
+    "status": "Done"
+  },
+  {
+    "path": "app/main.py",
+    "purpose": "main: Project setup Ã Â¤â€Ã Â¤Â° configuration",
+    "status": "Done"
+  },
+  {
+    "path": "app/config.py",
+    "purpose": "config: Project setup Ã Â¤â€Ã Â¤Â° configuration",
+    "status": "Done"
+  },
+  {
+    "path": "app/database.py",
+    "purpose": "database: Project setup Ã Â¤â€Ã Â¤Â° configuration",
+    "status": "Done"
+  },
+  {
+    "path": "app/dependencies.py",
+    "purpose": "dependencies: Project setup Ã Â¤â€Ã Â¤Â° configuration",
+    "status": "Done"
+  },
+  {
+    "path": "app/exceptions.py",
+    "purpose": "exceptions: Project setup Ã Â¤â€Ã Â¤Â° configuration",
+    "status": "Done"
+  },
+  {
+    "path": "app/logging.py",
+    "purpose": "logging: Project setup Ã Â¤â€Ã Â¤Â° configuration",
+    "status": "Done"
+  },
+  {
+    "path": "app/core/security.py",
+    "purpose": "security: Shared security Ã Â¤â€Ã Â¤Â° transaction rules",
+    "status": "Done"
+  },
+  {
+    "path": "app/core/permissions.py",
+    "purpose": "permissions: Shared security Ã Â¤â€Ã Â¤Â° transaction rules",
+    "status": "Done"
+  },
+  {
+    "path": "app/core/idempotency.py",
+    "purpose": "idempotency: Shared security Ã Â¤â€Ã Â¤Â° transaction rules",
+    "status": "Done"
+  },
+  {
+    "path": "app/core/money.py",
+    "purpose": "money: Shared security Ã Â¤â€Ã Â¤Â° transaction rules",
+    "status": "Done"
+  },
+  {
+    "path": "app/core/pagination.py",
+    "purpose": "pagination: Shared security Ã Â¤â€Ã Â¤Â° transaction rules",
+    "status": "Done"
+  },
+  {
+    "path": "app/core/audit.py",
+    "purpose": "audit: Shared security Ã Â¤â€Ã Â¤Â° transaction rules",
+    "status": "Done"
+  },
+  {
+    "path": "app/core/state_machine.py",
+    "purpose": "state machine: Shared security Ã Â¤â€Ã Â¤Â° transaction rules",
+    "status": "Done"
+  },
+  {
+    "path": "app/models/user.py",
+    "purpose": "user: Database tables Ã Â¤â€¢Ã Â¤Â¾ structure",
+    "status": "Done"
+  },
+  {
+    "path": "app/models/ticket_series.py",
+    "purpose": "ticket series: Database tables Ã Â¤â€¢Ã Â¤Â¾ structure",
+    "status": "Done"
+  },
+  {
+    "path": "app/models/ticket_package.py",
+    "purpose": "ticket package: Database tables Ã Â¤â€¢Ã Â¤Â¾ structure",
+    "status": "Done"
+  },
+  {
+    "path": "app/models/ticket.py",
+    "purpose": "ticket: Database tables Ã Â¤â€¢Ã Â¤Â¾ structure",
+    "status": "Done"
+  },
+  {
+    "path": "app/models/order.py",
+    "purpose": "order: Database tables Ã Â¤â€¢Ã Â¤Â¾ structure",
+    "status": "Done"
+  },
+  {
+    "path": "app/models/payment.py",
+    "purpose": "payment: Database tables Ã Â¤â€¢Ã Â¤Â¾ structure",
+    "status": "Done"
+  },
+  {
+    "path": "app/models/wallet.py",
+    "purpose": "wallet: Database tables Ã Â¤â€¢Ã Â¤Â¾ structure",
+    "status": "Done"
+  },
+  {
+    "path": "app/models/ledger.py",
+    "purpose": "ledger: Database tables Ã Â¤â€¢Ã Â¤Â¾ structure",
+    "status": "Done"
+  },
+  {
+    "path": "app/models/withdrawal.py",
+    "purpose": "withdrawal: Database tables Ã Â¤â€¢Ã Â¤Â¾ structure",
+    "status": "Done"
+  },
+  {
+    "path": "app/models/p2p_match.py",
+    "purpose": "p2p match: Database tables Ã Â¤â€¢Ã Â¤Â¾ structure",
+    "status": "Done"
+  },
+  {
+    "path": "app/models/winner.py",
+    "purpose": "winner: Database tables Ã Â¤â€¢Ã Â¤Â¾ structure",
+    "status": "Done"
+  },
+  {
+    "path": "app/models/coupon.py",
+    "purpose": "coupon: Database tables Ã Â¤â€¢Ã Â¤Â¾ structure",
+    "status": "Done"
+  },
+  {
+    "path": "app/models/cashback.py",
+    "purpose": "cashback: Database tables Ã Â¤â€¢Ã Â¤Â¾ structure",
+    "status": "Done"
+  },
+  {
+    "path": "app/models/referral.py",
+    "purpose": "referral: Database tables Ã Â¤â€¢Ã Â¤Â¾ structure",
+    "status": "Done"
+  },
+  {
+    "path": "app/models/affiliate.py",
+    "purpose": "affiliate: Database tables Ã Â¤â€¢Ã Â¤Â¾ structure",
+    "status": "Done"
+  },
+  {
+    "path": "app/models/revenue_allocation.py",
+    "purpose": "revenue allocation: Database tables Ã Â¤â€¢Ã Â¤Â¾ structure",
+    "status": "Done"
+  },
+  {
+    "path": "app/models/notification.py",
+    "purpose": "Payload-free common read model over existing durable P2P and draw notice tables",
+    "status": "Done"
+  },
+  {
+    "path": "app/models/audit_log.py",
+    "purpose": "audit log: Database tables Ã Â¤â€¢Ã Â¤Â¾ structure",
+    "status": "Done"
+  },
+  {
+    "path": "app/schemas/auth.py",
+    "purpose": "auth: Input/output validation",
+    "status": "Done"
+  },
+  {
+    "path": "app/schemas/user.py",
+    "purpose": "Masked administrator user read response",
+    "status": "Done"
+  },
+  {
+    "path": "app/schemas/ticket_series.py",
+    "purpose": "ticket series: Input/output validation",
+    "status": "Done"
+  },
+  {
+    "path": "app/schemas/ticket_package.py",
+    "purpose": "ticket package: Input/output validation",
+    "status": "Done"
+  },
+  {
+    "path": "app/schemas/order.py",
+    "purpose": "order: Input/output validation",
+    "status": "Done"
+  },
+  {
+    "path": "app/schemas/payment.py",
+    "purpose": "payment: Input/output validation",
+    "status": "Done"
+  },
+  {
+    "path": "app/schemas/wallet.py",
+    "purpose": "wallet: Input/output validation",
+    "status": "Done"
+  },
+  {
+    "path": "app/schemas/withdrawal.py",
+    "purpose": "withdrawal: Input/output validation",
+    "status": "Done"
+  },
+  {
+    "path": "app/schemas/result.py",
+    "purpose": "result: Input/output validation",
+    "status": "Done"
+  },
+  {
+    "path": "app/schemas/marketing.py",
+    "purpose": "marketing: Input/output validation",
+    "status": "Done"
+  },
+  {
+    "path": "app/schemas/admin.py",
+    "purpose": "admin: Input/output validation",
+    "status": "Done"
+  },
+  {
+    "path": "app/repositories/user_repository.py",
+    "purpose": "user repository: Database queries",
+    "status": "Done"
+  },
+  {
+    "path": "app/repositories/ticket_repository.py",
+    "purpose": "ticket repository: Database queries",
+    "status": "Done"
+  },
+  {
+    "path": "app/repositories/order_repository.py",
+    "purpose": "order repository: Database queries",
+    "status": "Done"
+  },
+  {
+    "path": "app/repositories/payment_repository.py",
+    "purpose": "payment repository: Database queries",
+    "status": "Done"
+  },
+  {
+    "path": "app/repositories/wallet_repository.py",
+    "purpose": "wallet repository: Database queries",
+    "status": "Done"
+  },
+  {
+    "path": "app/repositories/withdrawal_repository.py",
+    "purpose": "withdrawal repository: Database queries",
+    "status": "Done"
+  },
+  {
+    "path": "app/services/auth_service.py",
+    "purpose": "auth service: Business rules Ã Â¤â€Ã Â¤Â° calculations",
+    "status": "Done"
+  },
+  {
+    "path": "app/services/ticket_series_service.py",
+    "purpose": "ticket series service: Business rules Ã Â¤â€Ã Â¤Â° calculations",
+    "status": "Done"
+  },
+  {
+    "path": "app/services/ticket_package_service.py",
+    "purpose": "ticket package service: Business rules Ã Â¤â€Ã Â¤Â° calculations",
+    "status": "Done"
+  },
+  {
+    "path": "app/services/inventory_service.py",
+    "purpose": "inventory service: Business rules Ã Â¤â€Ã Â¤Â° calculations",
+    "status": "Done"
+  },
+  {
+    "path": "app/services/order_service.py",
+    "purpose": "order service: Business rules Ã Â¤â€Ã Â¤Â° calculations",
+    "status": "Done"
+  },
+  {
+    "path": "app/services/ticket_allocation_service.py",
+    "purpose": "ticket allocation service: Business rules Ã Â¤â€Ã Â¤Â° calculations",
+    "status": "Done"
+  },
+  {
+    "path": "app/services/winner_service.py",
+    "purpose": "winner service: Business rules Ã Â¤â€Ã Â¤Â° calculations",
+    "status": "Done"
+  },
+  {
+    "path": "app/services/result_service.py",
+    "purpose": "result service: Business rules Ã Â¤â€Ã Â¤Â° calculations",
+    "status": "Done"
+  },
+  {
+    "path": "app/services/wallet_service.py",
+    "purpose": "wallet service: Business rules Ã Â¤â€Ã Â¤Â° calculations",
+    "status": "Done"
+  },
+  {
+    "path": "app/services/ledger_service.py",
+    "purpose": "ledger service: Business rules Ã Â¤â€Ã Â¤Â° calculations",
+    "status": "Done"
+  },
+  {
+    "path": "app/services/withdrawal_service.py",
+    "purpose": "withdrawal service: Business rules Ã Â¤â€Ã Â¤Â° calculations",
+    "status": "Done"
+  },
+  {
+    "path": "app/services/payment_orchestrator.py",
+    "purpose": "Order-linked payment state, evidence, settlement, audit, and outbox orchestration",
+    "status": "Done"
+  },
+  {
+    "path": "app/services/p2p_service.py",
+    "purpose": "p2p service: Business rules Ã Â¤â€Ã Â¤Â° calculations",
+    "status": "Done"
+  },
+  {
+    "path": "app/services/dispute_service.py",
+    "purpose": "dispute service: Business rules Ã Â¤â€Ã Â¤Â° calculations",
+    "status": "Done"
+  },
+  {
+    "path": "app/services/coupon_service.py",
+    "purpose": "coupon service: Business rules Ã Â¤â€Ã Â¤Â° calculations",
+    "status": "Done"
+  },
+  {
+    "path": "app/services/cashback_service.py",
+    "purpose": "cashback service: Business rules Ã Â¤â€Ã Â¤Â° calculations",
+    "status": "Done"
+  },
+  {
+    "path": "app/services/referral_service.py",
+    "purpose": "referral service: Business rules Ã Â¤â€Ã Â¤Â° calculations",
+    "status": "Done"
+  },
+  {
+    "path": "app/services/affiliate_service.py",
+    "purpose": "affiliate service: Business rules Ã Â¤â€Ã Â¤Â° calculations",
+    "status": "Done"
+  },
+  {
+    "path": "app/services/revenue_service.py",
+    "purpose": "revenue service: Business rules Ã Â¤â€Ã Â¤Â° calculations",
+    "status": "Done"
+  },
+  {
+    "path": "app/services/notification_service.py",
+    "purpose": "notification service: Business rules Ã Â¤â€Ã Â¤Â° calculations",
+    "status": "Done"
+  },
+  {
+    "path": "app/services/reconciliation_service.py",
+    "purpose": "Review-only generic payment reconciliation snapshots",
+    "status": "Done"
+  },
+  {
+    "path": "app/payment_adapters/base.py",
+    "purpose": "Shared Phase 5 payment-adapter contracts and evidence validation",
+    "status": "Done"
+  },
+  {
+    "path": "app/payment_adapters/p2p_adapter.py",
+    "purpose": "HMAC-SHA256 raw-body authentication boundary for P2P provider callbacks",
+    "status": "Done"
+  },
+  {
+    "path": "app/payment_adapters/white_label_adapter.py",
+    "purpose": "Safe HMAC-only white-label boundary; checkout initiation remains unsupported",
+    "status": "Done"
+  },
+  {
+    "path": "app/payment_adapters/telegram_stars_adapter.py",
+    "purpose": "Telegram Stars signed instruction, update-validation, and pre-checkout acknowledgement boundary",
+    "status": "Done"
+  },
+  {
+    "path": "app/payment_adapters/manual_upi_adapter.py",
+    "purpose": "Manual UPI instruction and evidence-only adapter",
+    "status": "Done"
+  },
+  {
+    "path": "app/api/router.py",
+    "purpose": "router: API requests Ã Â¤â€Ã Â¤Â° permissions",
+    "status": "Done"
+  },
+  {
+    "path": "app/api/user/auth.py",
+    "purpose": "auth: API requests Ã Â¤â€Ã Â¤Â° permissions",
+    "status": "Done"
+  },
+  {
+    "path": "app/api/user/profile.py",
+    "purpose": "Authenticated owner profile read with verification and creation metadata",
+    "status": "Done"
+  },
+  {
+    "path": "app/api/user/catalog.py",
+    "purpose": "catalog: API requests Ã Â¤â€Ã Â¤Â° permissions",
+    "status": "Done"
+  },
+  {
+    "path": "app/api/user/orders.py",
+    "purpose": "orders: API requests Ã Â¤â€Ã Â¤Â° permissions",
+    "status": "Done"
+  },
+  {
+    "path": "app/api/user/payments.py",
+    "purpose": "payments: API requests Ã Â¤â€Ã Â¤Â° permissions",
+    "status": "Done"
+  },
+  {
+    "path": "app/api/user/tickets.py",
+    "purpose": "tickets: API requests Ã Â¤â€Ã Â¤Â° permissions",
+    "status": "Done"
+  },
+  {
+    "path": "app/api/user/results.py",
+    "purpose": "results: API requests Ã Â¤â€Ã Â¤Â° permissions",
+    "status": "Done"
+  },
+  {
+    "path": "app/api/user/wallet.py",
+    "purpose": "wallet: API requests Ã Â¤â€Ã Â¤Â° permissions",
+    "status": "Done"
+  },
+  {
+    "path": "app/api/user/withdrawals.py",
+    "purpose": "withdrawals: API requests Ã Â¤â€Ã Â¤Â° permissions",
+    "status": "Done"
+  },
+  {
+    "path": "app/api/admin/dashboard.py",
+    "purpose": "dashboard: API requests Ã Â¤â€Ã Â¤Â° permissions",
+    "status": "Done"
+  },
+  {
+    "path": "app/api/admin/users.py",
+    "purpose": "Role-gated bounded administrator user list and detail reads",
+    "status": "Done"
+  },
+  {
+    "path": "app/api/admin/ticket_series.py",
+    "purpose": "ticket series: API requests Ã Â¤â€Ã Â¤Â° permissions",
+    "status": "Done"
+  },
+  {
+    "path": "app/api/admin/packages.py",
+    "purpose": "packages: API requests Ã Â¤â€Ã Â¤Â° permissions",
+    "status": "Done"
+  },
+  {
+    "path": "app/api/admin/winners.py",
+    "purpose": "winners: API requests Ã Â¤â€Ã Â¤Â° permissions",
+    "status": "Done"
+  },
+  {
+    "path": "app/api/admin/payments.py",
+    "purpose": "payments: API requests Ã Â¤â€Ã Â¤Â° permissions",
+    "status": "Done"
+  },
+  {
+    "path": "app/api/admin/withdrawals.py",
+    "purpose": "withdrawals: API requests Ã Â¤â€Ã Â¤Â° permissions",
+    "status": "Done"
+  },
+  {
+    "path": "app/api/admin/disputes.py",
+    "purpose": "disputes: API requests Ã Â¤â€Ã Â¤Â° permissions",
+    "status": "Done"
+  },
+  {
+    "path": "app/api/admin/marketing.py",
+    "purpose": "marketing: API requests Ã Â¤â€Ã Â¤Â° permissions",
+    "status": "Done"
+  },
+  {
+    "path": "app/api/admin/revenue.py",
+    "purpose": "revenue: API requests Ã Â¤â€Ã Â¤Â° permissions",
+    "status": "Done"
+  },
+  {
+    "path": "app/api/admin/audit.py",
+    "purpose": "audit: API requests Ã Â¤â€Ã Â¤Â° permissions",
+    "status": "Done"
+  },
+  {
+    "path": "app/api/webhooks/white_label.py",
+    "purpose": "Signed raw-body white-label webhook API boundary",
+    "status": "Done"
+  },
+  {
+    "path": "app/api/webhooks/telegram.py",
+    "purpose": "Authenticated Telegram Stars webhook and bounded pre-checkout acknowledgement API",
+    "status": "Done"
+  },
+  {
+    "path": "app/tasks/celery_app.py",
+    "purpose": "celery app: Background jobs",
+    "status": "Done"
+  },
+  {
+    "path": "app/tasks/draw_tasks.py",
+    "purpose": "draw tasks: Background jobs",
+    "status": "Done"
+  },
+  {
+    "path": "app/tasks/notification_tasks.py",
+    "purpose": "Compatibility export for the durable P2P outbox worker task",
+    "status": "Done"
+  },
+  {
+    "path": "app/tasks/payment_tasks.py",
+    "purpose": "payment tasks: Background jobs",
+    "status": "Done"
+  },
+  {
+    "path": "app/tasks/reconciliation_tasks.py",
+    "purpose": "Review-only Phase 5 reconciliation task",
+    "status": "Done"
+  },
+  {
+    "path": "app/tasks/cleanup_tasks.py",
+    "purpose": "cleanup tasks: Background jobs",
+    "status": "Done"
+  },
+  {
+    "path": "alembic/env.py",
+    "purpose": "env: Database migrations",
+    "status": "Done"
+  },
+  {
+    "path": "scripts/seed_demo_data.py",
+    "purpose": "Opt-in development-only inert DRAFT catalog seed command",
+    "status": "Done"
+  },
+  {
+    "path": "scripts/create_admin.py",
+    "purpose": "Explicit, one-time first-admin bootstrap with prompted password",
+    "status": "Done"
+  },
+  {
+    "path": "scripts/reconcile_ledger.py",
+    "purpose": "reconcile ledger: Maintenance commands",
+    "status": "Done"
+  },
+  {
+    "path": "scripts/verify_journal_balance.py",
+    "purpose": "verify journal balance: Maintenance commands",
+    "status": "Done"
+  },
+  {
+    "path": "docs/architecture.md",
+    "purpose": "architecture: Project documentation",
+    "status": "Planned"
+  },
+  {
+    "path": "docs/database_schema.md",
+    "purpose": "database schema: Project documentation",
+    "status": "Planned"
+  },
+  {
+    "path": "docs/api_contract.md",
+    "purpose": "api contract: Project documentation",
+    "status": "Done"
+  },
+  {
+    "path": "docs/payment_flows.md",
+    "purpose": "payment flows: Project documentation",
+    "status": "Done"
+  },
+  {
+    "path": "docs/p2p_state_machine.md",
+    "purpose": "p2p state machine: Project documentation",
+    "status": "Done"
+  },
+  {
+    "path": "docs/deployment.md",
+    "purpose": "deployment: Project documentation",
+    "status": "Done"
+  },
+  {
+    "path": "docs/security_checklist.md",
+    "purpose": "security checklist: Project documentation",
+    "status": "Done"
+  },
+  {
+    "path": "app/templates_and_static/templates/public/home.html",
+    "purpose": "home: Screen Ã Â¤â€¢Ã Â¤Â¾ HTML layout",
+    "status": "Done"
+  },
+  {
+    "path": "app/templates_and_static/templates/public/login.html",
+    "purpose": "login: Screen Ã Â¤â€¢Ã Â¤Â¾ HTML layout",
+    "status": "Done"
+  },
+  {
+    "path": "app/templates_and_static/templates/public/register.html",
+    "purpose": "register: Screen Ã Â¤â€¢Ã Â¤Â¾ HTML layout",
+    "status": "Done"
+  },
+  {
+    "path": "app/templates_and_static/templates/public/series.html",
+    "purpose": "series: Screen Ã Â¤â€¢Ã Â¤Â¾ HTML layout",
+    "status": "Done"
+  },
+  {
+    "path": "app/templates_and_static/templates/public/packages.html",
+    "purpose": "packages: Screen Ã Â¤â€¢Ã Â¤Â¾ HTML layout",
+    "status": "Done"
+  },
+  {
+    "path": "app/templates_and_static/templates/public/results.html",
+    "purpose": "results: Screen Ã Â¤â€¢Ã Â¤Â¾ HTML layout",
+    "status": "Done"
+  },
+  {
+    "path": "app/templates_and_static/templates/user/dashboard.html",
+    "purpose": "dashboard: Screen Ã Â¤â€¢Ã Â¤Â¾ HTML layout",
+    "status": "Done"
+  },
+  {
+    "path": "app/templates_and_static/templates/user/tickets.html",
+    "purpose": "tickets: Screen Ã Â¤â€¢Ã Â¤Â¾ HTML layout",
+    "status": "Done"
+  },
+  {
+    "path": "app/templates_and_static/templates/user/checkout.html",
+    "purpose": "checkout: Screen Ã Â¤â€¢Ã Â¤Â¾ HTML layout",
+    "status": "Done"
+  },
+  {
+    "path": "app/templates_and_static/templates/user/wallet.html",
+    "purpose": "wallet: Screen Ã Â¤â€¢Ã Â¤Â¾ HTML layout",
+    "status": "Done"
+  },
+  {
+    "path": "app/templates_and_static/templates/user/withdrawals.html",
+    "purpose": "withdrawals: Screen Ã Â¤â€¢Ã Â¤Â¾ HTML layout",
+    "status": "Done"
+  },
+  {
+    "path": "app/templates_and_static/templates/user/referrals.html",
+    "purpose": "referrals: Screen Ã Â¤â€¢Ã Â¤Â¾ HTML layout",
+    "status": "Done"
+  },
+  {
+    "path": "app/templates_and_static/templates/admin/dashboard.html",
+    "purpose": "dashboard: Screen Ã Â¤â€¢Ã Â¤Â¾ HTML layout",
+    "status": "Done"
+  },
+  {
+    "path": "app/templates_and_static/templates/admin/series.html",
+    "purpose": "series: Screen Ã Â¤â€¢Ã Â¤Â¾ HTML layout",
+    "status": "Done"
+  },
+  {
+    "path": "app/templates_and_static/templates/admin/payments.html",
+    "purpose": "payments: Screen Ã Â¤â€¢Ã Â¤Â¾ HTML layout",
+    "status": "Done"
+  },
+  {
+    "path": "app/templates_and_static/templates/admin/withdrawals.html",
+    "purpose": "withdrawals: Screen Ã Â¤â€¢Ã Â¤Â¾ HTML layout",
+    "status": "Done"
+  },
+  {
+    "path": "app/templates_and_static/templates/admin/disputes.html",
+    "purpose": "disputes: Screen Ã Â¤â€¢Ã Â¤Â¾ HTML layout",
+    "status": "Done"
+  },
+  {
+    "path": "app/templates_and_static/templates/admin/marketing.html",
+    "purpose": "marketing: Screen Ã Â¤â€¢Ã Â¤Â¾ HTML layout",
+    "status": "Done"
+  },
+  {
+    "path": "app/templates_and_static/templates/admin/revenue.html",
+    "purpose": "revenue: Screen Ã Â¤â€¢Ã Â¤Â¾ HTML layout",
+    "status": "Done"
+  },
+  {
+    "path": "app/templates_and_static/static/css/base.css",
+    "purpose": "base: Screen Ã Â¤â€¢Ã Â¤Â¾ design",
+    "status": "Done"
+  },
+  {
+    "path": "app/templates_and_static/static/css/user.css",
+    "purpose": "user: Screen Ã Â¤â€¢Ã Â¤Â¾ design",
+    "status": "Done"
+  },
+  {
+    "path": "app/templates_and_static/static/css/admin.css",
+    "purpose": "admin: Screen Ã Â¤â€¢Ã Â¤Â¾ design",
+    "status": "Done"
+  },
+  {
+    "path": "app/templates_and_static/static/js/api.js",
+    "purpose": "api: Browser interaction Ã Â¤â€Ã Â¤Â° API calls",
+    "status": "Done"
+  },
+  {
+    "path": "app/templates_and_static/static/js/auth.js",
+    "purpose": "auth: Browser interaction Ã Â¤â€Ã Â¤Â° API calls",
+    "status": "Done"
+  },
+  {
+    "path": "app/templates_and_static/static/js/catalog.js",
+    "purpose": "catalog: Browser interaction Ã Â¤â€Ã Â¤Â° API calls",
+    "status": "Done"
+  },
+  {
+    "path": "app/templates_and_static/static/js/checkout.js",
+    "purpose": "checkout: Browser interaction Ã Â¤â€Ã Â¤Â° API calls",
+    "status": "Done"
+  },
+  {
+    "path": "app/templates_and_static/static/js/wallet.js",
+    "purpose": "wallet: Browser interaction Ã Â¤â€Ã Â¤Â° API calls",
+    "status": "Done"
+  },
+  {
+    "path": "app/templates_and_static/static/js/admin.js",
+    "purpose": "admin: Browser interaction Ã Â¤â€Ã Â¤Â° API calls",
+    "status": "Done"
+  },
+  {
+    "path": "app/core/__init__.py",
+    "purpose": "Core package marker",
+    "status": "Done"
+  },
+  {
+    "path": "app/models/__init__.py",
+    "purpose": "Model metadata imports for Alembic",
+    "status": "Done"
+  },
+  {
+    "path": "app/models/base.py",
+    "purpose": "SQLAlchemy base and shared UUID/timestamp columns",
+    "status": "Done"
+  },
+  {
+    "path": "app/schemas/__init__.py",
+    "purpose": "Schema package marker",
+    "status": "Done"
+  },
+  {
+    "path": "app/repositories/__init__.py",
+    "purpose": "Repository package marker",
+    "status": "Done"
+  },
+  {
+    "path": "app/services/__init__.py",
+    "purpose": "Service package marker",
+    "status": "Done"
+  },
+  {
+    "path": "app/api/__init__.py",
+    "purpose": "API package marker",
+    "status": "Done"
+  },
+  {
+    "path": "app/api/user/__init__.py",
+    "purpose": "User API package marker",
+    "status": "Done"
+  },
+  {
+    "path": "app/tasks/__init__.py",
+    "purpose": "Task package marker",
+    "status": "Done"
+  },
+  {
+    "path": "alembic/versions/0001_foundation_identity.py",
+    "purpose": "Initial identity and idempotency migration",
+    "status": "Done"
+  },
+  {
+    "path": "tests/conftest.py",
+    "purpose": "Isolated async SQLite fixture with clearing and P2P pending-fulfillment ledger accounts",
+    "status": "Done"
+  },
+  {
+    "path": "tests/api/test_health.py",
+    "purpose": "API health test",
+    "status": "Done"
+  },
+  {
+    "path": "tests/api/test_auth.py",
+    "purpose": "Authentication API integration test",
+    "status": "Done"
+  },
+  {
+    "path": "tests/unit/test_security.py",
+    "purpose": "Password and JWT tests",
+    "status": "Done"
+  },
+  {
+    "path": "tests/unit/test_auth_service.py",
+    "purpose": "Auth idempotency and RBAC tests",
+    "status": "Done"
+  },
+  {
+    "path": "alembic/versions/0002_financial_core.py",
+    "purpose": "Wallet, ledger and audit migration",
+    "status": "Done"
+  },
+  {
+    "path": "tests/unit/test_money.py",
+    "purpose": "Integer-paise validation tests",
+    "status": "Done"
+  },
+  {
+    "path": "tests/unit/test_ledger_service.py",
+    "purpose": "Balanced journal validation tests",
+    "status": "Done"
+  },
+  {
+    "path": "tests/unit/test_wallet_service.py",
+    "purpose": "Wallet, audit and idempotency service tests",
+    "status": "Done"
+  },
+  {
+    "path": "tests/concurrency/test_wallet_locking.py",
+    "purpose": "PostgreSQL wallet, inventory, P2P match, withdrawal, and payment-reference race tests",
+    "status": "Done"
+  },
+  {
+    "path": "alembic/versions/0003_financial_integrity.py",
+    "purpose": "Financial integrity migration",
+    "status": "Done"
+  },
+  {
+    "path": "alembic/versions/0004_ticket_catalog_orders.py",
+    "purpose": "Ticket catalog, packages, orders, reservations and tickets migration",
+    "status": "Done"
+  },
+  {
+    "path": "tests/unit/test_migrations.py",
+    "purpose": "Alembic schema round-trip tests through signed provider-event and notification revision",
+    "status": "Done"
+  },
+  {
+    "path": "tests/unit/test_ticket_catalog_and_orders.py",
+    "purpose": "Ticket catalog, reservation, allocation and expiry tests",
+    "status": "Done"
+  },
+  {
+    "path": "tests/api/test_phase3_catalog_orders.py",
+    "purpose": "Phase 3 catalog and order API tests",
+    "status": "Done"
+  },
+  {
+    "path": "app/services/catalog_service.py",
+    "purpose": "Public ticket catalog availability service",
+    "status": "Done"
+  },
+  {
+    "path": "alembic/versions/0005_p2p_matching_settlement.py",
+    "purpose": "P2P withdrawal, match, settlement, hold and outbox migration",
+    "status": "Done"
+  },
+  {
+    "path": "alembic/versions/0006_p2p_refund_case.py",
+    "purpose": "Evidence-bound P2P refund-case schema migration",
+    "status": "Done"
+  },
+  {
+    "path": "app/services/refund_service.py",
+    "purpose": "Admin P2P refund-case recording without payout execution",
+    "status": "Done"
+  },
+  {
+    "path": "app/api/admin/refunds.py",
+    "purpose": "Admin-only P2P pending-evidence refund-case API",
+    "status": "Done"
+  },
+  {
+    "path": "tests/unit/test_p2p_service.py",
+    "purpose": "P2P eligibility, signed provider evidence, settlement, delivery, notification, and refund-case tests",
+    "status": "Done"
+  },
+  {
+    "path": "tests/api/test_phase4_p2p_api.py",
+    "purpose": "P2P ownership, administrator authorization, and signed provider webhook API tests",
+    "status": "Done"
+  },
+  {
+    "path": "app/core/digests.py",
+    "purpose": "Canonical SHA-256 digests for trusted P2P event correlation",
+    "status": "Done"
+  },
+  {
+    "path": "app/core/transaction_locks.py",
+    "purpose": "PostgreSQL transaction-scoped advisory locks for missing logical keys",
+    "status": "Done"
+  },
+  {
+    "path": "app/repositories/provider_event_repository.py",
+    "purpose": "Locked retrieval for signed P2P provider events",
+    "status": "Done"
+  },
+  {
+    "path": "app/repositories/outbox_repository.py",
+    "purpose": "Locked retrieval and dispatch selection for P2P outbox events",
+    "status": "Done"
+  },
+  {
+    "path": "app/schemas/provider_webhook.py",
+    "purpose": "Strict signed provider webhook request and response contracts",
+    "status": "Done"
+  },
+  {
+    "path": "app/services/p2p_risk_service.py",
+    "purpose": "P2P active-user and optional verified-user eligibility guard",
+    "status": "Done"
+  },
+  {
+    "path": "app/services/provider_event_service.py",
+    "purpose": "Signed provider event authentication, replay protection, and durable review handling",
+    "status": "Done"
+  },
+  {
+    "path": "app/services/p2p_outbox_service.py",
+    "purpose": "Transactional P2P delivery, settlement, and notification outbox dispatcher",
+    "status": "Done"
+  },
+  {
+    "path": "app/api/webhooks/p2p_provider.py",
+    "purpose": "Signed P2P provider callback API endpoint",
+    "status": "Done"
+  },
+  {
+    "path": "alembic/versions/0007_p2p_provider_events_outbox.py",
+    "purpose": "Signed provider-event and durable in-app notification persistence migration",
+    "status": "Done"
+  },
+  {
+    "path": "tests/unit/test_p2p_tasks.py",
+    "purpose": "Celery P2P expiry/outbox task registration and beat schedule test",
+    "status": "Done"
+  },
+  {
+    "path": "app/models/payment.py",
+    "purpose": "Phase 5 payment attempts, provider events, manual evidence, settlements, outbox, and reconciliation models",
+    "status": "Done"
+  },
+  {
+    "path": "app/schemas/payment_methods.py",
+    "purpose": "Strict Phase 5 user, administrator, white-label, and Telegram payment API contracts",
+    "status": "Done"
+  },
+  {
+    "path": "app/repositories/generic_payment_repository.py",
+    "purpose": "Locked Phase 5 payment, event, proof, settlement, and review queries",
+    "status": "Done"
+  },
+  {
+    "path": "app/services/payment_outbox_service.py",
+    "purpose": "Settlement-gated generic payment ticket-allocation outbox dispatcher",
+    "status": "Done"
+  },
+  {
+    "path": "alembic/versions/0008_phase5_payment_core.py",
+    "purpose": "Phase 5 generic payment persistence and external-receipt ledger migration",
+    "status": "Done"
+  },
+  {
+    "path": "alembic/versions/0009_phase5_manual_destination_uniqueness.py",
+    "purpose": "Partial unique active-manual-destination index migration",
+    "status": "Done"
+  },
+  {
+    "path": "tests/unit/test_payment_orchestrator.py",
+    "purpose": "Phase 5 payment settlement, evidence, expiry, replay, and review safety tests",
+    "status": "Done"
+  },
+  {
+    "path": "tests/unit/test_payment_tasks.py",
+    "purpose": "Phase 5 Celery expiry, delivery-outbox, and reconciliation task tests",
+    "status": "Done"
+  },
+  {
+    "path": "tests/api/test_phase5_payments_api.py",
+    "purpose": "Phase 5 buyer and administrator payment API authorization and review tests",
+    "status": "Done"
+  },
+  {
+    "path": "tests/api/test_phase5_webhook_api.py",
+    "purpose": "Phase 5 signed white-label and Telegram webhook trust-boundary tests",
+    "status": "Done"
+  },
+  {
+    "path": "tests/unit/test_config.py",
+    "purpose": "Configuration validation for the Phase 5 Telegram webhook URL trust boundary",
+    "status": "Done"
+  },
+  {
+    "path": "app/repositories/winner_repository.py",
+    "purpose": "Locked draw, candidate, winner, award, and notification retrieval helpers",
+    "status": "Done"
+  },
+  {
+    "path": "alembic/versions/0010_phase6_draw_results.py",
+    "purpose": "Phase 6 auditable draw, winner, award, and local notification migration",
+    "status": "Done"
+  },
+  {
+    "path": "alembic/versions/0011_phase6_draw_integrity_guards.py",
+    "purpose": "PostgreSQL draw evidence immutability, ordered lifecycle, and same-draw relationship guards",
+    "status": "Done"
+  },
+  {
+    "path": "tests/unit/test_winner_service.py",
+    "purpose": "Commit/reveal selection, prize-credit replay, publication, and reproducibility tests",
+    "status": "Done"
+  },
+  {
+    "path": "tests/api/test_phase6_results_api.py",
+    "purpose": "Admin draw authorization and public published-result API tests",
+    "status": "Done"
+  },
+  {
+    "path": "tests/unit/test_draw_tasks.py",
+    "purpose": "Phase 6 guarded sales-closure task registration and validation tests",
+    "status": "Done"
+  },
+  {
+    "path": "app/api/user/referrals.py",
+    "purpose": "Authenticated referral profile and claim routes",
+    "status": "Done"
+  },
+  {
+    "path": "alembic/versions/0012_phase7_coupon_revenue.py",
+    "purpose": "Coupon snapshots, revenue account buckets, and immutable allocation migration",
+    "status": "Done"
+  },
+  {
+    "path": "alembic/versions/0013_phase7_marketing_rewards.py",
+    "purpose": "Referral, cashback, and affiliate evidence and pending reward migration",
+    "status": "Done"
+  },
+  {
+    "path": "tests/unit/test_phase7_coupon_revenue.py",
+    "purpose": "Coupon pricing and cancellation plus balanced revenue allocation tests",
+    "status": "Done"
+  },
+  {
+    "path": "tests/unit/test_phase7_marketing_rewards.py",
+    "purpose": "Referral, cashback, affiliate, idempotency, and pending review tests",
+    "status": "Done"
+  },
+  {
+    "path": "tests/api/test_phase7_marketing_revenue_api.py",
+    "purpose": "Coupon and revenue API authorization and pricing tests",
+    "status": "Done"
+  },
+  {
+    "path": "tests/api/test_phase7_rewards_api.py",
+    "purpose": "Marketing API authorization, referral claim, and affiliate evidence tests",
+    "status": "Done"
+  },
+  {
+    "path": "app/api/web.py",
+    "purpose": "Same-origin Phase 8 page routes and response security headers",
+    "status": "Done"
+  },
+  {
+    "path": "app/services/dashboard_service.py",
+    "purpose": "Read-only administrator operational counts",
+    "status": "Done"
+  },
+  {
+    "path": "app/templates_and_static/static/js/app.js",
+    "purpose": "Frontend navigation and page-module bootstrap",
+    "status": "Done"
+  },
+  {
+    "path": "app/templates_and_static/static/js/user.js",
+    "purpose": "User dashboard, tickets, and referral views",
+    "status": "Done"
+  },
+  {
+    "path": "tests/api/test_phase8_read_api.py",
+    "purpose": "Owner-scoped wallet and withdrawal reads plus admin RBAC tests",
+    "status": "Done"
+  },
+  {
+    "path": "tests/api/test_phase8_web.py",
+    "purpose": "All Phase 8 pages, assets, and CSP smoke tests",
+    "status": "Done"
+  },
+  {
+    "path": "app/operations.py",
+    "purpose": "Bounded Redis dependency readiness probe",
+    "status": "Done"
+  },
+  {
+    "path": "tests/api/test_phase9_operations.py",
+    "purpose": "Production settings, readiness, and response-header tests",
+    "status": "Done"
+  },
+  {
+    "path": "app/services/integrity_service.py",
+    "purpose": "Read-only journal balance and wallet cache integrity scan",
+    "status": "Done"
+  },
+  {
+    "path": "tests/unit/test_phase9_integrity.py",
+    "purpose": "Journal and wallet integrity scan tests",
+    "status": "Done"
+  },
+  {
+    "path": "scripts/run_test_agents.py",
+    "purpose": "Domain-scoped local test runner with explicit release-gate summary",
+    "status": "Done"
+  },
+  {
+    "path": "tests/agents/README.md",
+    "purpose": "Test harness usage and limitations",
+    "status": "Done"
+  },
+  {
+    "path": "tests/agents/test_agent_contract.py",
+    "purpose": "Frontend and API route contract checks",
+    "status": "Done"
+  },
+  {
+    "path": "tests/agents/test_agent_readiness.py",
+    "purpose": "Migration, placeholder, and configuration readiness checks",
+    "status": "Done"
+  },
+  {
+    "path": "tests/agents/test_agent_runner.py",
+    "purpose": "Release-gate reporting tests for the domain test harness",
+    "status": "Done"
+  },
+  {
+    "path": "app/schemas/audit.py",
+    "purpose": "Redacted administrator audit metadata response",
+    "status": "Done"
+  },
+  {
+    "path": "tests/api/test_phase9_audit_api.py",
+    "purpose": "Administrator audit access, redaction, filters, and pagination tests",
+    "status": "Done"
+  },
+  {
+    "path": "app/templates_and_static/templates/public/payment_demo.html",
+    "purpose": "Clearly labeled, non-transactional buyer payment UI preview",
+    "status": "Done"
+  },
+  {
+    "path": "app/templates_and_static/static/js/payment_demo.js",
+    "purpose": "Interactive payment-method preview without API mutations",
+    "status": "Done"
+  },
+  {
+    "path": "app/templates_and_static/static/css/payment_demo.css",
+    "purpose": "Responsive payment preview layout and method tabs",
+    "status": "Done"
+  },
+  {
+    "path": "design/e-ticket-figma-board.svg",
+    "purpose": "Figma-importable vector UI concept for discovery, checkout, operations, and mobile",
+    "status": "Done"
+  },
+  {
+    "path": "design/README.md",
+    "purpose": "Design import instructions, limitations, and review gate",
+    "status": "Done"
+  },
+  {
+    "path": "design/v2/e-ticket-figma-board-v2.svg",
+    "purpose": "Earlier second-direction vector exploration retained for comparison",
+    "status": "Done"
+  },
+  {
+    "path": "design/v2/e-ticket-figma-board-v2.png",
+    "purpose": "Earlier second-direction raster preview retained for comparison",
+    "status": "Done"
+  },
+  {
+    "path": "design/v2/complete-ui-board.svg",
+    "purpose": "Nine-screen Figma-importable complete UI direction 02 board",
+    "status": "Done"
+  },
+  {
+    "path": "design/v2/complete-ui-board-preview.png",
+    "purpose": "Rendered review image of the complete nine-screen design board",
+    "status": "Done"
+  },
+  {
+    "path": "design/v2/preview.html",
+    "purpose": "Responsive non-transactional HTML/CSS preview for all nine design screens",
+    "status": "Done"
+  },
+  {
+    "path": "design/v2/page-details.md",
+    "purpose": "Page-by-page visual, state, and backend-criteria design handoff",
+    "status": "Done"
+  },
+  {
+    "path": "design/v2/site-architecture.md",
+    "purpose": "Proposed 44-view site map, page inventory, navigation, and route status before UI coding",
+    "status": "Done"
+  },
+  {
+    "path": "design/v2/build_figma.js",
+    "purpose": "Prepared native Figma construction source; blocked before execution by Figma usage limit",
+    "status": "Prepared, not executed"
+  },
+  {
+    "path": "app/templates_and_static/static/css/public-v2.css",
+    "purpose": "Scoped responsive visual system for the first six public and access pages",
+    "status": "Done"
+  },
+  {
+    "path": "tests/api/test_public_v2_web.py",
+    "purpose": "Regression checks for public v2 page shells, scoped stylesheet, and auth landmarks",
+    "status": "Done"
+  },
+  {
+    "path": "app/templates_and_static/static/css/user-v2.css",
+    "purpose": "Responsive account layout and UI states for dashboard, tickets, and orders",
+    "status": "Done"
+  },
+  {
+    "path": "app/templates_and_static/static/js/account_v2.js",
+    "purpose": "Owner-scoped dashboard, ticket, order list, and order detail rendering",
+    "status": "Done"
+  },
+  {
+    "path": "app/templates_and_static/templates/user/orders.html",
+    "purpose": "Orders list page shell with account navigation",
+    "status": "Done"
+  },
+  {
+    "path": "app/templates_and_static/templates/user/order_detail.html",
+    "purpose": "Order detail page shell for server-authoritative status",
+    "status": "Done"
+  },
+  {
+    "path": "tests/api/test_account_v2_web.py",
+    "purpose": "Regression checks for account v2 routes, assets, and order detail path validation",
+    "status": "Done"
+  },
+  {
+    "path": "app/templates_and_static/templates/user/payments.html",
+    "purpose": "Authenticated payment-status page shell with account navigation",
+    "status": "Done"
+  },
+  {
+    "path": "app/templates_and_static/static/css/commerce-v2.css",
+    "purpose": "Responsive checkout, payments, wallet, and withdrawals visual system",
+    "status": "Done"
+  },
+  {
+    "path": "tests/api/test_commerce_v2_web.py",
+    "purpose": "Commerce page shell and configured payment-method availability regression checks",
+    "status": "Done"
+  },
+  {
+    "path": "app/templates_and_static/templates/admin/workspace.html",
+    "purpose": "Shared responsive shell for administrator route views",
+    "status": "Done"
+  },
+  {
+    "path": "app/templates_and_static/static/css/admin-v2.css",
+    "purpose": "Operations dashboard, navigation, queue, record, and report styling",
+    "status": "Done"
+  },
+  {
+    "path": "app/templates_and_static/templates/public/content.html",
+    "purpose": "Shared public detail and information page shell",
+    "status": "Done"
+  },
+  {
+    "path": "app/templates_and_static/static/css/content-v2.css",
+    "purpose": "Responsive catalog detail, proof, and information page layouts",
+    "status": "Done"
+  },
+  {
+    "path": "app/templates_and_static/static/js/content_v2.js",
+    "purpose": "Public product/result details and non-binding information content",
+    "status": "Done"
+  },
+  {
+    "path": "app/templates_and_static/templates/user/utility.html",
+    "purpose": "Shared account utility and detail page shell",
+    "status": "Done"
+  },
+  {
+    "path": "app/templates_and_static/static/js/utility_v2.js",
+    "purpose": "Referral, ticket, withdrawal, account, and notification view handling",
+    "status": "Done"
+  },
+  {
+    "path": "tests/api/test_v2_route_inventory.py",
+    "purpose": "Regression checks for all proposed UI route shells and scoped assets",
+    "status": "Done"
+  },
+  {
+    "path": "app/services/admin_user_read_service.py",
+    "purpose": "Bounded administrator user reads with masked email projection",
+    "status": "Done"
+  },
+  {
+    "path": "app/schemas/notification_read.py",
+    "purpose": "Payload-free owner notification API response",
+    "status": "Done"
+  },
+  {
+    "path": "app/services/notification_read_service.py",
+    "purpose": "Owner-scoped delivered P2P and draw event read service",
+    "status": "Done"
+  },
+  {
+    "path": "app/api/user/notifications.py",
+    "purpose": "Authenticated bounded in-app notification read endpoint",
+    "status": "Done"
+  },
+  {
+    "path": "tests/api/test_admin_users_read.py",
+    "purpose": "Role and data-minimization regression for admin user reads",
+    "status": "Done"
+  },
+  {
+    "path": "tests/api/test_notification_read.py",
+    "purpose": "Owner-scoping and payload exclusion regression for notifications",
+    "status": "Done"
+  },
+  {
+    "path": "tests/api/test_admin_package_read.py",
+    "purpose": "Inactive package visibility and role-gate regression for admin reads",
+    "status": "Done"
+  },
+  {
+    "path": "app/services/admin_bootstrap_service.py",
+    "purpose": "Audited, idempotent first-admin creation with PostgreSQL bootstrap lock",
+    "status": "Done"
+  },
+  {
+    "path": "app/services/demo_seed_service.py",
+    "purpose": "Development-only idempotent catalog draft seed via guarded series service",
+    "status": "Done"
+  },
+  {
+    "path": "tests/api/test_profile_read.py",
+    "purpose": "Owner profile auth and safe-field regression",
+    "status": "Done"
+  },
+  {
+    "path": "tests/unit/test_maintenance_scripts.py",
+    "purpose": "Bootstrap, demo seed, role, audit, idempotency, and CLI safety checks",
+    "status": "Done"
+  }
+]
