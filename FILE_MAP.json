@@ -1393,5 +1393,30 @@
     "path": "tests/unit/test_maintenance_scripts.py",
     "purpose": "Bootstrap, demo seed, role, audit, idempotency, and CLI safety checks",
     "status": "Done"
+  },
+  {
+    "path": "ROADMAP.md",
+    "purpose": "Evidence-based completion roadmap and release gates",
+    "status": "Done"
+  },
+  {
+    "path": ".github/workflows/tests.yml",
+    "purpose": "Isolated PostgreSQL full-suite CI gate; first GitHub run pending",
+    "status": "Review"
+  },
+  {
+    "path": "app/core/rate_limit.py",
+    "purpose": "Distributed fail-closed Redis rate limiting for public authentication",
+    "status": "Done"
+  },
+  {
+    "path": "scripts/release_preflight.py",
+    "purpose": "Read-only migration revision and Redis release preflight",
+    "status": "Done"
+  },
+  {
+    "path": "tests/unit/test_release_preflight.py",
+    "purpose": "Redaction, migration mismatch, and no-write preflight tests",
+    "status": "Done"
   }
 ]

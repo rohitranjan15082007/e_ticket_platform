@@ -2,6 +2,10 @@
 
 FastAPI platform for limited ticket sales, wallet accounting and a controlled P2P withdrawal-matching core. It is intentionally **not configured for live payments**.
 
+For the current staging evidence, remaining work, and release gates, see
+[`ROADMAP.md`](ROADMAP.md). A deployed `/ready` response is not a payment launch
+approval.
+
 ## Current status
 
 Phases 1-3 are implemented locally: admin-managed finite ticket series/packages, server-priced orders with short inventory reservations, safe cancellation/expiry release, and settlement-gated ticket allocation with unique per-series serials.

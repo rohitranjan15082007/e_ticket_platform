@@ -2,8 +2,9 @@
 
 from typing import Annotated
 
-from fastapi import APIRouter, Depends, Header, status
+from fastapi import APIRouter, Depends, Header, Request, status
 
+from app.core.rate_limit import check_auth_rate_limit
 from app.dependencies import SessionDependency, get_current_user
 from app.models.user import User
 from app.schemas.auth import AccessTokenResponse, LoginRequest, LoginResponse, RegisterRequest, UserResponse
@@ -25,15 +26,18 @@ def serialize_user(user: User) -> UserResponse:
 @router.post("/register", response_model=UserResponse, status_code=status.HTTP_201_CREATED)
 async def register(
     payload: RegisterRequest,
+    request: Request,
     session: SessionDependency,
     idempotency_key: Annotated[str, Header(alias="Idempotency-Key", min_length=8, max_length=255)],
 ) -> UserResponse:
+    await check_auth_rate_limit(action="register", email=payload.email, request=request)
     user = await AuthService(session).register(payload, idempotency_key)
     return serialize_user(user)
 
 
 @router.post("/login", response_model=LoginResponse)
-async def login(payload: LoginRequest, session: SessionDependency) -> LoginResponse:
+async def login(payload: LoginRequest, request: Request, session: SessionDependency) -> LoginResponse:
+    await check_auth_rate_limit(action="login", email=payload.email, request=request)
     result = await AuthService(session).login(payload)
     return LoginResponse(
         token=AccessTokenResponse(access_token=result.access_token),

@@ -471,6 +471,35 @@ Redis connection, worker/beat schedule or live payment was exercised.
 
 ## Intentional boundaries
 
-- No real provider contract/credentials, externally operated Telegram bot dispatch/registration, QR/UPI payment-initiation flow, wallet-credit source adapter, payout executor, external notification channel, or production deployment has been configured. The signed provider webhook boundaries and scheduled local outbox workers are implemented but disabled/unconfigured for live operation. Phase 5 reconciliation is review-only and has no bank/provider polling or automatic settlement.
+- No real provider contract/credentials, externally operated Telegram bot dispatch/registration, QR/UPI payment-initiation flow, wallet-credit source adapter, payout executor, external notification channel, or approved live-money production rollout has been configured. The signed provider webhook boundaries and scheduled local outbox workers are implemented but disabled/unconfigured for live operation. Phase 5 reconciliation is review-only and has no bank/provider polling or automatic settlement.
 - `SPEC.md` v1.2 is the authoritative corrected behavior for Phase 4. A screenshot/UTR/receiver confirmation never constitutes verification.
 - Provider selection, legal/compliance approval, KYC/AML, fees, refund funding/execution, evidence retention, reconciliation operations and real-money launch remain explicit pre-launch decisions.
+
+## Completion-roadmap work - 2026-10-01
+
+Created `ROADMAP.md` to separate verified staging behavior, local code tasks,
+provider/operator decisions, and the project-wide release gates. The public
+Vercel deployment returned `/health` HTTP 200 in `production` mode and `/ready`
+HTTP 200 with database and Redis `ok`; public catalog/results reads and key
+HTML/CSS/JS routes also returned HTTP 200. The catalog was empty. Neither
+readiness nor these GET requests verify Alembic head, Celery worker/beat,
+financial settlement, or live payments. `docs/deployment.md` now records this
+observed status instead of the obsolete “not deployed” statement.
+
+The local branch was fast-forwarded from `319b9b6` to GitHub/Vercel base
+`04a7d60` after reviewing the non-overlapping four-file database TLS diff;
+user-owned untracked PDF, build, and reference files were preserved. Added
+Redis-backed atomic login/registration rate limits with HMAC-derived keys,
+429 responses, and fail-closed 503 on broker failure. Added a read-only
+`scripts.release_preflight` command for Alembic revision and Redis checks;
+its JSON output explicitly leaves Celery and providers unverified. Added a
+GitHub Actions workflow using a disposable PostgreSQL `_test` service and a
+check that all nine race tests execute, but **no GitHub CI run has occurred**.
+
+On the aligned base plus these local changes, `python -B -m pytest -q -ra
+--color=no -p no:cacheprovider` passed **159 tests**, skipped the nine
+PostgreSQL-only race tests because no isolated test URL is configured here,
+and reported two installed-dependency deprecation warnings. Focused auth
+tests passed 5/5 and preflight tests passed 7/7. No staging migration,
+worker/beat, provider, browser checkout, or payment activation was performed
+by this roadmap work. See `ROADMAP.md` for the remaining acceptance evidence.
