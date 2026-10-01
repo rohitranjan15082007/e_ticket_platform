@@ -17,8 +17,13 @@ accept real money. `PROJECT_RULES.md`, `SPEC.md`, `PROJECT_BLUEPRINT.md`, and
   ends in `_test`; their fixture truncates tables and cycles migrations.
 - The local branch was fast-forwarded from `319b9b6` to Vercel's observed base
   commit `04a7d60` after reviewing its four-file diff. The roadmap, security
-  changes, CI workflow, and preflight are local worktree changes, **not yet
-  deployed or verified by GitHub CI**. Unrelated local files were preserved.
+  changes, CI workflow, and preflight were published to review branch
+  `codex/release-roadmap-20261001` at `6def8ae`, not merged into production
+  `main`. Unrelated local files were preserved.
+- [GitHub CI run 36851321589](https://github.com/rohitranjan15082007/e_ticket_platform/actions/runs/36851321589)
+  passed the full suite and its explicit nine-PostgreSQL-race-test assertion.
+  The first Vercel preview build for `6def8ae` failed with `BUILD_FAILED` /
+  `Resource provisioning timed out`; no preview runtime result is claimed.
 
 ## Execution order and exit evidence
 
@@ -37,16 +42,18 @@ accept real money. `PROJECT_RULES.md`, `SPEC.md`, `PROJECT_BLUEPRINT.md`, and
 - [x] Add a shared, fail-closed rate limit to public login/registration
       mutations, without storing raw identity, IP, or credentials in keys.
 - [x] Add a continuous-integration workflow with an isolated PostgreSQL
-      `_test` service. Its **first GitHub run remains pending**; never use
-      staging or production databases for these destructive tests.
+      `_test` service. Its first GitHub run passed, including the explicit
+      nine-race-test assertion. Never use staging or production databases for
+      these destructive tests.
 - [x] Add a read-only release preflight that reports the Alembic revision and
       dependency checks separately from `/ready`; do not run migrations on
       application startup or expose secrets in an unauthenticated endpoint.
       It has only been unit-tested; the staging run remains pending.
-- [ ] Run the full suite and focused security tests against the exact release
-      commit in CI with no skipped PostgreSQL tests; perform real browser
-      journeys on desktop and mobile. The updated local worktree run passed
-      159 tests with nine expected PostgreSQL-only skips.
+- [x] Run the full suite and focused security tests on the review commit in
+      CI with all nine PostgreSQL race tests executed. The local worktree run
+      passed 159 tests with nine expected PostgreSQL-only skips.
+- [ ] Obtain a successful preview deployment and perform real browser journeys
+      on desktop and mobile before merging the release candidate.
 - **Exit evidence:** test run with zero failures and zero unexplained skips;
   reviewed CI logs and browser results.
 
@@ -58,8 +65,9 @@ accept real money. `PROJECT_RULES.md`, `SPEC.md`, `PROJECT_BLUEPRINT.md`, and
       a separate release step. Do not upgrade or downgrade an unknown database.
 - [ ] Run the read-only journal-balance and wallet-reconciliation commands;
       investigate every finding before any correction.
-- [ ] Create a separate empty `_test` PostgreSQL database or branch and run
-      the nine destructive concurrency tests there, never on staging/live.
+- [x] Run the nine destructive concurrency tests in CI's disposable PostgreSQL
+      `_test` database, never on staging/live. A separate database is still
+      required for any manual rerun outside CI.
 - **Exit evidence:** revision, integrity reports, 9/9 race-test results, and
   backup/restore evidence; `/ready` alone is insufficient.
 
@@ -126,6 +134,5 @@ accept real money. `PROJECT_RULES.md`, `SPEC.md`, `PROJECT_BLUEPRINT.md`, and
 2. cPanel Terminal results for `python3 --version`, `id -u`, and whether
    `/usr/local/cpanel/scripts/cpuser_service_manager` is available. Also
    confirm whether the plan permits always-running user processes.
-3. An isolated disposable PostgreSQL `_test` database for the nine race tests.
-4. Owner/provider decisions for product terms and any real-money operations;
+3. Owner/provider decisions for product terms and any real-money operations;
    these cannot be invented by an implementation agent.

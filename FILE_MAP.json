@@ -1401,8 +1401,8 @@
   },
   {
     "path": ".github/workflows/tests.yml",
-    "purpose": "Isolated PostgreSQL full-suite CI gate; first GitHub run pending",
-    "status": "Review"
+    "purpose": "Isolated PostgreSQL full-suite CI gate with nine race-test assertion",
+    "status": "Done"
   },
   {
     "path": "app/core/rate_limit.py",

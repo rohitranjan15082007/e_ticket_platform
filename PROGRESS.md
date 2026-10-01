@@ -494,7 +494,8 @@ Redis-backed atomic login/registration rate limits with HMAC-derived keys,
 `scripts.release_preflight` command for Alembic revision and Redis checks;
 its JSON output explicitly leaves Celery and providers unverified. Added a
 GitHub Actions workflow using a disposable PostgreSQL `_test` service and a
-check that all nine race tests execute, but **no GitHub CI run has occurred**.
+check that all nine race tests execute; its run was still pending at this
+local-implementation checkpoint.
 
 On the aligned base plus these local changes, `python -B -m pytest -q -ra
 --color=no -p no:cacheprovider` passed **159 tests**, skipped the nine
@@ -503,3 +504,15 @@ and reported two installed-dependency deprecation warnings. Focused auth
 tests passed 5/5 and preflight tests passed 7/7. No staging migration,
 worker/beat, provider, browser checkout, or payment activation was performed
 by this roadmap work. See `ROADMAP.md` for the remaining acceptance evidence.
+
+### Review-branch CI and preview outcome
+
+Published only the roadmap, CI workflow, auth limiter, preflight, related tests,
+and tracker/runbook updates to review branch `codex/release-roadmap-20261001`
+at `6def8ae`; production `main` was not changed. [GitHub Actions run
+36851321589](https://github.com/rohitranjan15082007/e_ticket_platform/actions/runs/36851321589)
+completed successfully: the full-suite step and the explicit assertion that
+all nine PostgreSQL race tests executed both passed against a disposable
+runner-local `_test` database. This does not prove a staging migration or
+worker. Vercel's first preview build for that commit reported `BUILD_FAILED`
+with `Resource provisioning timed out`; no preview runtime pass is claimed.
