@@ -17,13 +17,17 @@ accept real money. `PROJECT_RULES.md`, `SPEC.md`, `PROJECT_BLUEPRINT.md`, and
   ends in `_test`; their fixture truncates tables and cycles migrations.
 - The local branch was fast-forwarded from `319b9b6` to Vercel's observed base
   commit `04a7d60` after reviewing its four-file diff. The roadmap, security
-  changes, CI workflow, and preflight were published to review branch
-  `codex/release-roadmap-20261001` at `6def8ae`, not merged into production
-  `main`. Unrelated local files were preserved.
-- [GitHub CI run 36851321589](https://github.com/rohitranjan15082007/e_ticket_platform/actions/runs/36851321589)
+  changes, CI workflow, and preflight are on review branch
+  `codex/release-roadmap-20261001`, not merged into production `main`.
+  Unrelated local files were preserved.
+- [GitHub CI run 36852347736](https://github.com/rohitranjan15082007/e_ticket_platform/actions/runs/36852347736)
   passed the full suite and its explicit nine-PostgreSQL-race-test assertion.
-  The first Vercel preview build for `6def8ae` failed with `BUILD_FAILED` /
-  `Resource provisioning timed out`; no preview runtime result is claimed.
+  A review preview built successfully and served `/health` and HTML/assets,
+  but `/ready` returned 503 and catalog API reads returned 500. Vercel logs
+  showed a refused PostgreSQL connection. The project settings show that
+  `TICKET_DATABASE_URL` and `TICKET_REDIS_URL` exist only in Production;
+  Preview falls back to the local development service URLs. This is an
+  environment-isolation blocker, not a passing preview runtime test.
 
 ## Execution order and exit evidence
 
@@ -34,6 +38,14 @@ accept real money. `PROJECT_RULES.md`, `SPEC.md`, `PROJECT_BLUEPRINT.md`, and
       user-owned untracked files.
 - [ ] Keep live payment credentials unset and manual UPI disabled while
       infrastructure is being tested. Keep real `.env` files out of Git.
+- [ ] Provide Preview its own PostgreSQL and Redis resources and `TICKET_*`
+      settings; never reuse Production database/Redis for unreviewed preview
+      code or destructive tests. Prefer a clean separate free-tier Neon project
+      and a separate Redis instance; do not clone Production data into a
+      Preview branch. Scope the Preview JWT secret separately, check whether
+      integration-generated `rana_*` credentials still expose Production
+      resources to Preview, then redeploy and verify `/ready` and catalog
+      reads. Provider free-tier limits must be confirmed before creation.
 - **Exit evidence:** recorded commit SHA, environment name, and a reviewed
   release diff. A Vercel `READY` badge is not runtime evidence.
 
@@ -52,7 +64,9 @@ accept real money. `PROJECT_RULES.md`, `SPEC.md`, `PROJECT_BLUEPRINT.md`, and
 - [x] Run the full suite and focused security tests on the review commit in
       CI with all nine PostgreSQL race tests executed. The local worktree run
       passed 159 tests with nine expected PostgreSQL-only skips.
-- [ ] Obtain a successful preview deployment and perform real browser journeys
+- [x] Obtain a Vercel `READY` preview build and check its browser-visible
+      pages. The check found the database/Redis configuration blocker above.
+- [ ] After isolated Preview resources work, perform real browser journeys
       on desktop and mobile before merging the release candidate.
 - **Exit evidence:** test run with zero failures and zero unexplained skips;
   reviewed CI logs and browser results.
@@ -128,9 +142,11 @@ accept real money. `PROJECT_RULES.md`, `SPEC.md`, `PROJECT_BLUEPRINT.md`, and
 
 ## Inputs needed to unblock the next steps
 
-1. Read-only access to the Neon staging database (or the revision from
-   `SELECT version_num FROM alembic_version;`). Never send a database URL or
-   password in chat.
+1. Provision clean, isolated Preview PostgreSQL and Redis resources within
+   the approved free-tier limit, then set Preview-only `TICKET_*` variables.
+   Read-only access to the resulting Neon staging database (or the revision
+   from `SELECT version_num FROM alembic_version;`) is needed for preflight.
+   Never send a database URL or password in chat.
 2. cPanel Terminal results for `python3 --version`, `id -u`, and whether
    `/usr/local/cpanel/scripts/cpuser_service_manager` is available. Also
    confirm whether the plan permits always-running user processes.

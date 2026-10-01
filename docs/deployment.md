@@ -3,10 +3,25 @@
 Status (observed 2026-10-01): the public Vercel Function responds with HTTP 200
 at `/health` (`production`) and `/ready` (PostgreSQL and Redis `ok`). Public
 catalog/results reads and representative HTML/CSS/JS routes also responded.
-This proves a reachable staging API, **not** applied migration head, Celery
+This proves a reachable deployed API, **not** applied migration head, Celery
 worker/beat operation, payment settlement, or production release approval.
 The public catalog had no series or packages at this check. Follow
 [`ROADMAP.md`](../ROADMAP.md) for the remaining evidence and release gates.
+
+The review-branch Vercel Preview is **not** ready as of 2026-10-01: its
+`/ready` returned 503 and catalog API returned 500 because application
+`TICKET_DATABASE_URL` and `TICKET_REDIS_URL` are set for Production only.
+The Preview Function used local development defaults and its database
+connection was refused. Give Preview separate PostgreSQL/Redis resources and
+the application's own `TICKET_*` variables; do not reuse Production resources
+to make unreviewed preview code work. A Vercel `READY` build or `/health` 200
+does not prove runtime dependencies are connected.
+The integration-created `rana_*` database/Redis variables are currently
+visible in Production and Preview; confirm which resources they reference and
+restrict Production resource credentials to Production where supported. Do
+not clone Production user/payment data into a staging branch. Vercel variable
+scope changes apply to a new deployment, so redeploy Preview after safe,
+isolated configuration.
 
 ## Local verification
 

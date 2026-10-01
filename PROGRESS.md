@@ -516,3 +516,16 @@ all nine PostgreSQL race tests executed both passed against a disposable
 runner-local `_test` database. This does not prove a staging migration or
 worker. Vercel's first preview build for that commit reported `BUILD_FAILED`
 with `Resource provisioning timed out`; no preview runtime pass is claimed.
+
+The subsequent review commit `3d13b9d` passed [GitHub Actions run
+36852347736](https://github.com/rohitranjan15082007/e_ticket_platform/actions/runs/36852347736),
+including the full suite and all nine PostgreSQL race-test assertions. Its
+Vercel preview reached `READY` and served `/health` and HTML/assets, but the
+browser-visible packages page reported a catalog request failure. Vercel
+runtime logs recorded `/api/v1/catalog/packages` HTTP 500 with PostgreSQL
+`ConnectionRefusedError`, and `/ready` HTTP 503. The project settings show
+that application-specific `TICKET_DATABASE_URL` and `TICKET_REDIS_URL` are
+Production-only; integration-generated `rana_*` variables do not replace
+them in Preview. The preview is therefore **not** runtime-ready. Use isolated
+Preview PostgreSQL/Redis resources; do not point it at Production data merely
+to make the preview turn green.
