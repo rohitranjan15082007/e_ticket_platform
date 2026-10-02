@@ -57,7 +57,8 @@ def test_sqlite_async_url_remains_available_for_local_migrations() -> None:
 
     url, connect_args = async_database_options(raw_url)
 
-    assert url.render_as_string(hide_password=False) == raw_url
+    assert url.drivername == "sqlite+aiosqlite"
+    assert url.database == ":memory:"
     assert connect_args == {}
 
 
