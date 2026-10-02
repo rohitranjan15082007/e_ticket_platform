@@ -85,13 +85,19 @@ async function dashboard() {
   const data = await get("/api/v1/admin/dashboard/summary", true);
   const grid = el("div", "", "ops-grid");
   for (const [label, value, href] of [
-    ["Open series", data.open_series, "/admin/series"], ["Pending orders", data.pending_orders, "/admin/payments"],
-    ["Manual proofs to review", data.pending_manual_proofs, "/admin/payments"],
-    ["Active P2P matches", data.active_p2p_matches, "/admin/withdrawals"],
-    ["Unresolved withdrawals", data.unresolved_withdrawals, "/admin/withdrawals"],
-    ["Open disputes", data.open_disputes, "/admin/disputes"],
+    ["Total users", data.total_users, "/admin/users"],
+    ["Open series", data.open_series, "/admin/series"],
+    ["Closed series", data.closed_series, "/admin/series"],
     ["Tickets sold", data.tickets_sold, "/admin/series"],
     ["Tickets remaining", data.open_tickets_remaining, "/admin/series"],
+    ["Pending orders", data.pending_orders, "/admin/payments"],
+    ["Manual proofs to review", data.pending_manual_proofs, "/admin/payments"],
+    ["Active P2P matches", data.active_p2p_matches, "/admin/withdrawals"],
+    ["Open disputes", data.open_disputes, "/admin/disputes"],
+    ["Unresolved withdrawals", data.unresolved_withdrawals, "/admin/withdrawals"],
+    ["Referral rewards to review", data.pending_referral_rewards, "/admin/marketing"],
+    ["Cashback rewards to review", data.pending_cashback_rewards, "/admin/marketing"],
+    ["Affiliate commissions to review", data.pending_affiliate_commissions, "/admin/marketing"],
     ["Allocated revenue", money(data.allocated_revenue_paise), "/admin/revenue"],
   ]) grid.append(metric(label, value, href));
   clear().append(note("Review independent evidence before financial decisions. A count or claim is not settlement."), grid);
@@ -171,8 +177,9 @@ async function marketing() {
   chrome("Marketing", "Program states and pending rewards; pending is not wallet credit.", "/admin/marketing");
   const endpoints = [
     ["Coupons", "coupons"], ["Referral programs", "referral-programs"], ["Cashback campaigns", "cashback-campaigns"],
-    ["Affiliates", "affiliates"], ["Pending referral rewards", "referral-rewards"],
-    ["Pending cashback rewards", "cashback-rewards"], ["Pending affiliate commissions", "affiliate-commissions"],
+    ["Affiliates", "affiliates"], ["Referral rewards", "referral-rewards"],
+    ["Cashback rewards", "cashback-rewards"], ["Affiliate conversions", "affiliate-conversions"],
+    ["Affiliate commissions", "affiliate-commissions"],
   ];
   const results = await Promise.all(endpoints.map(async ([label, slug]) =>
     [label, await get(`/api/v1/admin/marketing/${slug}`, true)]));
