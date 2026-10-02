@@ -35,6 +35,32 @@ async def test_frontend_modules_and_styles_are_served() -> None:
 
 
 @pytest.mark.asyncio
+async def test_admin_frontend_maps_the_complete_read_only_contract() -> None:
+    async with AsyncClient(transport=ASGITransport(app=app), base_url="http://test") as client:
+        page = await client.get("/admin")
+        script = await client.get("/assets/js/admin.js")
+
+    assert page.status_code == 200
+    assert '/assets/css/admin-v2.css' in page.text
+    assert script.status_code == 200
+    for counter in (
+        "total_users", "open_series", "closed_series", "tickets_sold",
+        "open_tickets_remaining", "pending_orders", "pending_manual_proofs",
+        "active_p2p_matches", "open_disputes", "unresolved_withdrawals",
+        "pending_referral_rewards", "pending_cashback_rewards",
+        "pending_affiliate_commissions", "allocated_revenue_paise",
+    ):
+        assert f"data.{counter}" in script.text
+    for resource in (
+        "coupons", "referral-programs", "cashback-campaigns", "affiliates",
+        "referral-rewards", "cashback-rewards", "affiliate-conversions",
+        "affiliate-commissions",
+    ):
+        assert f'"{resource}"' in script.text
+    assert "post(" not in script.text
+
+
+@pytest.mark.asyncio
 async def test_payment_demo_is_clearly_labeled_and_has_no_payment_mutation() -> None:
     async with AsyncClient(transport=ASGITransport(app=app), base_url="http://test") as client:
         page = await client.get("/payment-demo")
