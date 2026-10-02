@@ -6,7 +6,7 @@ from sqlalchemy.engine import URL, make_url
 
 
 def async_database_options(raw_url: str) -> tuple[URL, dict[str, ssl.SSLContext]]:
-    """Use system CAs and hostname verification for Neon connections.
+    """Normalize provider PostgreSQL URLs and verify Neon TLS peer identity.
 
     Neon's libpq URL parameters are not all understood by asyncpg. In
     particular, asyncpg treats ``channel_binding`` as a server setting and
@@ -15,8 +15,18 @@ def async_database_options(raw_url: str) -> tuple[URL, dict[str, ssl.SSLContext]
     """
 
     url = make_url(raw_url)
+    if url.drivername == "sqlite+aiosqlite":
+        # Keep the local and migration-test database path available.
+        return url, {}
+    if url.drivername == "postgresql":
+        # Provider dashboards commonly export a libpq URL. The application,
+        # Alembic, and the release preflight all use SQLAlchemy's async engine.
+        url = url.set(drivername="postgresql+asyncpg")
+    elif url.drivername != "postgresql+asyncpg":
+        raise ValueError("DATABASE_URL must use PostgreSQL with the asyncpg driver")
+
     is_neon = (url.host or "").lower().endswith(".neon.tech")
-    if url.drivername != "postgresql+asyncpg" or not is_neon:
+    if not is_neon:
         return url, {}
 
     query = {

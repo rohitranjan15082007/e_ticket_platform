@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import ssl
 from types import SimpleNamespace
 
 import pytest
@@ -123,6 +124,22 @@ async def test_wrong_database_scheme_does_not_probe_database(
     assert report["checks"]["redis"] == {"status": "ok"}
 
 
+@pytest.mark.asyncio
+async def test_provider_postgresql_scheme_is_accepted_by_preflight(
+    monkeypatch: pytest.MonkeyPatch, capsys: pytest.CaptureFixture[str],
+) -> None:
+    _configure(monkeypatch, revisions=["0013_expected"])
+    provider_url = "postgresql://user:secret@ep-example.us-east-1.aws.neon.tech/ticket"
+    monkeypatch.setattr(
+        release_preflight,
+        "get_settings",
+        lambda: SimpleNamespace(database_url=provider_url, redis_url="redis://host/0"),
+    )
+
+    assert await release_preflight.run_check() == 0
+    assert json.loads(capsys.readouterr().out)["status"] == "ok"
+
+
 def test_repository_head_resolves_outside_project_directory(
     monkeypatch: pytest.MonkeyPatch, tmp_path,
 ) -> None:
@@ -170,3 +187,57 @@ async def test_database_probe_only_executes_read_query_and_disposes_engine(
     ]
     assert executed == ["SELECT version_num FROM alembic_version"]
     assert disposed
+
+
+@pytest.mark.asyncio
+@pytest.mark.parametrize("scheme", ["postgresql", "postgresql+asyncpg"])
+async def test_database_probe_normalizes_neon_url_and_verifies_tls(
+    monkeypatch: pytest.MonkeyPatch,
+    scheme: str,
+) -> None:
+    captured: dict[str, object] = {}
+
+    class Result:
+        def scalars(self):
+            return self
+
+        def all(self):
+            return ["0013_expected"]
+
+    class Connection:
+        async def execute(self, _statement):
+            return Result()
+
+    class Context:
+        async def __aenter__(self):
+            return Connection()
+
+        async def __aexit__(self, *_args):
+            return None
+
+    class Engine:
+        def connect(self):
+            return Context()
+
+        async def dispose(self):
+            return None
+
+    def fake_engine(url, **kwargs):
+        captured["url"] = url
+        captured["kwargs"] = kwargs
+        return Engine()
+
+    monkeypatch.setattr(release_preflight, "create_async_engine", fake_engine)
+    assert await release_preflight._database_revisions(
+        f"{scheme}://owner:secret@ep-preview.us-east-1.aws.neon.tech/ticket"
+        "?sslmode=verify-full&channel_binding=require&sslrootcert=/missing/root.crt"
+    ) == ["0013_expected"]
+
+    url = captured["url"]
+    assert url.drivername == "postgresql+asyncpg"
+    assert url.host == "ep-preview.us-east-1.aws.neon.tech"
+    assert url.query == {}
+    assert captured["kwargs"]["pool_pre_ping"] is True
+    tls = captured["kwargs"]["connect_args"]["ssl"]
+    assert tls.verify_mode == ssl.CERT_REQUIRED
+    assert tls.check_hostname

@@ -160,7 +160,7 @@ class Settings(BaseSettings):
                 raise ValueError("JWT_SECRET must be a non-placeholder secret of at least 32 characters in production")
             database = urlparse(self.database_url)
             if (
-                database.scheme != "postgresql+asyncpg"
+                database.scheme not in {"postgresql", "postgresql+asyncpg"}
                 or not database.hostname
                 or not database.username
                 or not database.password

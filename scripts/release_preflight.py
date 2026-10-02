@@ -20,6 +20,7 @@ from sqlalchemy.engine import make_url
 from sqlalchemy.ext.asyncio import create_async_engine
 
 from app.config import get_settings
+from app.database_connection import async_database_options
 from app.operations import verify_redis_connection
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -38,7 +39,8 @@ def _repository_head() -> str:
 
 
 async def _database_revisions(database_url: str) -> list[str]:
-    engine = create_async_engine(database_url, pool_pre_ping=True)
+    engine_url, connect_args = async_database_options(database_url)
+    engine = create_async_engine(engine_url, pool_pre_ping=True, connect_args=connect_args)
     try:
         async with engine.connect() as connection:
             result = await connection.execute(text("SELECT version_num FROM alembic_version"))
@@ -67,8 +69,8 @@ async def run_check() -> int:
         return 3
 
     try:
-        if make_url(settings.database_url).drivername != "postgresql+asyncpg":
-            raise ValueError("Expected PostgreSQL asyncpg URL")
+        if make_url(settings.database_url).drivername not in {"postgresql", "postgresql+asyncpg"}:
+            raise ValueError("Expected PostgreSQL URL")
         repository_head = _repository_head()
         database_revisions = await asyncio.wait_for(
             _database_revisions(settings.database_url), timeout=PROBE_TIMEOUT_SECONDS

@@ -3,6 +3,7 @@
 from io import StringIO
 from pathlib import Path
 
+import pytest
 from alembic import command
 from alembic.config import Config
 from sqlalchemy import create_engine, inspect, text
@@ -411,10 +412,11 @@ def test_sqlite_migrations_upgrade_downgrade_and_reupgrade(monkeypatch, tmp_path
         get_settings.cache_clear()
 
 
-def test_postgresql_offline_sql_renders_phase7_integrity_guards(monkeypatch) -> None:
+@pytest.mark.parametrize("scheme", ["postgresql", "postgresql+asyncpg"])
+def test_postgresql_offline_sql_renders_phase7_integrity_guards(monkeypatch, scheme: str) -> None:
     """Exercise every revision's PostgreSQL offline branch without a live server."""
 
-    database_url = "postgresql+asyncpg://ticket_user:ticket_password@localhost/ticket_platform"
+    database_url = f"{scheme}://ticket_user:ticket_password@localhost/ticket_platform"
     monkeypatch.setenv("TICKET_DATABASE_URL", database_url)
     get_settings.cache_clear()
     output_buffer = StringIO()
