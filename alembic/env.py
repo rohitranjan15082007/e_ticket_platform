@@ -20,8 +20,9 @@ target_metadata = Base.metadata
 
 
 def run_migrations_offline() -> None:
+    engine_url, _ = async_database_options(get_settings().database_url)
     context.configure(
-        url=get_settings().database_url,
+        url=engine_url.render_as_string(hide_password=False),
         target_metadata=target_metadata,
         literal_binds=True,
         dialect_opts={"paramstyle": "named"},
