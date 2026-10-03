@@ -20,7 +20,8 @@ async def test_proposed_product_routes_serve_shells_without_external_assets() ->
         f"/admin/draws/{record_id}", f"/admin/payments/{record_id}",
         f"/admin/disputes/{record_id}",
     )
-    assert len(PAGES) + len(dynamic) - 1 == 44  # Development-only payment demo excluded.
+    product_pages = set(PAGES) - {"/payment-demo", "/admin/actions"}
+    assert len(product_pages) + len(dynamic) == 44  # Demo and internal action console excluded.
     assert len(router.routes) == len(PAGES) + len(dynamic)
     async with AsyncClient(transport=ASGITransport(app=app), base_url="http://test") as client:
         for route in (*PAGES, *dynamic):
@@ -31,7 +32,8 @@ async def test_proposed_product_routes_serve_shells_without_external_assets() ->
             assert "script-src 'self'" in response.headers["content-security-policy"], route
         for asset in (
             "/assets/css/admin-v2.css", "/assets/css/content-v2.css",
-            "/assets/js/admin.js", "/assets/js/content_v2.js", "/assets/js/utility_v2.js",
+            "/assets/js/admin.js", "/assets/js/admin_actions.js",
+            "/assets/js/content_v2.js", "/assets/js/utility_v2.js",
         ):
             response = await client.get(asset)
             assert response.status_code == 200, asset

@@ -85,6 +85,8 @@ export async function request(path, {method = "GET", body, authenticated = false
 export const get = (path, authenticated = false) => request(path, {authenticated});
 export const post = (path, body = {}, authenticated = true) =>
   request(path, {method: "POST", body, authenticated, idempotent: true});
+export const put = (path, body = {}, authenticated = true) =>
+  request(path, {method: "PUT", body, authenticated, idempotent: true});
 export async function requireUser(admin = false) {
   if (!token()) { location.assign(`/login?next=${encodeURIComponent(location.pathname + location.search)}`); return null; }
   try {

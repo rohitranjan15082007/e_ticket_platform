@@ -46,6 +46,7 @@ PAGES = {
     "/admin/revenue": "admin/workspace.html",
     "/admin/marketing": "admin/workspace.html",
     "/admin/audit": "admin/workspace.html",
+    "/admin/actions": "admin/workspace.html",
 }
 
 

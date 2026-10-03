@@ -1,7 +1,8 @@
 import {clear, date, el, get, link, money, requireUser} from "./api.js";
+import {renderAdminActions} from "./admin_actions.js";
 
 const groups = [
-  ["Overview", [["Dashboard", "/admin"]]],
+  ["Overview", [["Dashboard", "/admin"], ["Admin actions", "/admin/actions"]]],
   ["People", [["Users", "/admin/users"]]],
   ["Catalog", [["Series", "/admin/series"], ["Packages", "/admin/packages"], ["Draws & results", "/admin/draws"]]],
   ["Operations", [["Payments", "/admin/payments"], ["Withdrawals & P2P", "/admin/withdrawals"], ["Disputes & refunds", "/admin/disputes"]]],
@@ -264,6 +265,7 @@ export async function render() {
     "/admin/packages": packages, "/admin/draws": draws, "/admin/payments": payments,
     "/admin/withdrawals": withdrawals, "/admin/disputes": disputes,
     "/admin/revenue": revenue, "/admin/marketing": marketing, "/admin/audit": audit,
+    "/admin/actions": () => renderAdminActions(chrome),
   };
   return (main[path] || detail)();
 }

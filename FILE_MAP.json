@@ -765,6 +765,11 @@
     "status": "Done"
   },
   {
+    "path": "app/templates_and_static/static/js/admin_actions.js",
+    "purpose": "Guarded administrator console for every existing POST and PUT operation",
+    "status": "Done"
+  },
+  {
     "path": "app/core/__init__.py",
     "purpose": "Core package marker",
     "status": "Done"
@@ -1337,6 +1342,11 @@
   {
     "path": "tests/api/test_v2_route_inventory.py",
     "purpose": "Regression checks for all proposed UI route shells and scoped assets",
+    "status": "Done"
+  },
+  {
+    "path": "tests/api/test_admin_actions_web.py",
+    "purpose": "Admin action UI, OpenAPI mutation coverage, and browser safety regression checks",
     "status": "Done"
   },
   {
