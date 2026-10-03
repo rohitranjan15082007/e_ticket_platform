@@ -68,6 +68,17 @@ async def test_admin_catalog_then_buyer_order_api_has_no_settlement_route(sessio
                 f"/api/v1/admin/ticket-series/{series_id}/publish",
                 headers={**_authorization(admin, admin=True), "Idempotency-Key": "api-series-publish-01"},
             )
+            create_package = await client.post(
+                "/api/v1/admin/ticket-packages",
+                headers={**_authorization(admin, admin=True), "Idempotency-Key": "api-package-create-01"},
+                json={
+                    "name": "API Package",
+                    "description": "Created through the guarded admin package API",
+                    "price_paise": 5_000,
+                    "inventory_limit": 2,
+                    "items": [{"series_id": series_id, "quantity": 1}],
+                },
+            )
             draw_commitment = sha256(b"phase3-api-public-draw-seed").hexdigest()
             commit_draw = await client.post(
                 f"/api/v1/admin/ticket-series/{series_id}/draw/commit",
@@ -99,6 +110,8 @@ async def test_admin_catalog_then_buyer_order_api_has_no_settlement_route(sessio
         assert forbidden_admin.status_code == 403
         assert create.status_code == 201, create.text
         assert publish.status_code == 200, publish.text
+        assert create_package.status_code == 201, create_package.text
+        assert create_package.json()["items"] == [{"series_id": series_id, "quantity": 1}]
         assert commit_draw.status_code == 201, commit_draw.text
         assert open_series.status_code == 200, open_series.text
         assert catalog.status_code == 200 and [item["id"] for item in catalog.json()] == [series_id]

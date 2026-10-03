@@ -22,6 +22,11 @@ async def test_admin_actions_shell_and_module_are_served() -> None:
     assert workspace.status_code == actions.status_code == api.status_code == 200
     assert 'from "./admin_actions.js"' in workspace.text
     assert '"/admin/actions"' in workspace.text
+    assert '`/admin/actions?action=${encodeURIComponent(action)}`' in workspace.text
+    assert '"series-create"' in workspace.text
+    assert '/admin/actions?action=package-create' in workspace.text
+    assert "PUBLISHED or OPEN" in workspace.text
+    assert "Series ID ${item.id}" in workspace.text
     assert "export const put" in api.text
 
 
@@ -65,6 +70,15 @@ async def test_admin_actions_keep_browser_and_financial_safety_guards() -> None:
     assert "confirmation" in source and "Type ${action.confirm} exactly" in source
     assert 'output.tabIndex = 0' in source
     assert 'output.setAttribute("aria-label", "Server response")' in source
+    assert "new URLSearchParams(location.search)" in source
+    assert "details.dataset.actionId = action.id" in source
+    assert 'action.id === "package-create"' in source
+    assert "DRAFT series are rejected by the server" in source
+    assert "Sales end must be after sales start" in source
+    assert "Package items must contain at least one series" in source
+    assert "Enter this exact case-sensitive phrase" in source
+    assert 'confirmInput.scrollIntoView({behavior: "smooth", block: "center"})' in source
+    assert 'confirmInput.setAttribute("aria-invalid", "true")' in source
     for phrase in (
         "RUN DRAW", "POST PRIZES", "REVIEW PAYMENT", "RESOLVE DISPUTE",
         "CREATE REFUND CASE", "VOID REFERRAL REWARD", "VOID CASHBACK REWARD",

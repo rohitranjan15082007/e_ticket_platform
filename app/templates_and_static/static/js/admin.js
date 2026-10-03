@@ -63,7 +63,7 @@ function factsCard(title, pairs) {
   node.append(list);
   return node;
 }
-function listing(items, make, emptyText) {
+function listing(items, make, emptyText, before = []) {
   const root = clear(), toolbar = el("div", "", "ops-toolbar"), label = el("label");
   label.append(el("span", "Search loaded records"));
   const search = el("input"); search.type = "search"; search.placeholder = "Name, ID or status";
@@ -78,9 +78,18 @@ function listing(items, make, emptyText) {
     else for (const item of visible) list.append(make(item));
   }
   search.addEventListener("input", update);
-  root.append(toolbar, count, list); update();
+  root.append(...before, toolbar, count, list); update();
 }
 function back(label, href) { return el("div", "", "ops-actions").appendChild(link(label, href, "button secondary")); }
+function catalogActionPanel(title, description, action, label, secondary = []) {
+  const panel = el("section", "", "ops-record catalog-action-panel");
+  panel.append(el("h2", title), el("p", description));
+  const actions = el("div", "", "ops-actions");
+  actions.append(link(label, `/admin/actions?action=${encodeURIComponent(action)}`, "button"));
+  for (const [secondaryLabel, href] of secondary) actions.append(link(secondaryLabel, href, "button secondary"));
+  panel.append(actions);
+  return panel;
+}
 async function dashboard() {
   chrome("Operations overview", "Server counts are triage signals, never payment verification.", "/admin");
   const data = await get("/api/v1/admin/dashboard/summary", true);
@@ -107,17 +116,42 @@ async function series() {
   chrome("Ticket series", "Inventory, lifecycle and pricing from the administrator API.", "/admin/series");
   const items = await get("/api/v1/admin/ticket-series", true);
   listing(items, item => record(item.name, item.status, [
+    `Series ID ${item.id}`,
     `${money(item.price_paise)} per ticket · Sold ${item.sold_count} · Reserved ${item.reserved_count} · Limit ${item.ticket_limit}`,
     `Sales end ${date(item.sales_end_at)} · Draw ${date(item.draw_at)}`,
-  ], `/admin/catalog/series/${encodeURIComponent(item.id)}`), "No ticket series.");
+  ], `/admin/catalog/series/${encodeURIComponent(item.id)}`), "No ticket series yet. Create the first draft above.", [
+    catalogActionPanel(
+      "Create a ticket series",
+      "Create a DRAFT with server-validated price, dates and prizes. Review it, then publish it before adding it to a package.",
+      "series-create",
+      "Create series",
+    ),
+    note("Catalog workflow: create DRAFT → review details → publish → optionally add to a package. Opening sales has additional draw-commitment and date-window safeguards."),
+  ]);
 }
 async function packages() {
   chrome("Packages", "Administrator catalog, including inactive package inventory.", "/admin/packages");
-  const items = await get("/api/v1/admin/ticket-packages", true);
+  const [items, seriesItems] = await Promise.all([
+    get("/api/v1/admin/ticket-packages", true), get("/api/v1/admin/ticket-series", true),
+  ]);
+  const eligible = seriesItems.filter(item => ["PUBLISHED", "OPEN"].includes(item.status));
+  const packageHelp = eligible.length
+    ? `${eligible.length} published/open series ${eligible.length === 1 ? "is" : "are"} available. Copy a Series ID from the Series page into the package form.`
+    : "No series is eligible yet. Create a series and publish it first; DRAFT series cannot be added to packages.";
+  const packageAction = eligible.length ? "package-create" : "series-create";
+  const packageLabel = eligible.length ? "Create package" : "Create series first";
   listing(items, item => record(item.name, item.is_active ? "Active" : "Inactive", [
     `${money(item.price_paise)} · ${item.items.length} series · ${item.sold_count} sold`, item.description,
-  ], `/admin/catalog/packages/${encodeURIComponent(item.id)}`), "No public packages.");
-  document.getElementById("page-content").prepend(note("This is a read-only inventory view. Package changes remain guarded by the admin API."));
+  ], `/admin/catalog/packages/${encodeURIComponent(item.id)}`), "No packages yet. Follow the guided workflow above.", [
+    catalogActionPanel(
+      "Create a ticket package",
+      packageHelp,
+      packageAction,
+      packageLabel,
+      eligible.length ? [["View eligible series", "/admin/series"]] : [["Open package form", "/admin/actions?action=package-create"]],
+    ),
+    note("Package rule: every item must reference a PUBLISHED or OPEN series. Creating a series leaves it in DRAFT until an administrator publishes it."),
+  ]);
 }
 async function draws() {
   chrome("Draws & results", "Inspect the server-controlled lifecycle; this browser cannot choose winners.", "/admin/draws");
@@ -209,7 +243,15 @@ async function detail() {
   if (area === "catalog" && parts[2] === "series") {
     chrome("Series record", "Read-only catalog state and draw context.", "/admin/series");
     const item = await get(`/api/v1/admin/ticket-series/${encodeURIComponent(id)}`, true);
-    clear().append(back("Back to series", "/admin/series"), factsCard(item.name, [
+    const actions = el("div", "", "ops-actions");
+    actions.append(link("Edit series", `/admin/actions?action=series-update&series_id=${encodeURIComponent(id)}`, "button secondary"));
+    if (item.status === "DRAFT") {
+      actions.append(link("Publish series", `/admin/actions?action=series-publish&series_id=${encodeURIComponent(id)}`, "button"));
+    }
+    if (["PUBLISHED", "OPEN"].includes(item.status)) {
+      actions.append(link("Create package with this series", `/admin/actions?action=package-create&series_id=${encodeURIComponent(id)}`, "button"));
+    }
+    clear().append(back("Back to series", "/admin/series"), actions, factsCard(item.name, [
       ["Status", readable(item.status)], ["ID", item.id], ["Price", money(item.price_paise)],
       ["Sold", item.sold_count], ["Reserved", item.reserved_count], ["Limit", item.ticket_limit],
       ["Sales end", date(item.sales_end_at)], ["Draw", date(item.draw_at)],

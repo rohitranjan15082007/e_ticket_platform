@@ -26,7 +26,7 @@ export const ADMIN_ACTIONS = [
   {
     id: "series-create", group: "Series", label: "Create ticket series", method: "POST",
     path: "/api/v1/admin/ticket-series", confirm: "CREATE SERIES",
-    description: "Create a draft series. Dates are converted to timezone-aware ISO timestamps.",
+    description: "Create a DRAFT series. Dates are converted to timezone-aware ISO timestamps; publish the reviewed series before using it in a package.",
     fields: [
       field("name", "Name", "text", {required: true, maxLength: 200}),
       field("description", "Description", "textarea", {required: false, maxLength: 10000}),
@@ -85,7 +85,7 @@ export const ADMIN_ACTIONS = [
   {
     id: "package-create", group: "Packages", label: "Create ticket package", method: "POST",
     path: "/api/v1/admin/ticket-packages", confirm: "CREATE PACKAGE",
-    description: "Create a package that contains one or more existing ticket series.",
+    description: "Create a package from one or more PUBLISHED or OPEN ticket series. DRAFT series are rejected by the server.",
     fields: [
       field("name", "Name", "text", {required: true, maxLength: 200}),
       field("description", "Description", "textarea", {required: false, maxLength: 10000}),
@@ -94,6 +94,7 @@ export const ADMIN_ACTIONS = [
       field("items", "Package items", "json", {
         required: true, jsonKind: "array",
         placeholder: '[{"series_id":"00000000-0000-0000-0000-000000000000","quantity":1}]',
+        help: "JSON array using Series IDs from the Series page. Every referenced series must be PUBLISHED or OPEN.",
       }),
     ],
   },
@@ -367,9 +368,39 @@ function responseSummary(response) {
   return JSON.stringify(response, null, 2);
 }
 
-function actionCard(action) {
+function preparedDefinition(action, definition, presets) {
+  const prepared = {...definition};
+  if (Object.hasOwn(presets, definition.name)) prepared.value = presets[definition.name];
+  if (action.id === "package-create" && definition.name === "items" && UUID_PATTERN.test(presets.series_id || "")) {
+    prepared.value = JSON.stringify([{series_id: presets.series_id, quantity: 1}], null, 2);
+  }
+  return prepared;
+}
+
+function validateActionBody(action, body) {
+  if (action.id === "series-create") {
+    const start = Date.parse(body.sales_start_at), end = Date.parse(body.sales_end_at), draw = Date.parse(body.draw_at);
+    if (!(start < end)) throw new Error("Sales end must be after sales start.");
+    if (!(end < draw)) throw new Error("Draw time must be after sales end.");
+  }
+  if (["package-create", "package-update"].includes(action.id) && body.items !== undefined) {
+    if (!Array.isArray(body.items) || !body.items.length) throw new Error("Package items must contain at least one series.");
+    const seen = new Set();
+    for (const [index, item] of body.items.entries()) {
+      if (item === null || Array.isArray(item) || typeof item !== "object") throw new Error(`Package item ${index + 1} must be an object.`);
+      if (!UUID_PATTERN.test(String(item.series_id || ""))) throw new Error(`Package item ${index + 1} needs a valid Series ID.`);
+      if (!Number.isSafeInteger(item.quantity) || item.quantity < 1) throw new Error(`Package item ${index + 1} quantity must be a positive whole number.`);
+      if (seen.has(item.series_id)) throw new Error("A series may appear only once in a package.");
+      seen.add(item.series_id);
+    }
+  }
+}
+
+function actionCard(action, presets = {}, requestedActionId = null) {
   const details = document.createElement("details");
   details.className = `action-card${action.danger ? " is-danger" : ""}`;
+  details.dataset.actionId = action.id;
+  details.open = action.id === requestedActionId;
   const summary = document.createElement("summary");
   const title = el("span", "", "action-title");
   title.append(el("strong", action.label), el("small", `${action.method} ${action.path}`));
@@ -380,14 +411,27 @@ function actionCard(action) {
   form.className = "action-form";
   form.noValidate = false;
   const fieldGrid = el("div", "", "action-fields");
-  for (const definition of action.fields) fieldGrid.append(fieldNode(definition));
+  for (const definition of action.fields) fieldGrid.append(fieldNode(preparedDefinition(action, definition, presets)));
   form.append(fieldGrid);
 
   const confirmation = field("confirmation", `Type ${action.confirm} to confirm`, "text", {
-    required: true, autocomplete: "off",
+    required: true,
+    autocomplete: "off",
+    help: `Enter this exact case-sensitive phrase: ${action.confirm}`,
   });
   const confirmNode = fieldNode(confirmation);
   confirmNode.classList.add("confirmation-field");
+  const confirmationError = el("p", "", "field-error");
+  confirmationError.setAttribute("role", "alert");
+  confirmationError.hidden = true;
+  confirmNode.append(confirmationError);
+  const confirmInput = confirmNode.querySelector('[name="confirmation"]');
+  confirmInput?.addEventListener("input", () => {
+    confirmInput.setCustomValidity("");
+    confirmInput.removeAttribute("aria-invalid");
+    confirmNode.classList.remove("is-invalid");
+    confirmationError.hidden = true;
+  });
   form.append(confirmNode);
 
   const controls = el("div", "", "action-submit");
@@ -405,7 +449,19 @@ function actionCard(action) {
     if (!form.reportValidity()) return;
     const typed = form.elements.namedItem("confirmation")?.value.trim();
     if (typed !== action.confirm) {
-      showStatus(`Type ${action.confirm} exactly before submitting.`, "error");
+      const message = `Type ${action.confirm} exactly before submitting.`;
+      if (confirmInput) {
+        confirmInput.setCustomValidity(message);
+        confirmInput.setAttribute("aria-invalid", "true");
+        confirmNode.classList.add("is-invalid");
+        confirmationError.textContent = message;
+        confirmationError.hidden = false;
+        details.open = true;
+        confirmInput.scrollIntoView({behavior: "smooth", block: "center"});
+        confirmInput.focus({preventScroll: true});
+        confirmInput.reportValidity();
+      }
+      showStatus(`${message} The confirmation field is highlighted below.`, "error");
       return;
     }
     submit.disabled = true;
@@ -414,11 +470,11 @@ function actionCard(action) {
     showStatus("");
     try {
       const {path, body} = requestParts(action, form);
+      validateActionBody(action, body);
       const response = action.method === "PUT" ? await put(path, body, true) : await post(path, body, true);
       showStatus(`${action.label} completed. Review the server response below.`, "success");
       output.textContent = responseSummary(response);
       output.hidden = false;
-      const confirmInput = form.elements.namedItem("confirmation");
       if (confirmInput) confirmInput.value = "";
     } catch (error) {
       const message = errorMessage(error);
@@ -442,6 +498,10 @@ export function renderAdminActions(chrome) {
     "/admin/actions",
   );
   const root = clear();
+  const params = new URLSearchParams(location.search);
+  const requestedActionId = params.get("action");
+  const requestedAction = ADMIN_ACTIONS.find(action => action.id === requestedActionId) || null;
+  const presets = Object.fromEntries([...params.entries()].filter(([name]) => name !== "action"));
   const warning = el("section", "", "action-warning");
   warning.append(
     el("strong", "Verify before you mutate"),
@@ -464,6 +524,11 @@ export function renderAdminActions(chrome) {
   toolbar.append(searchLabel, groupLabel, count);
 
   const list = el("div", "", "action-list");
+  let initialTargetApplied = false;
+  if (requestedAction) {
+    search.value = requestedAction.label;
+    groupSelect.value = requestedAction.group;
+  }
   function update() {
     const term = search.value.trim().toLowerCase();
     const group = groupSelect.value;
@@ -471,8 +536,13 @@ export function renderAdminActions(chrome) {
       (!group || action.group === group) &&
       (!term || `${action.label} ${action.description} ${action.path} ${action.group}`.toLowerCase().includes(term)));
     count.textContent = `${visible.length} of ${ADMIN_ACTIONS.length} actions`;
-    list.replaceChildren(...visible.map(actionCard));
+    list.replaceChildren(...visible.map(action => actionCard(action, presets, requestedAction?.id || null)));
     if (!visible.length) list.append(el("p", "No admin action matches this filter.", "empty-state"));
+    if (requestedAction && !initialTargetApplied) {
+      const target = [...list.querySelectorAll("details")].find(node => node.dataset.actionId === requestedAction.id);
+      target?.querySelector("input, textarea, select")?.focus();
+      initialTargetApplied = true;
+    }
   }
   search.addEventListener("input", update);
   groupSelect.addEventListener("change", update);
