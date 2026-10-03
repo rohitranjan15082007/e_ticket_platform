@@ -474,3 +474,36 @@ Redis connection, worker/beat schedule or live payment was exercised.
 - No real provider contract/credentials, externally operated Telegram bot dispatch/registration, QR/UPI payment-initiation flow, wallet-credit source adapter, payout executor, external notification channel, or production deployment has been configured. The signed provider webhook boundaries and scheduled local outbox workers are implemented but disabled/unconfigured for live operation. Phase 5 reconciliation is review-only and has no bank/provider polling or automatic settlement.
 - `SPEC.md` v1.2 is the authoritative corrected behavior for Phase 4. A screenshot/UTR/receiver confirmation never constitutes verification.
 - Provider selection, legal/compliance approval, KYC/AML, fees, refund funding/execution, evidence retention, reconciliation operations and real-money launch remain explicit pre-launch decisions.
+
+## Live administrator action console - 2026-10-03
+
+Published the guarded `/admin/actions` workspace with all 34 existing
+administrator POST/PUT operations: catalog and draw lifecycle, package
+management, payment/P2P review, dispute/refund cases, and marketing review.
+The browser builds exact typed payloads, uses the shared authenticated
+idempotent request layer, requires explicit confirmation phrases, displays the
+server response safely, and keeps backend transition rules authoritative.
+
+The clean release branch passed **159 tests**; nine isolated PostgreSQL race
+tests were skipped because no local `TICKET_TEST_DATABASE_URL` was supplied.
+An authenticated local browser run created a disposable draft series and
+received HTTP 201. Desktop/mobile checks found no horizontal overflow or
+console/page errors, and the final axe audit reported zero violations. The
+temporary local QA database was removed afterward.
+
+The first Preview exposed a provider `postgresql://` URL that SQLAlchemy tried
+to load through an unavailable synchronous driver. Runtime URL normalization
+now selects `postgresql+asyncpg`, preserves verified Neon TLS, and is covered
+by configuration, connection, and migration tests. The replacement Preview
+served `/health`, the admin shell and all 34 deployed action definitions; its
+database check passed while Preview Redis remained unconfigured. Production
+deployment `dpl_2eJPdNyUCoJFMfKUSbjvKVb5kVBU` became READY from GitHub `main`
+commit `33fdd65`. Live `/health` reports `production`, and `/ready` reports both
+database and Redis `ok`.
+
+Production authenticated-admin behavior still requires an existing first
+administrator credential. The repository intentionally permits that initial
+account only through `python -m scripts.create_admin`, which prompts for the
+password and refuses an existing email or second administrator. No password,
+database URL, JWT secret, payment provider, live-money settlement, or external
+Celery worker/beat claim was added by this release.
